@@ -1,0 +1,56 @@
+---
+title: "Assignment 2"
+---
+# General considerations website layout: 
+Data about the bribe; time, place, amount, category, etc. is available from the main search page.  
+The full text describing the event is only available from the link itself. 
+
+
+Let's generate and scrape the links of the reports first
+```{r}
+install.packages("rvest")
+install.packages("dplyr")
+install.packages("xml2")
+library("rvest")
+library("dplyr")
+library("xml2")
+
+
+df <- data_frame(LINKS = character(),TITLES = character())
+dftemp <- data_frame()
+for (i in 0:99) {
+ HYPERLINK <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*10, sep = "")
+ print(paste("processing", i, sep = " "))
+ MY.LINK <- read_html(HYPERLINK, encoding = "UTF-8") 
+ LINKS <- MY.LINK %>% html_nodes(".heading-3 a") %>% html_attr(name = 'href')
+ TITLES <- MY.LINK %>% html_nodes(".heading-3 a") %>% html_text()
+ dftemp <- cbind(TITLES,LINKS)
+ df <- rbind(df,dftemp)
+ Sys.sleep(1)
+ cat(" done!\n")
+}
+
+
+
+scrape_jp = function(link){
+ my.link = read_html(link, encoding = "UTF-8")
+ my.link.name = my.link %>% 
+   html_nodes(".heading-3 a") %>% html_text() %>% 
+   paste(collapse = "")
+ my.link.amount = my.link %>% 
+   html_nodes(".paid-amount span") %>% html_text()
+ return(cbind( my.link.name, link, my.link.amount ))
+
+}
+
+library("plyr")
+df = ldply(my.jp.data)
+df$article = jp.data.clean[1:5]
+head(df, 2)
+
+
+ .heading-3 a
+ .paid-amount span
+ .views
+ .location
+ .name a
