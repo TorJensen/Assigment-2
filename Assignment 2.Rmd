@@ -81,6 +81,9 @@ for (i in 0:99) { #loop through first 100 pages, 10 results per page = 1000
   cat(" done!\n") #progress report
 }
 
+#clean unused variables from workspace
+rm("title", "amount", "dep", "trans", "views", "city", "date", "time", "dftemp", "i")
+
 ## Split the city column
 
 df$states <- lapply(strsplit(as.character(df$city), "\\,"), "[", 2)
@@ -90,27 +93,68 @@ df$city <- lapply(strsplit(as.character(df$city), "\\,"), "[", 1)
 
 library(stringr)
 
-df$title <- df$title %>% 
+df$title <- df$title %>% #clean text
   str_replace_all(pattern = "\\n" , replacement = " ") %>%
   str_trim()
 
-df$amount <- df$amount %>%
-  str_replace_all(pattern = "Paid INR" , replacement = " ") %>%
-  str_replace_all(pattern = "," , replacement = "") %>%
-  str_trim()
+df$amount <- df$amount %>% #clean text from amount and convert to numeric
+  str_replace_all(pattern = "Paid INR" , replacement = " ") %>% 
+  str_replace_all(pattern = "," , replacement = "") %>% 
+  str_trim() %>% 
+  as.numeric() 
 
-df$views <- df$views %>%
+df$views <- df$views %>% #clean text from views and convert to numeric
   str_replace_all(pattern = "views" , replacement = " ") %>%
-  str_trim()
+  str_trim() %>% 
+  as.numeric()
 
-df$city <- df$city %>% 
+df$city <- df$city %>% #clean text from city
   as.character(df$city) %>%
   str_trim()
 
-df$states <- df$states %>% 
+df$states <- df$states %>% #clean text from states
   as.character(df$states) %>%
   str_trim()
+
+df$time <- as.numeric(str_extract(df$time,"[0-9]*"))*!grepl("minutes|hours",df$time) #clean hours and minutes out of time stamp and change to whole number of days
+
+df$date <- as.Date(df$date, format("%B %d, %Y")) #convert the date column to date format
 
 df <- df[, c(1,2,3,4,5,6,9,7,8)]
 
 ## Suggestion: Analysis of Variance between transaction and amount per province or city
+
+# Alternative to start of : 
+# Arbirtrary list of variables and header locations in link, variable observations per pages
+# 
+# headers <- c("title", "amount", "dep", "trans", "views", "city", "date", "time", "link") #list of column names
+# nodes <- c(".heading-3 a",".paid-amount span", ".name a", ".transaction a", ".overview .views", ".location", ".date", #".time-span", ".heading-3 a") #corresponding css nodes
+# obsnr <- 10 #number of observations per page
+# pgnr <- 99 #number of pages to loop through +1 (starts at 0)
+# df <- data_frame() #initialize df as data frame
+# dftemps <- data_frame() #initialize dftemps as dataframe
+# 
+# for (i in 0:pgnr) { #loop through first 100 pages, 10 results per page = 1000 
+#   link <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*obsnr, sep = "") #Create hyperlink based on loop function
+#   print(paste("processing", i, sep = " ")) #progress report outer loop
+#   main <- read_html(link, encoding = "UTF-8") #define the static part of link references
+#       #begin inner loop, defining the dftemps results based on the header and node vectors
+#       for (k in 1:length(headers)) { #dynamic length based on the number of headers
+#       print(paste("processing", headers[[k]], sep = " ")) #progress report inner loop
+#       dftemps[1:obsnr, headers[[k]]] <- #define the column name by the headers vector
+#       if(headers[[k]] != "link") #test if the data is the link data, if it's not, standard html_text, if it is, html_attr()
+#         main %>% #create column based on header name, fill with node data
+#         html_nodes(nodes[[k]]) %>% 
+#         html_text()
+#       else #this is if it is the link data
+#         main %>% 
+#         html_nodes(nodes[[k]]) %>% 
+#         html_attr(name = 'href')
+#       }
+#   
+#   df <- rbind(df,dftemps) #bind dftemps to df, and iterate to next link.
+#   Sys.sleep(1) #timer, wait 1 second
+#   cat(" done!\n") #progress report
+#   
+#   }  
+ 
