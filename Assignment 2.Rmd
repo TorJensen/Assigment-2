@@ -1,9 +1,10 @@
 ---
 title: "Assignment 2"
 ---
-# General considerations website layout: 
+General considerations website layout:  
 Data about the bribe; time, place, amount, category, etc. is available from the main search page.  
 The full text describing the event is only available from the link itself. 
+Can get most of the data from the main "search", without having to go through every link that has been pulled  
 
 
 Let's generate and scrape the links of the reports first
@@ -16,21 +17,27 @@ library("dplyr")
 library("xml2")
 
 
-df <- data_frame(LINKS = character(),TITLES = character())
-dftemp <- data_frame()
-for (i in 0:99) {
- HYPERLINK <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*10, sep = "")
- print(paste("processing", i, sep = " "))
- MY.LINK <- read_html(HYPERLINK, encoding = "UTF-8") 
- LINKS <- MY.LINK %>% html_nodes(".heading-3 a") %>% html_attr(name = 'href')
- TITLES <- MY.LINK %>% html_nodes(".heading-3 a") %>% html_text()
- dftemp <- cbind(TITLES,LINKS)
- df <- rbind(df,dftemp)
- Sys.sleep(1)
- cat(" done!\n")
+df <- data_frame(LINKS = character(),TITLES = character()) #Initialize dataframe with the desired data columns
+dftemp <- data_frame() #Create an empty dataframe
+for (i in 0:99) { #loop through first 100 pages, 10 results per page = 1000 
+ HYPERLINK <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*10, sep = "") #Create hyperlink based on loop function
+ print(paste("processing", i, sep = " ")) #progress report
+ MY.LINK <- read_html(HYPERLINK, encoding = "UTF-8") #define the static part of link references
+ LINKS <- MY.LINK %>% html_nodes(".heading-3 a") %>% html_attr(name = 'href') #define the variable pulled from the site, this returns a 10x1 character vector of hyperlinks
+ TITLES <- MY.LINK %>% html_nodes(".heading-3 a") %>% html_text() #vector of titles of bribe
+ dftemp <- cbind(TITLES,LINKS) #bind the variables together into a 10 by n dataframe
+ df <- rbind(df,dftemp) #bind the rows of df and dftemp together, appending dftemp to df based on column headers, as dftemp is redefined with each step, df grows
+ Sys.sleep(1) #timer, wait 1 second
+ cat(" done!\n") #progress report
 }
 
+#Steps to do:
+#Add the remaining variables to pull from the main search in order to construct database
+#clean the data as necessary
 
+
+
+#Stuff from lectures below
 
 scrape_jp = function(link){
  my.link = read_html(link, encoding = "UTF-8")
