@@ -1,0 +1,1001 @@
+"","title","amount","dep","trans","views","city","states","date","time"
+"1","I Paid Rs. 111 to Municipal Services in Solapur.",111,"Municipal Services","Birth Certificate",6,"Solapur","Maharashtra",2015-11-03,0
+"2","I Paid Rs. 344 to Municipal Services in Almora.",344,"Municipal Services","Birth Certificate",8,"Almora","Uttarakhand",2015-11-03,0
+"3","Paid Bribe for Borewell drilling in Bangalore",3700,"Water and Sewage","Water Connection under Sajala",9,"Bangalore","Karnataka",2015-11-03,1
+"4","I Paid Rs. 111 to Municipal Services in Abohar.",111,"Municipal Services","Birth Certificate",10,"Abohar","Punjab",2015-11-03,0
+"5","I Paid Rs. 1 to Municipal Services in Mumbai.",1,"Municipal Services","Birth Certificate",10,"Mumbai","Maharashtra",2015-11-03,0
+"6","I Paid Rs. 5000 to Police in Thane.",5000,"Police","Filing FIR",16,"Thane","Maharashtra",2015-11-03,0
+"7","I Paid Rs. 500 to Municipal Services in Lucknow.",500,"Municipal Services","Birth Certificate",17,"Lucknow","Uttar Pradesh",2015-11-03,0
+"8","I Paid Rs. 100 to Municipal Services in Mumbai.",100,"Municipal Services","Birth Certificate",13,"Mumbai","Maharashtra",2015-11-03,0
+"9","I Paid Rs. 1000 to Police in Hazaribagh.",1000,"Police","Traffic Violations",27,"Hazaribagh","Jharkhand",2015-11-03,0
+"10","I Paid Rs. 50000 to Food, Civil Supplies and Consumer Affairs in Abohar.",50000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",49,"Abohar","Punjab",2015-11-03,0
+"11","I Paid Rs. 500000 to Commercial Tax, Sales Tax, VAT in Kolkata.",5e+05,"Commercial Tax, Sales Tax, VAT","C Form",83,"Kolkata","West Bengal",2015-11-03,0
+"12","Bribe for passport verification",200,"Police","Police Verification for Passport",107,"Bangalore","Karnataka",2015-11-02,0
+"13","I Paid Rs. 2 to Police in Adari.",2,"Police","Filing FIR",125,"Adari","Uttar Pradesh",2015-11-02,0
+"14","I Paid Rs. 10000 to Railways in Chandigarh.",10000,"Railways","Transport of Goods",143,"Chandigarh","Chandigarh",2015-11-02,0
+"15","Asked bribe at the heart of Delhi by traffic police",600,"Police","Traffic Violations",145,"New Delhi","Delhi",2015-11-02,0
+"16","I Paid Rs. 100 to Commercial Tax, Sales Tax, VAT in Durgapur.",100,"Commercial Tax, Sales Tax, VAT","C Form",133,"Durgapur","West Bengal",2015-11-02,0
+"17","I Paid Rs. 20 to Others in Pune.",20,"Others","Others",133,"Pune","Maharashtra",2015-11-02,0
+"18","I Paid Rs. 1200 to Others in Mumbai.",1200,"Others","Others",131,"Mumbai","Maharashtra",2015-11-02,0
+"19","I Paid Rs. 100 to Municipal Services in Itanagar.",100,"Municipal Services","Birth Certificate",117,"Itanagar","Arunachal Pradesh",2015-11-02,0
+"20","I Paid Rs. 464001 to Municipal Services in Vidisha.",464001,"Municipal Services","Birth Certificate",122,"Vidisha","Madhya Pradesh",2015-11-02,0
+"21","I Paid Rs. 120200 to Transport in Alipurduar.",120200,"Transport","Registration of Vehicle",159,"Alipurduar","West Bengal",2015-11-02,0
+"22","I Paid Rs. 1200 to Municipal Services in Kochi.",1200,"Municipal Services","Birth Certificate",172,"Kochi","Kerala",2015-11-02,1
+"23","I Paid Rs. 10000 to Police in Mahesana.",10000,"Police","Traffic Violations",163,"Mahesana","Gujarat",2015-11-02,1
+"24","I Paid Rs. 200 to Income Tax in Pune.",200,"Income Tax","New PAN Card",167,"Pune","Maharashtra",2015-11-02,1
+"25","I Paid Rs. 20000 to Others in Hyderabad.",20000,"Others","Others",188,"Hyderabad","Telangana",2015-11-02,1
+"26","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Kolkata.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",218,"Kolkata","West Bengal",2015-11-02,2
+"27","I Paid Rs. 111 to Municipal Services in Chennai.",111,"Municipal Services","Birth Certificate",209,"Chennai","Tamil Nadu",2015-11-01,2
+"28","I Paid Rs. 200 to Municipal Services in Adilabad.",200,"Municipal Services","Birth Certificate",176,"Adilabad","Telangana",2015-11-01,2
+"29","I Paid Rs. 2000 to Income Tax in Abohar.",2000,"Income Tax","New PAN Card",178,"Abohar","Punjab",2015-11-01,2
+"30","I Paid Rs. 100 to Customs, Excise and Service Tax in Abohar.",100,"Customs, Excise and Service Tax","Customs Check and Clearance",158,"Abohar","Punjab",2015-11-01,2
+"31","I Paid Rs. 345 to Municipal Services in Abhayapuri.",345,"Municipal Services","Birth Certificate",144,"Abhayapuri","Assam",2015-11-01,2
+"32","I Paid Rs. 33 to Municipal Services in Achhnera.",33,"Municipal Services","Birth Certificate",136,"Achhnera","Uttar Pradesh",2015-11-01,2
+"33","I Paid Rs. 524001 to Commercial Tax, Sales Tax, VAT in Abohar.",524001,"Commercial Tax, Sales Tax, VAT","C Form",159,"Abohar","Punjab",2015-11-01,2
+"34","I Paid Rs. 200 to Police in New Delhi.",200,"Police","Traffic Violations",164,"New Delhi","Delhi",2015-11-01,2
+"35","I Paid Rs. 1000 to Municipal Services in Mansa.",1000,"Municipal Services","Birth Certificate",138,"Mansa","Punjab",2015-11-01,2
+"36","I Paid Rs. 108 to Income Tax in Rae Bareli.",108,"Income Tax","New PAN Card",133,"Rae Bareli","Uttar Pradesh",2015-11-01,2
+"37","I Paid Rs. 100 to Municipal Services in Dehradun.",100,"Municipal Services","Birth Certificate",115,"Dehradun","Uttarakhand",2015-11-01,2
+"38","I Paid Rs. 105 to Income Tax in Bhopal.",105,"Income Tax","New PAN Card",102,"Bhopal","Madhya Pradesh",2015-11-01,2
+"39","I Paid Rs. 100 to Others in Bahraich.",100,"Others","Others",102,"Bahraich","Uttar Pradesh",2015-11-01,2
+"40","I Paid Rs. 1000 to Passport in Kollam.",1000,"Passport","Police Verification for Passport",124,"Kollam","Kerala",2015-11-01,2
+"41","I Paid Rs. 8120303241 to Municipal Services in Tikamgarh.",8120303241,"Municipal Services","Birth Certificate",102,"Tikamgarh","Madhya Pradesh",2015-11-01,2
+"42","I Paid Rs. 12345 to Commercial Tax, Sales Tax, VAT in Abohar.",12345,"Commercial Tax, Sales Tax, VAT","C Form",101,"Abohar","Punjab",2015-11-01,2
+"43","I Paid Rs. 50 to Municipal Services in Imphal.",50,"Municipal Services","Birth Certificate",88,"Imphal","Manipur",2015-11-01,2
+"44","I Paid Rs. 100 to Municipal Services in Adari.",100,"Municipal Services","Birth Certificate",73,"Adari","Uttar Pradesh",2015-11-01,2
+"45","I Paid Rs. 10000 to Police in Kolar.",10000,"Police","Filing FIR",98,"Kolar","Karnataka",2015-11-01,2
+"46","I Paid Rs. 4552 to Municipal Services in Achhnera.",4552,"Municipal Services","Birth Certificate",65,"Achhnera","Uttar Pradesh",2015-11-01,2
+"47","I Paid Rs. 100 to Customs, Excise and Service Tax in Achhnera.",100,"Customs, Excise and Service Tax","Customs Check and Clearance",73,"Achhnera","Uttar Pradesh",2015-11-01,2
+"48","I paid Rs 300 to police conistable at his home in Tirupati",300,"Passport","Police Clearance Certificate",93,"Tirupati","Andhra Pradesh",2015-11-01,2
+"49","I Paid Rs. 100 to Municipal Services in Kolkata.",100,"Municipal Services","Birth Certificate",70,"Kolkata","West Bengal",2015-11-01,2
+"50","I Paid Rs. 1000 to Police in Bangalore.",1000,"Police","Filing FIR",121,"Bangalore","Karnataka",2015-10-31,3
+"51","I Paid Rs. 1122 to Municipal Services in Jhalawar.",1122,"Municipal Services","Birth Certificate",95,"Jhalawar","Rajasthan",2015-10-31,3
+"52","I Paid Rs. 600 to Municipal Services in Goalpara.",600,"Municipal Services","Birth Certificate",114,"Goalpara","Assam",2015-10-31,3
+"53","I Paid Rs. 400 to Others in Chittoor.",400,"Others","Others",127,"Chittoor","Andhra Pradesh",2015-10-31,3
+"54","Bribe for passport verification",200,"Police","Police Clearance Certificate",123,"Mumbai","Maharashtra",2015-10-31,3
+"55","I Paid Rs. 1000 to Commercial Tax, Sales Tax, VAT in Gurgaon.",1000,"Commercial Tax, Sales Tax, VAT","C Form",106,"Gurgaon","Haryana",2015-10-31,3
+"56","I Paid Rs. 100 to Commercial Tax, Sales Tax, VAT in Abohar.",100,"Commercial Tax, Sales Tax, VAT","C Form",95,"Abohar","Punjab",2015-10-31,3
+"57","I Paid Rs. 500 to Customs, Excise and Service Tax in Abhayapuri.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",93,"Abhayapuri","Assam",2015-10-31,3
+"58","I Paid Rs. 200 to Income Tax in Bangalore.",200,"Income Tax","New PAN Card",90,"Bangalore","Karnataka",2015-10-31,3
+"59","I Paid Rs. 100000 to Municipal Services in Lucknow.",1e+05,"Municipal Services","Birth Certificate",70,"Lucknow","Uttar Pradesh",2015-10-31,3
+"60","I Paid Rs. 500 to Passport in Anantapur.",500,"Passport","Police Verification for Passport",88,"Anantapur","Andhra Pradesh",2015-10-31,3
+"61","I Paid Rs. 50000 to Municipal Services in Mumbai.",50000,"Municipal Services","Birth Certificate",95,"Mumbai","Maharashtra",2015-10-31,3
+"62","I Paid Rs. 13 to Municipal Services in Ahmedabad.",13,"Municipal Services","Birth Certificate",80,"Ahmedabad","Gujarat",2015-10-31,3
+"63","I Paid Rs. 100 to Customs, Excise and Service Tax in Gorakhpur.",100,"Customs, Excise and Service Tax","Customs Check and Clearance",94,"Gorakhpur","Uttar Pradesh",2015-10-31,3
+"64","I Paid Rs. 10000 to Municipal Services in Bareilly.",10000,"Municipal Services","Birth Certificate",87,"Bareilly","Uttar Pradesh",2015-10-31,3
+"65","I Paid Rs. 100 to Transport in Abohar.",100,"Transport","Duplicate Registration Certificate",95,"Abohar","Punjab",2015-10-31,3
+"66","I Paid Rs. 100 to Police in New Delhi.",100,"Police","Traffic Violations",77,"New Delhi","Delhi",2015-10-31,3
+"67","I Paid Rs. 210 to Municipal Services in Adari.",210,"Municipal Services","Birth Certificate",69,"Adari","Uttar Pradesh",2015-10-31,3
+"68","I Paid Rs. 100 to Food, Civil Supplies and Consumer Affairs in Chennai.",100,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",73,"Chennai","Tamil Nadu",2015-10-31,3
+"69","I Paid Rs. 40 to Municipal Services in Nagpur.",40,"Municipal Services","Birth Certificate",67,"Nagpur","Maharashtra",2015-10-31,3
+"70","I Paid Rs. 10000 to Others in Hyderabad.",10000,"Others","Others",65,"Hyderabad","Telangana",2015-10-31,3
+"71","I Paid Rs. 100 to Police in Akola.",100,"Police","Traffic Violations",64,"Akola","Madhya Pradesh",2015-10-31,3
+"72","I Paid Rs. 1 to Income Tax in Barabanki.",1,"Income Tax","New PAN Card",63,"Barabanki","Uttar Pradesh",2015-10-31,3
+"73","I Paid Rs. 10 to Commercial Tax, Sales Tax, VAT in Abhayapuri.",10,"Commercial Tax, Sales Tax, VAT","C Form",60,"Abhayapuri","Assam",2015-10-31,3
+"74","I Paid Rs. 25 to Municipal Services in Akola.",25,"Municipal Services","Birth Certificate",53,"Akola","Madhya Pradesh",2015-10-31,3
+"75","I Paid Rs. 5000 to Stamps and Registration in Pune.",5000,"Stamps and Registration","Registration of Flat or Apartment",97,"Pune","Maharashtra",2015-10-31,3
+"76","I Paid Rs. 1 to Municipal Services in Bhubaneswar.",1,"Municipal Services","Birth Certificate",54,"Bhubaneswar","Orissa",2015-10-31,3
+"77","No way of getting out of this :(",10000,"Commercial Tax, Sales Tax, VAT","VAT Registration",98,"New Delhi","Delhi",2015-10-31,4
+"78","I Paid Rs. 100 to Municipal Services in Abhayapuri.",100,"Municipal Services","Birth Certificate",81,"Abhayapuri","Assam",2015-10-31,4
+"79","I Paid Rs. 450 to Municipal Services in Abhayapuri.",450,"Municipal Services","Birth Certificate",73,"Abhayapuri","Assam",2015-10-31,4
+"80","I Paid Rs. 10 to Income Tax in Madurai.",10,"Income Tax","New PAN Card",82,"Madurai","Tamil Nadu",2015-10-31,4
+"81","I Paid Rs. 15 to Others in Kozhikode.",15,"Others","Others",109,"Kozhikode","Kerala",2015-10-30,4
+"82","I Paid Rs. 200 to Municipal Services in Gorakhpur.",200,"Municipal Services","Birth Certificate",103,"Gorakhpur","Uttar Pradesh",2015-10-30,4
+"83","I Paid Rs. 300 to Municipal Services in Achhnera.",300,"Municipal Services","Birth Certificate",116,"Achhnera","Uttar Pradesh",2015-10-30,4
+"84","I Paid Rs. 777 to Municipal Services in Thane.",777,"Municipal Services","Birth Certificate",99,"Thane","Maharashtra",2015-10-30,4
+"85","I Paid Rs. 100 to Passport in Pune.",100,"Passport","Passport Delivery",125,"Pune","Maharashtra",2015-10-30,4
+"86","I Paid Rs. 65 to Others in Amritsar.",65,"Others","Others",99,"Amritsar","Punjab",2015-10-30,4
+"87","I Paid Rs. 5000 to Municipal Services in Nashik.",5000,"Municipal Services","Birth Certificate",87,"Nashik","Maharashtra",2015-10-30,4
+"88","I Paid Rs. 1995 to Municipal Services in Mangalore.",1995,"Municipal Services","Birth Certificate",86,"Mangalore","Karnataka",2015-10-30,4
+"89","I Paid Rs. 200 to Municipal Services in Abhayapuri.",200,"Municipal Services","Birth Certificate",70,"Abhayapuri","Assam",2015-10-30,4
+"90","I Paid Rs. 272165 to Others in Gonda.",272165,"Others","Others",77,"Gonda","Uttar Pradesh",2015-10-30,4
+"91","I Paid Rs. 33 to Commercial Tax, Sales Tax, VAT in Abohar.",33,"Commercial Tax, Sales Tax, VAT","C Form",72,"Abohar","Punjab",2015-10-30,4
+"92","I Paid Rs. 10 to Municipal Services in Jabalpur.",10,"Municipal Services","Birth Certificate",79,"Jabalpur","Madhya Pradesh",2015-10-30,4
+"93","I Paid Rs. 500 to Income Tax in Hingoli.",500,"Income Tax","New PAN Card",77,"Hingoli","Maharashtra",2015-10-30,4
+"94","I Paid Rs. 800 to Municipal Services in Achhnera.",800,"Municipal Services","Birth Certificate",103,"Achhnera","Uttar Pradesh",2015-10-30,5
+"95","I Paid Rs. 16000 to Municipal Services in Mumbai.",16000,"Municipal Services","Birth Certificate",123,"Mumbai","Maharashtra",2015-10-29,5
+"96","I Paid Rs. 123 to Transport in New Delhi.",123,"Transport","New Domestic Driving License",131,"New Delhi","Delhi",2015-10-29,5
+"97","I Paid Rs. 5000 to Municipal Services in Abhayapuri.",5000,"Municipal Services","Birth Certificate",106,"Abhayapuri","Assam",2015-10-29,5
+"98","I Paid Rs. 1000 to Municipal Services in Pimpri-Chinchwad.",1000,"Municipal Services","Birth Certificate",88,"Pimpri-Chinchwad","Maharashtra",2015-10-29,5
+"99","I Paid Rs. 500 to Others in Ambattur.",500,"Others","Others",107,"Ambattur","Tamil Nadu",2015-10-29,5
+"100","I Paid Rs. 2000 to Others in Cooch Behar.",2000,"Others","Others",103,"Cooch Behar","West Bengal",2015-10-29,5
+"101","I Paid Rs. 50 to Police in Surat.",50,"Police","Traffic Violations",114,"Surat","Gujarat",2015-10-29,5
+"102","I paid a bribe of Rs 5000 for Marriage  Registration",5000,"Stamps and Registration","Marriage Registration",205,"Chennai","Tamil Nadu",2015-10-29,5
+"103","I Paid Rs. 123456 to Others in Katihar.",123456,"Others","Others",103,"Katihar","Bihar",2015-10-29,5
+"104","I Paid Rs. 8 to Income Tax in Adilabad.",8,"Income Tax","New PAN Card",140,"Adilabad","Telangana",2015-10-29,6
+"105","Mr Harsh Chaturvedi, Inspector of Factory Act 1948, Moti Mahal Gwalior",5000,"Labour","Inspection of Office or Factories",145,"Gwalior","Madhya Pradesh",2015-10-28,6
+"106","I Paid Rs. 1000 to Municipal Services in Thiruvananthapuram.",1000,"Municipal Services","Birth Certificate",164,"Thiruvananthapuram","Kerala",2015-10-28,6
+"107","I paid 3000/- for getting DOB certificate",3000,"Municipal Services","Non Availability Certificate",166,"Visakhapatnam","Andhra Pradesh",2015-10-28,6
+"108","I Paid Rs. 10 to Commercial Tax, Sales Tax, VAT in Cuddapah.",10,"Commercial Tax, Sales Tax, VAT","C Form",165,"Cuddapah","Andhra Pradesh",2015-10-28,6
+"109","I Paid Rs. 10000 to Others in Guwahati.",10000,"Others","Others",149,"Guwahati","Assam",2015-10-28,6
+"110","I Paid Rs. 1200 to Others in Sambalpur.",1200,"Others","Others",148,"Sambalpur","Orissa",2015-10-28,6
+"111","I Paid Rs. 1000 to Customs, Excise and Service Tax in Kochi.",1000,"Customs, Excise and Service Tax","Customs Check and Clearance",174,"Kochi","Kerala",2015-10-28,6
+"112","I Paid Rs. 5000 to Municipal Services in Amarpur.",5000,"Municipal Services","Birth Certificate",158,"Amarpur","Bihar",2015-10-28,6
+"113","I Paid Rs. 34 to Commercial Tax, Sales Tax, VAT in Achhnera.",34,"Commercial Tax, Sales Tax, VAT","C Form",187,"Achhnera","Uttar Pradesh",2015-10-27,7
+"114","I Paid Rs. 1000 to Police in Pune.",1000,"Police","Police Harassment",195,"Pune","Maharashtra",2015-10-27,7
+"115","I Paid Rs. 5000 to Municipal Services in Achhnera.",5000,"Municipal Services","Birth Certificate",176,"Achhnera","Uttar Pradesh",2015-10-27,7
+"116","I Paid Rs. 1111 to Others in Goalpara.",1111,"Others","Others",158,"Goalpara","Assam",2015-10-27,7
+"117","I Paid Rs. 23 to Municipal Services in Siliguri.",23,"Municipal Services","Birth Certificate",146,"Siliguri","West Bengal",2015-10-27,7
+"118","I Paid Rs. 50 to Customs, Excise and Service Tax in Mumbai.",50,"Customs, Excise and Service Tax","Customs Check and Clearance",163,"Mumbai","Maharashtra",2015-10-27,7
+"119","I Paid Rs. 200 to Commercial Tax, Sales Tax, VAT in Shahabad, Hardoi.",200,"Commercial Tax, Sales Tax, VAT","C Form",160,"Shahabad","Hardoi",2015-10-27,7
+"120","I Paid Rs. 100 to Municipal Services in Abohar.",100,"Municipal Services","Birth Certificate",163,"Abohar","Punjab",2015-10-27,7
+"121","I Paid Rs. 10 to Commercial Tax, Sales Tax, VAT in Jaipur.",10,"Commercial Tax, Sales Tax, VAT","C Form",150,"Jaipur","Rajasthan",2015-10-27,7
+"122","Open bribe demanded by officers in shiggaon taluk, haveri district - property Registrar office",10000,"Municipal Services","Registration of Land",226,"Haveri","Karnataka",2015-10-27,7
+"123","I Paid Rs. 100 to Passport in Gwalior.",100,"Passport","Passport Delivery",157,"Gwalior","Madhya Pradesh",2015-10-27,7
+"124","I Paid Rs. 5000 to Municipal Services in Achhnera.",5000,"Municipal Services","Birth Certificate",168,"Achhnera","Uttar Pradesh",2015-10-27,8
+"125","I Paid Rs. 10000 to Municipal Services in Mumbai.",10000,"Municipal Services","Birth Certificate",164,"Mumbai","Maharashtra",2015-10-26,8
+"126","Corrupt unashamed officers in Madurai DEO Office",2500,"Education","School or College Related Activities",177,"Madurai","Tamil Nadu",2015-10-26,8
+"127","I Paid Rs. 400054 to Municipal Services in Mumbai.",400054,"Municipal Services","Birth Certificate",168,"Mumbai","Maharashtra",2015-10-26,8
+"128","I Paid Rs. 46 to Stamps and Registration in New Delhi.",46,"Stamps and Registration","Marriage Certificate",194,"New Delhi","Delhi",2015-10-26,8
+"129","I Paid Rs. 18 to Others in Tezpur.",18,"Others","Others",155,"Tezpur","Assam",2015-10-26,8
+"130","I Paid Rs. 10 to Municipal Services in Mumbai.",10,"Municipal Services","Birth Certificate",144,"Mumbai","Maharashtra",2015-10-26,8
+"131","I Paid Rs. 3500 to Transport in Bhubaneswar.",3500,"Transport","Registration of Vehicle",179,"Bhubaneswar","Orissa",2015-10-26,8
+"132","I Paid Rs. 123 to Police in Etawah.",123,"Police","Police Harassment",157,"Etawah","Uttar Pradesh",2015-10-26,8
+"133","I Paid Rs. 200000 to Municipal Services in New Delhi.",2e+05,"Municipal Services","Birth Certificate",126,"New Delhi","Delhi",2015-10-26,8
+"134","I Paid Rs. 100 to Police in Bangalore.",100,"Police","Police Harassment",148,"Bangalore","Karnataka",2015-10-26,8
+"135","I Paid Rs. 625000 to Police in Madurai.",625000,"Police","Traffic Violations",172,"Madurai","Tamil Nadu",2015-10-26,8
+"136","I Paid Rs. 1 to Others in Indore.",1,"Others","Others",131,"Indore","Madhya Pradesh",2015-10-26,8
+"137","I Paid Rs. 15000 to Municipal Services in Anandnagaar.",15000,"Municipal Services","Birth Certificate",125,"Anandnagaar","Assam",2015-10-26,8
+"138","I Paid Rs. 10 to Municipal Services in Kolkata.",10,"Municipal Services","Birth Certificate",116,"Kolkata","West Bengal",2015-10-26,8
+"139","I Paid Rs. 23 to Municipal Services in Gulbarga.",23,"Municipal Services","Birth Certificate",120,"Gulbarga","Karnataka",2015-10-26,8
+"140","I Paid Rs. 20 to Railways in Abhayapuri.",20,"Railways","Transport of Goods",145,"Abhayapuri","Assam",2015-10-26,8
+"141","I Paid Rs. 13 to Customs, Excise and Service Tax in Abhayapuri.",13,"Customs, Excise and Service Tax","Customs Check and Clearance",139,"Abhayapuri","Assam",2015-10-26,8
+"142","I Paid Rs. 10 to Municipal Services in Gurgaon.",10,"Municipal Services","Birth Certificate",110,"Gurgaon","Haryana",2015-10-26,8
+"143","I Paid Rs. 300 to Police in Bangalore.",300,"Police","Traffic Violations",160,"Bangalore","Karnataka",2015-10-26,9
+"144","I Paid Rs. 7000 to Commercial Tax, Sales Tax, VAT in Abhayapuri.",7000,"Commercial Tax, Sales Tax, VAT","C Form",160,"Abhayapuri","Assam",2015-10-25,9
+"145","Bribe given to issue RTC of the land",35000,"Revenue","Urban Land Ceiling Clearance Certificate",158,"Chikmagalur","Karnataka",2015-10-25,9
+"146","The Sub Registrar collected INR 35000 before registration of the land",35000,"Stamps and Registration","Land Registration",443,"Chikmagalur","Karnataka",2015-10-25,9
+"147","I paid a bribe to a police officer",250,"Passport","Police Verification for Passport",261,"New Delhi","Delhi",2015-10-25,9
+"148","I Paid Rs. 120 to Municipal Services in Pune.",120,"Municipal Services","Birth Certificate",176,"Pune","Maharashtra",2015-10-25,9
+"149","Bribe paid to Customs Officials at Hyderabad International Airport",2000,"Airports","Immigration Check",202,"Hyderabad","Telangana",2015-10-25,9
+"150","I Paid Rs. 100 to Municipal Services in Hyderabad.",100,"Municipal Services","Birth Certificate",196,"Hyderabad","Telangana",2015-10-25,9
+"151","I Paid Rs. 25 to Municipal Services in Chennai.",25,"Municipal Services","Birth Certificate",203,"Chennai","Tamil Nadu",2015-10-25,10
+"152","I Paid Rs. 500000 to Municipal Services in Aurangabad.",5e+05,"Municipal Services","Birth Certificate",183,"Aurangabad","Maharashtra",2015-10-25,10
+"153","I Paid Rs. 100 to Municipal Services in Ulhasnagar.",100,"Municipal Services","Birth Certificate",170,"Ulhasnagar","Maharashtra",2015-10-24,10
+"154","I Paid Rs. 2000 to Income Tax in Chennai.",2000,"Income Tax","New PAN Card",205,"Chennai","Tamil Nadu",2015-10-24,10
+"155","I Paid Rs. 100 to Police in New Delhi.",100,"Police","Traffic Violations",217,"New Delhi","Delhi",2015-10-24,10
+"156","I Paid Rs. 1999 to Municipal Services in Thiruvananthapuram.",1999,"Municipal Services","Birth Certificate",169,"Thiruvananthapuram","Kerala",2015-10-24,10
+"157","I Paid Rs. 300000 to Municipal Services in Kolkata.",3e+05,"Municipal Services","Birth Certificate",156,"Kolkata","West Bengal",2015-10-24,10
+"158","I Paid Rs. 100 to Municipal Services in Chennai.",100,"Municipal Services","Birth Certificate",166,"Chennai","Tamil Nadu",2015-10-24,10
+"159","I Paid Rs. 800000 to Stamps and Registration in Mumbai.",8e+05,"Stamps and Registration","Registration of Property",217,"Mumbai","Maharashtra",2015-10-24,10
+"160","I Paid Rs. 100 to Municipal Services in Abhayapuri.",100,"Municipal Services","Birth Certificate",167,"Abhayapuri","Assam",2015-10-24,10
+"161","I Paid Rs. 248 to Transport in New Delhi.",248,"Transport","Duplicate Registration Certificate",228,"New Delhi","Delhi",2015-10-24,10
+"162","I Paid Rs. 123456 to Others in Dadri.",123456,"Others","Others",172,"Dadri","Uttar Pradesh",2015-10-24,10
+"163","I Paid Rs. 10 to Municipal Services in Bhopal.",10,"Municipal Services","Birth Certificate",143,"Bhopal","Madhya Pradesh",2015-10-24,10
+"164","I Paid Rs. 500 to Police in Lucknow.",500,"Police","Filing FIR",163,"Lucknow","Uttar Pradesh",2015-10-24,10
+"165","I Paid Rs. 12000 to Municipal Services in Mumbai.",12000,"Municipal Services","Birth Certificate",141,"Mumbai","Maharashtra",2015-10-24,10
+"166","For taking  an action on filed complaint.",8000,"Police","Lodging Police Complaint",165,"Ghaziabad","Uttar Pradesh",2015-10-24,10
+"167","I Paid Rs. 100 to Municipal Services in Adilabad.",100,"Municipal Services","Birth Certificate",123,"Adilabad","Telangana",2015-10-24,10
+"168","I Paid Rs. 150 to Municipal Services in Abhayapuri.",150,"Municipal Services","Birth Certificate",132,"Abhayapuri","Assam",2015-10-24,10
+"169","I Paid Rs. 100 to Customs, Excise and Service Tax in Gwalior.",100,"Customs, Excise and Service Tax","Customs Check and Clearance",117,"Gwalior","Madhya Pradesh",2015-10-24,10
+"170","I Paid Rs. 100 to Income Tax in Mumbai.",100,"Income Tax","New PAN Card",170,"Mumbai","Maharashtra",2015-10-24,11
+"171","I Paid Rs. 1 to Municipal Services in Indore.",1,"Municipal Services","Birth Certificate",153,"Indore","Madhya Pradesh",2015-10-23,11
+"172","I Paid Rs. 1200 to Municipal Services in Abhayapuri.",1200,"Municipal Services","Birth Certificate",146,"Abhayapuri","Assam",2015-10-23,11
+"173","I Paid Rs. 6000 to Others in Abhayapuri.",6000,"Others","Others",167,"Abhayapuri","Assam",2015-10-23,11
+"174","I Paid Rs. 50000 to Stamps and Registration in Abohar.",50000,"Stamps and Registration","Marriage Certificate",211,"Abohar","Punjab",2015-10-23,11
+"175","I Paid Rs. 15111 to Municipal Services in Surat.",15111,"Municipal Services","Birth Certificate",150,"Surat","Gujarat",2015-10-23,11
+"176","I Paid Rs. 100 to Municipal Services in Shivpuri.",100,"Municipal Services","Birth Certificate",131,"Shivpuri","Madhya Pradesh",2015-10-23,11
+"177","I Paid Rs. 50 to Municipal Services in Pune.",50,"Municipal Services","Birth Certificate",127,"Pune","Maharashtra",2015-10-23,11
+"178","I Paid Rs. 120 to Commercial Tax, Sales Tax, VAT in New Delhi.",120,"Commercial Tax, Sales Tax, VAT","C Form",169,"New Delhi","Delhi",2015-10-23,11
+"179","I Paid Rs. 300 to Others in Belgaum.",300,"Others","Others",147,"Belgaum","Karnataka",2015-10-23,11
+"180","I Paid Rs. 10 to Customs, Excise and Service Tax in Palasa Kasibugga.",10,"Customs, Excise and Service Tax","Customs Check and Clearance",142,"Palasa Kasibugga","Andhra Pradesh",2015-10-23,11
+"181","I Paid Rs. 1000 to Municipal Services in Agartala.",1000,"Municipal Services","Birth Certificate",108,"Agartala","Tripura",2015-10-23,11
+"182","I Paid Rs. 15000 to Municipal Services in Uttara Kannada.",15000,"Municipal Services","Birth Certificate",118,"Uttara Kannada","Karnataka",2015-10-23,11
+"183","I Paid Rs. 10 to Others in Maldah.",10,"Others","Others",137,"Maldah","West Bengal",2015-10-23,11
+"184","I Paid Rs. 250000 to Income Tax in Madurai.",250000,"Income Tax","New PAN Card",141,"Madurai","Tamil Nadu",2015-10-23,11
+"185","I Paid Rs. 2500 to Municipal Services in Abhayapuri.",2500,"Municipal Services","Birth Certificate",124,"Abhayapuri","Assam",2015-10-23,11
+"186","I Paid Rs. 1400 to Municipal Services in Vadakara.",1400,"Municipal Services","Birth Certificate",122,"Vadakara","Kerala",2015-10-23,11
+"187","Airport customs Red channel",1100,"Airports","Customs",196,"Mumbai","Maharashtra",2015-10-23,12
+"188","I Paid Rs. 1000 to Railways in Chennai.",1000,"Railways","Transport of Goods",222,"Chennai","Tamil Nadu",2015-10-22,12
+"189","I Paid Rs. 200 to Police in Gurgaon.",200,"Police","Filing FIR",180,"Gurgaon","Haryana",2015-10-22,12
+"190","I Paid Rs. 100 to Others in Kota.",100,"Others","Others",173,"Kota","Rajasthan",2015-10-22,12
+"191","I Paid Rs. 500 to Police in Kolkata.",500,"Police","Filing FIR",200,"Kolkata","West Bengal",2015-10-22,12
+"192","I Paid Rs. 76 to Others in New Delhi.",76,"Others","Others",246,"New Delhi","Delhi",2015-10-22,12
+"193","I Paid Rs. 42 to Others in Ponnur.",42,"Others","Others",209,"Ponnur","Andhra Pradesh",2015-10-22,12
+"194","I Paid Rs. 10 to Municipal Services in Jaunpur.",10,"Municipal Services","Birth Certificate",162,"Jaunpur","Uttar Pradesh",2015-10-22,12
+"195","I Paid Rs. 21 to Municipal Services in Abhayapuri.",21,"Municipal Services","Birth Certificate",167,"Abhayapuri","Assam",2015-10-22,12
+"196","I Paid Rs. 122 to Municipal Services in Bhagalpur.",122,"Municipal Services","Birth Certificate",156,"Bhagalpur","Bihar",2015-10-22,12
+"197","I Paid Rs. 500 to Transport in Abohar.",500,"Transport","Duplicate Registration Certificate",217,"Abohar","Punjab",2015-10-22,12
+"198","I paid Rs.3000(approx.) to get Birth Certificate for myself",3000,"Municipal Services","Birth Certificate",143,"Narasaraopet","Andhra Pradesh",2015-10-22,12
+"199","I Paid Rs. 1000 to Municipal Services in Chennai.",1000,"Municipal Services","Birth Certificate",170,"Chennai","Tamil Nadu",2015-10-22,13
+"200","I Paid Rs. 99 to Income Tax in Adari.",99,"Income Tax","New PAN Card",185,"Adari","Uttar Pradesh",2015-10-22,13
+"201","I Paid Rs. 22 to Commercial Tax, Sales Tax, VAT in Abhayapuri.",22,"Commercial Tax, Sales Tax, VAT","C Form",200,"Abhayapuri","Assam",2015-10-21,13
+"202","I Paid Rs. 3000 to Transport in Bidar.",3000,"Transport","New Domestic Driving License",221,"Bidar","Karnataka",2015-10-21,13
+"203","I Paid Rs. 22 to Income Tax in Amarpur.",22,"Income Tax","New PAN Card",165,"Amarpur","Bihar",2015-10-21,13
+"204","I Paid Rs. 300 to Municipal Services in Chandigarh.",300,"Municipal Services","Birth Certificate",161,"Chandigarh","Chandigarh",2015-10-21,13
+"205","I Paid Rs. 8 to Stamps and Registration in Abhayapuri.",8,"Stamps and Registration","Registration of Flat or Apartment",226,"Abhayapuri","Assam",2015-10-21,13
+"206","I Paid Rs. 5 to Others in Kurnool.",5,"Others","Others",184,"Kurnool","Andhra Pradesh",2015-10-21,13
+"207","I Paid Rs. 100 to Others in Jaipur.",100,"Others","Others",163,"Jaipur","Rajasthan",2015-10-21,13
+"208","I Paid Rs. 876776 to Police in Agra.",876776,"Police","Police Harassment",203,"Agra","Uttar Pradesh",2015-10-21,13
+"209","I Paid Rs. 5000 to Others in Aligarh.",5000,"Others","Others",139,"Aligarh","Uttar Pradesh",2015-10-21,13
+"210","I Paid Rs. 123 to Transport in Adityapur.",123,"Transport","New Domestic Driving License",165,"Adityapur","Jharkhand",2015-10-21,13
+"211","I Paid Rs. 100 to Commercial Tax, Sales Tax, VAT in Abohar.",100,"Commercial Tax, Sales Tax, VAT","C Form",187,"Abohar","Punjab",2015-10-21,13
+"212","100 rs for an FIR copy",100,"Police","Filing FIR",192,"Imphal","Manipur",2015-10-21,13
+"213","I Paid Rs. 1000 to Commercial Tax, Sales Tax, VAT in Achhnera.",1000,"Commercial Tax, Sales Tax, VAT","C Form",162,"Achhnera","Uttar Pradesh",2015-10-21,13
+"214","I Paid Rs. 200 to Municipal Services in Pratapgarh.",200,"Municipal Services","Birth Certificate",125,"Pratapgarh","Tripura",2015-10-21,13
+"215","I Paid Rs. 1000 to Police in Ahmedabad.",1000,"Police","Traffic Violations",144,"Ahmedabad","Gujarat",2015-10-21,13
+"216","I Paid Rs. 700 to Municipal Services in Chennai.",700,"Municipal Services","Birth Certificate",121,"Chennai","Tamil Nadu",2015-10-21,13
+"217","I Paid Rs. 30000 to Municipal Services in Dhanbad.",30000,"Municipal Services","Birth Certificate",154,"Dhanbad","Jharkhand",2015-10-21,13
+"218","I Paid Rs. 100 to Municipal Services in Durgapur.",100,"Municipal Services","Birth Certificate",135,"Durgapur","West Bengal",2015-10-21,14
+"219","I Paid Rs. 100 to Customs, Excise and Service Tax in Basti.",100,"Customs, Excise and Service Tax","Customs Check and Clearance",153,"Basti","Uttar Pradesh",2015-10-21,14
+"220","I Paid Rs. 9000 to Others in Hyderabad.",9000,"Others","Others",152,"Hyderabad","Telangana",2015-10-20,14
+"221","I Paid Rs. 5000 to Municipal Services in Mumbai.",5000,"Municipal Services","Birth Certificate",142,"Mumbai","Maharashtra",2015-10-20,14
+"222","I Paid Rs. 44 to  in .",44,"","",187,"","",2015-10-20,14
+"223","I Paid Rs. 100 to Railways in Bina.",100,"Railways","Transport of Goods",176,"Bina","Madhya Pradesh",2015-10-20,14
+"224","For the Birth Certificate of My Daughter",300,"Municipal Services","Birth Certificate",209,"Bangalore","Karnataka",2015-10-20,14
+"225","For Wrong Parking of Two Wheeler",300,"Police","Traffic Violations",218,"Bangalore","Karnataka",2015-10-20,14
+"226","Have to pay the bribe even after having right documents",500,"Transport","Duplicate Driving License",194,"Jaipur","Rajasthan",2015-10-20,14
+"227","I Paid Rs. 200 to Municipal Services in Udaipur.",200,"Municipal Services","Birth Certificate",154,"Udaipur","Tripura",2015-10-20,14
+"228","I Paid Rs. 200 to Municipal Services in Mumbai.",200,"Municipal Services","Birth Certificate",168,"Mumbai","Maharashtra",2015-10-20,14
+"229","Paid Bribe for filing ER 1 Return and for other certificate",34000,"Customs, Excise and Service Tax","Excise Return",250,"Bangalore","Karnataka",2015-10-20,14
+"230","I Paid Rs. 500 to Transport in Abohar.",500,"Transport","New Domestic Driving License",208,"Abohar","Punjab",2015-10-20,14
+"231","I Paid Rs. 500 to Municipal Services in Bharatpur.",500,"Municipal Services","Birth Certificate",148,"Bharatpur","Rajasthan",2015-10-20,14
+"232","I Paid Rs. 3500 to Passport in Bangalore.",3500,"Passport","Police Verification for Passport",361,"Bangalore","Karnataka",2015-10-19,15
+"233","I Paid Rs. 12000 to Municipal Services in Ludhiana.",12000,"Municipal Services","Birth Certificate",219,"Ludhiana","Punjab",2015-10-19,15
+"234","I Paid Rs. 4000 to Transport in Adari.",4000,"Transport","Registration of Vehicle",207,"Adari","Uttar Pradesh",2015-10-19,15
+"235","I Paid Rs. 15000 to Others in New Delhi.",15000,"Others","Others",242,"New Delhi","Delhi",2015-10-19,15
+"236","I Paid Rs. 100 to Municipal Services in New Delhi.",100,"Municipal Services","Birth Certificate",223,"New Delhi","Delhi",2015-10-19,15
+"237","I Paid Rs. 54 to Income Tax in Faizabad.",54,"Income Tax","New PAN Card",208,"Faizabad","Uttar Pradesh",2015-10-19,15
+"238","I Paid Rs. 3500 to Municipal Services in Lucknow.",3500,"Municipal Services","Birth Certificate",199,"Lucknow","Uttar Pradesh",2015-10-19,15
+"239","I Paid Rs. 100 to Municipal Services in Dharmapuri.",100,"Municipal Services","Birth Certificate",188,"Dharmapuri","Tamil Nadu",2015-10-19,15
+"240","I Paid Rs. 2525 to Commercial Tax, Sales Tax, VAT in Abhayapuri.",2525,"Commercial Tax, Sales Tax, VAT","C Form",197,"Abhayapuri","Assam",2015-10-19,15
+"241","I Paid Rs. 200 to Municipal Services in Abohar.",200,"Municipal Services","Birth Certificate",176,"Abohar","Punjab",2015-10-19,15
+"242","I Paid Rs. 2500 to Municipal Services in Pune.",2500,"Municipal Services","Birth Certificate",234,"Pune","Maharashtra",2015-10-18,16
+"243","I Paid Rs. 10 to Others in Chennai.",10,"Others","Others",238,"Chennai","Tamil Nadu",2015-10-18,16
+"244","I Paid Rs. 100 to Food, Civil Supplies and Consumer Affairs in Abhayapuri.",100,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",255,"Abhayapuri","Assam",2015-10-18,16
+"245","I Paid Rs. 100 to Others in Chennai.",100,"Others","Others",224,"Chennai","Tamil Nadu",2015-10-18,16
+"246","I Paid Rs. 700 to Municipal Services in Abhayapuri.",700,"Municipal Services","Birth Certificate",257,"Abhayapuri","Assam",2015-10-18,16
+"247","I Paid Rs. 1000 to Others in Bangalore.",1000,"Others","Others",280,"Bangalore","Karnataka",2015-10-18,16
+"248","I Paid Rs. 6000 to Municipal Services in Pune.",6000,"Municipal Services","Birth Certificate",232,"Pune","Maharashtra",2015-10-18,16
+"249","I Paid Rs. 19 to Municipal Services in Ludhiana.",19,"Municipal Services","Birth Certificate",203,"Ludhiana","Punjab",2015-10-18,16
+"250","I paid bribe for Katha Transfer BBMP",15000,"Revenue","Residence Certificate",277,"Bangalore","Karnataka",2015-10-18,16
+"251","Name of the officer = sandipan guha date of incident = 7th sep 2015…",10000,"Police","Filing FIR",460,"Barrackpur","West Bengal",2015-10-17,17
+"252","I Paid Rs. 100 to Municipal Services in Adari.",100,"Municipal Services","Birth Certificate",203,"Adari","Uttar Pradesh",2015-10-17,17
+"253","Paid Bribe for Getting Stipend in M.Tech  during my studies- Andhra University",5000,"Education","Obtaining Scholarship",244,"Visakhapatnam","Andhra Pradesh",2015-10-17,17
+"254","I Paid Rs. 441 to Commercial Tax, Sales Tax, VAT in Adari.",441,"Commercial Tax, Sales Tax, VAT","C Form",242,"Adari","Uttar Pradesh",2015-10-17,17
+"255","I Paid Rs. 10000 to Others in Mumbai.",10000,"Others","Others",240,"Mumbai","Maharashtra",2015-10-17,17
+"256","I Paid Rs. 25000 to Police in Adari.",25000,"Police","Filing FIR",292,"Adari","Uttar Pradesh",2015-10-17,17
+"257","I Paid Rs. 4300 to Municipal Services in Bhuj.",4300,"Municipal Services","Birth Certificate",227,"Bhuj","Gujarat",2015-10-17,17
+"258","I Paid Rs. 15 to Income Tax in New Delhi.",15,"Income Tax","New PAN Card",238,"New Delhi","Delhi",2015-10-17,17
+"259","I Paid Rs. 200 to Income Tax in Mumbai.",200,"Income Tax","New PAN Card",202,"Mumbai","Maharashtra",2015-10-17,17
+"260","I Paid Rs. 1000 to Municipal Services in Abhayapuri.",1000,"Municipal Services","Birth Certificate",192,"Abhayapuri","Assam",2015-10-17,17
+"261","Property Tax Collector takes bribe but issues remain pending.",7000,"Municipal Services","Property Tax",188,"Chennai","Tamil Nadu",2015-10-16,18
+"262","I Paid Rs. 2000000 to Income Tax in Mumbai.",2e+06,"Income Tax","New PAN Card",189,"Mumbai","Maharashtra",2015-10-16,18
+"263","I Paid Rs. 200 to Police in Kakinada.",200,"Police","Police Clearance Certificate",233,"Kakinada","Andhra Pradesh",2015-10-16,18
+"264","Corrupt loafers of DEO office madurai",1000,"Education","School or College Related Activities",211,"Madurai","Tamil Nadu",2015-10-16,18
+"265","I Paid Rs. 1000 to Municipal Services in Adilabad.",1000,"Municipal Services","Birth Certificate",212,"Adilabad","Telangana",2015-10-16,18
+"266","I Paid Rs. 5 to Municipal Services in Kolkata.",5,"Municipal Services","Birth Certificate",174,"Kolkata","West Bengal",2015-10-16,18
+"267","Was asked to Pay a Bribe of 500 for Police Verifiaction",500,"Police","Police Verification for Passport",268,"Howrah","West Bengal",2015-10-15,19
+"268","I paid bribe to get approval of plan to build house",1e+05,"Municipal Services","Registration of Land",244,"Kolkata","West Bengal",2015-10-15,19
+"269","I Paid Rs. 100 to Municipal Services in Kota.",100,"Municipal Services","Birth Certificate",233,"Kota","Rajasthan",2015-10-15,19
+"270","New connection request - paid INR 5300 receipt only for ~ INR 4800",500,"Food, Civil Supplies and Consumer Affairs","New Gas Connection",299,"Bangalore","Karnataka",2015-10-15,19
+"271","I Paid Rs. 5 to Commercial Tax, Sales Tax, VAT in Mumbai.",5,"Commercial Tax, Sales Tax, VAT","C Form",230,"Mumbai","Maharashtra",2015-10-15,19
+"272","I have Piad bride in RTO Office",2000,"Transport","General RTO related",377,"Bangalore","Karnataka",2015-10-15,20
+"273","I Paid Rs. 300 to Municipal Services in Abhayapuri.",300,"Municipal Services","Birth Certificate",229,"Abhayapuri","Assam",2015-10-14,20
+"274","Paid bribe for Police clearance",2500,"Passport","Police Verification for Passport",428,"Pune","Maharashtra",2015-10-14,20
+"275","I Paid Rs. 20 to Police in Kurnool.",20,"Police","Traffic Violations",268,"Kurnool","Andhra Pradesh",2015-10-14,20
+"276","I Paid Rs. 20 to Municipal Services in Siliguri.",20,"Municipal Services","Birth Certificate",236,"Siliguri","West Bengal",2015-10-14,20
+"277","I Paid Rs. 10 to Customs, Excise and Service Tax in Pithoragarh.",10,"Customs, Excise and Service Tax","Customs Check and Clearance",253,"Pithoragarh","Uttarakhand",2015-10-14,20
+"278","I Paid Rs. 20000 to Stamps and Registration in Tumkur.",20000,"Stamps and Registration","Marriage Certificate",343,"Tumkur","Karnataka",2015-10-14,20
+"279","I Paid Rs. 10 to Municipal Services in Hubli.",10,"Municipal Services","Birth Certificate",198,"Hubli","Karnataka",2015-10-14,20
+"280","I Paid Rs. 2000 to Transport in Jalandhar.",2000,"Transport","New Domestic Driving License",280,"Jalandhar","Punjab",2015-10-14,20
+"281","I Paid Rs. 6000 to Municipal Services in Abohar.",6000,"Municipal Services","Birth Certificate",216,"Abohar","Punjab",2015-10-14,20
+"282","I Paid Rs. 11 to Municipal Services in Kota.",11,"Municipal Services","Birth Certificate",185,"Kota","Rajasthan",2015-10-14,20
+"283","I Paid Rs. 200 to Food, Civil Supplies and Consumer Affairs in Banda.",200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",215,"Banda","Uttar Pradesh",2015-10-14,20
+"284","I Paid Rs. 123 to Others in Bharatpur.",123,"Others","Others",175,"Bharatpur","Rajasthan",2015-10-14,20
+"285","I Paid Rs. 10 to Food, Civil Supplies and Consumer Affairs in Salem.",10,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",156,"Salem","Tamil Nadu",2015-10-14,20
+"286","I Paid Rs. 500 to Municipal Services in Nagaon.",500,"Municipal Services","Birth Certificate",130,"Nagaon","Assam",2015-10-14,20
+"287","I Paid Rs. 200 to Police in Nainital.",200,"Police","Traffic Violations",160,"Nainital","Uttarakhand",2015-10-14,20
+"288","I Paid Rs. 5000 to Transport in Adilabad.",5000,"Transport","Duplicate Registration Certificate",169,"Adilabad","Telangana",2015-10-14,20
+"289","I Paid Rs. 10 to Municipal Services in Abhayapuri.",10,"Municipal Services","Birth Certificate",116,"Abhayapuri","Assam",2015-10-14,20
+"290","I Paid Rs. 250000 to Municipal Services in Baran.",250000,"Municipal Services","Birth Certificate",63,"Baran","Rajasthan",2015-10-14,20
+"291","I Paid Rs. 30000 to Municipal Services in Bangalore.",30000,"Municipal Services","Birth Certificate",140,"Bangalore","Karnataka",2015-10-14,20
+"292","I Paid Rs. 3000 to Others in Bijnaur.",3000,"Others","Others",121,"Bijnaur","Uttar Pradesh",2015-10-14,20
+"293","I Paid Rs. 100 to Others in Bilaspur.",100,"Others","Others",126,"Bilaspur","Chhattisgarh",2015-10-14,20
+"294","I Paid Rs. 10 to Commercial Tax, Sales Tax, VAT in Ghaziabad.",10,"Commercial Tax, Sales Tax, VAT","C Form",128,"Ghaziabad","Uttar Pradesh",2015-10-14,20
+"295","I Paid Rs. 70000 to Municipal Services in Bagaha.",70000,"Municipal Services","Birth Certificate",81,"Bagaha","Bihar",2015-10-14,20
+"296","I Paid Rs. 500 to Municipal Services in Abohar.",500,"Municipal Services","Birth Certificate",130,"Abohar","Punjab",2015-10-14,20
+"297","I Paid Rs. 10 to Municipal Services in Varanasi.",10,"Municipal Services","Birth Certificate",111,"Varanasi","Uttar Pradesh",2015-10-14,20
+"298","Police verification for Passport",500,"Public Works Department","Public Works",208,"Bangalore","Karnataka",2015-10-13,21
+"299","I Paid Rs. 5000 to Police in Bangalore.",5000,"Police","Traffic Violations",234,"Bangalore","Karnataka",2015-10-13,21
+"300","I Paid Rs. 20 to Municipal Services in Chennai.",20,"Municipal Services","Birth Certificate",208,"Chennai","Tamil Nadu",2015-10-13,21
+"301","I Paid Rs. 9999 to Customs, Excise and Service Tax in Abhayapuri.",9999,"Customs, Excise and Service Tax","Customs Check and Clearance",221,"Abhayapuri","Assam",2015-10-13,21
+"302","I Paid Rs. 10 to Municipal Services in Hyderabad.",10,"Municipal Services","Birth Certificate",199,"Hyderabad","Telangana",2015-10-13,21
+"303","I Paid Rs. 555 to Municipal Services in Achhnera.",555,"Municipal Services","Birth Certificate",219,"Achhnera","Uttar Pradesh",2015-10-13,21
+"304","I Paid Rs. 20000 to Municipal Services in Abhayapuri.",20000,"Municipal Services","Birth Certificate",183,"Abhayapuri","Assam",2015-10-13,21
+"305","I Paid Rs. 12 to Municipal Services in Adilabad.",12,"Municipal Services","Birth Certificate",184,"Adilabad","Telangana",2015-10-13,21
+"306","I Paid Rs. 10 to Commercial Tax, Sales Tax, VAT in New Delhi.",10,"Commercial Tax, Sales Tax, VAT","C Form",213,"New Delhi","Delhi",2015-10-13,21
+"307","I Paid Rs. 22222 to Stamps and Registration in Bangalore.",22222,"Stamps and Registration","Registration of Property",278,"Bangalore","Karnataka",2015-10-13,21
+"308","I Paid Rs. 10 to Income Tax in Chandigarh.",10,"Income Tax","New PAN Card",182,"Chandigarh","Chandigarh",2015-10-13,21
+"309","I Paid Rs. 565 to Stamps and Registration in Alipurduar.",565,"Stamps and Registration","Registration of Property",212,"Alipurduar","West Bengal",2015-10-13,21
+"310","I Paid Rs. 30 to Municipal Services in Abohar.",30,"Municipal Services","Birth Certificate",140,"Abohar","Punjab",2015-10-13,21
+"311","I Paid Rs. 10000 to Others in Guntur.",10000,"Others","Others",160,"Guntur","Andhra Pradesh",2015-10-13,21
+"312","I Paid Rs. 10000 to Municipal Services in Srivilliputhur.",10000,"Municipal Services","Birth Certificate",136,"Srivilliputhur","Tamil Nadu",2015-10-13,21
+"313","I Paid Rs. 100 to Municipal Services in Chennai.",100,"Municipal Services","Birth Certificate",111,"Chennai","Tamil Nadu",2015-10-13,21
+"314","I Paid Rs. 1000 to Others in New Delhi.",1000,"Others","Others",178,"New Delhi","Delhi",2015-10-13,21
+"315","I Paid Rs. 1000 to Others in Lucknow.",1000,"Others","Others",160,"Lucknow","Uttar Pradesh",2015-10-13,21
+"316","I Paid Rs. 20 to Police in Abhayapuri.",20,"Police","Traffic Violations",153,"Abhayapuri","Assam",2015-10-13,21
+"317","I Paid Rs. 3000 to Police in Bangalore.",3000,"Police","Filing FIR",217,"Bangalore","Karnataka",2015-10-13,21
+"318","I Paid Rs. 50 to Others in Raipur.",50,"Others","Others",166,"Raipur","Chhattisgarh",2015-10-13,21
+"319","I Paid Rs. 100 to Municipal Services in Abhayapuri.",100,"Municipal Services","Birth Certificate",161,"Abhayapuri","Assam",2015-10-13,21
+"320","I Paid Rs. 100 to Municipal Services in New Delhi.",100,"Municipal Services","Birth Certificate",74,"New Delhi","Delhi",2015-10-13,21
+"321","I Paid Rs. 1000 to Others in Coimbatore.",1000,"Others","Others",101,"Coimbatore","Tamil Nadu",2015-10-13,21
+"322","I Paid Rs. 12 to Commercial Tax, Sales Tax, VAT in Hathras.",12,"Commercial Tax, Sales Tax, VAT","C Form",113,"Hathras","Uttar Pradesh",2015-10-13,21
+"323","I Paid Rs. 800 to Customs, Excise and Service Tax in Bangalore.",800,"Customs, Excise and Service Tax","Customs Check and Clearance",199,"Bangalore","Karnataka",2015-10-13,21
+"324","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Calicut.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",125,"Calicut","Kerala",2015-10-13,21
+"325","I Paid Rs. 210 to Income Tax in Banka.",210,"Income Tax","New PAN Card",132,"Banka","Bihar",2015-10-13,21
+"326","I Paid Rs. 400 to Police in New Delhi.",400,"Police","Police Verification for Passport",131,"New Delhi","Delhi",2015-10-13,21
+"327","I Paid Rs. 100 to Others in Kolhapur.",100,"Others","Others",87,"Kolhapur","Maharashtra",2015-10-13,21
+"328","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Bangalore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",134,"Bangalore","Karnataka",2015-10-13,21
+"329","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",146,"Bangalore","Karnataka",2015-10-13,21
+"330","I Paid Rs. 400 to Stamps and Registration in New Delhi.",400,"Stamps and Registration","Marriage Certificate",153,"New Delhi","Delhi",2015-10-13,21
+"331","I Paid Rs. 2000 to Municipal Services in Hyderabad.",2000,"Municipal Services","Birth Certificate",92,"Hyderabad","Telangana",2015-10-13,21
+"332","I Paid Rs. 200 to Police in New Delhi.",200,"Police","Traffic Violations",137,"New Delhi","Delhi",2015-10-13,21
+"333","I Paid Rs. 500 to Police in New Delhi.",500,"Police","Police Verification for Passport",125,"New Delhi","Delhi",2015-10-13,21
+"334","I Paid Rs. 500 to Police in New Delhi.",500,"Police","Police Verification for Passport",82,"New Delhi","Delhi",2015-10-13,21
+"335","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",175,"Bangalore","Karnataka",2015-10-13,21
+"336","I Paid Rs. 1500 to Customs, Excise and Service Tax in New Delhi.",1500,"Customs, Excise and Service Tax","Customs Check and Clearance",141,"New Delhi","Delhi",2015-10-13,21
+"337","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",100,"Bangalore","Karnataka",2015-10-13,21
+"338","I Paid Rs. 1000 to Commercial Tax, Sales Tax, VAT in Aizawl.",1000,"Commercial Tax, Sales Tax, VAT","C Form",116,"Aizawl","Mizoram",2015-10-13,21
+"339","I Paid Rs. 15000 to Customs, Excise and Service Tax in Bangalore.",15000,"Customs, Excise and Service Tax","Customs Check and Clearance",143,"Bangalore","Karnataka",2015-10-13,21
+"340","I Paid Rs. 77 to Police in Adoni.",77,"Police","Traffic Violations",82,"Adoni","Andhra Pradesh",2015-10-13,21
+"341","I Paid Rs. 100000 to Stamps and Registration in Bangalore.",1e+05,"Stamps and Registration","Registration of Property",167,"Bangalore","Karnataka",2015-10-13,21
+"342","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",69,"Bangalore","Karnataka",2015-10-13,21
+"343","I Paid Rs. 600 to Transport in Bangalore.",600,"Transport","Duplicate Registration Certificate",155,"Bangalore","Karnataka",2015-10-13,21
+"344","I Paid Rs. 800 to Transport in Bangalore.",800,"Transport","Duplicate Registration Certificate",145,"Bangalore","Karnataka",2015-10-13,21
+"345","I Paid Rs. 500 to Municipal Services in Jaipur.",500,"Municipal Services","Birth Certificate",150,"Jaipur","Rajasthan",2015-10-13,22
+"346","I Paid Rs. 700 to Police in Pune.",700,"Police","Traffic Violations",158,"Pune","Maharashtra",2015-10-12,22
+"347","I Paid Rs. 500 to Stamps and Registration in Guwahati.",500,"Stamps and Registration","Marriage Certificate",184,"Guwahati","Assam",2015-10-12,22
+"348","I Paid Rs. 500 to Police in New Delhi.",500,"Police","Police Verification for Passport",143,"New Delhi","Delhi",2015-10-12,22
+"349","I Paid Rs. 600 to Transport in New Delhi.",600,"Transport","New Domestic Driving License",170,"New Delhi","Delhi",2015-10-12,22
+"350","I Paid Rs. 1500 to Customs, Excise and Service Tax in New Delhi.",1500,"Customs, Excise and Service Tax","Customs Check and Clearance",159,"New Delhi","Delhi",2015-10-12,22
+"351","I Paid Rs. 500 to Transport in New Delhi.",500,"Transport","New Domestic Driving License",186,"New Delhi","Delhi",2015-10-12,22
+"352","I Paid Rs. 1000 to Customs, Excise and Service Tax in New Delhi.",1000,"Customs, Excise and Service Tax","Customs Check and Clearance",140,"New Delhi","Delhi",2015-10-12,22
+"353","I Paid Rs. 500 to Police in New Delhi.",500,"Police","Police Verification for Passport",166,"New Delhi","Delhi",2015-10-12,22
+"354","I Paid Rs. 2400 to Food, Civil Supplies and Consumer Affairs in Indore.",2400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",156,"Indore","Madhya Pradesh",2015-10-12,22
+"355","I Paid Rs. 2610 to Food, Civil Supplies and Consumer Affairs in Indore.",2610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",154,"Indore","Madhya Pradesh",2015-10-12,22
+"356","I Paid Rs. 3610 to Food, Civil Supplies and Consumer Affairs in Indore.",3610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",137,"Indore","Madhya Pradesh",2015-10-12,22
+"357","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",114,"Indore","Madhya Pradesh",2015-10-12,22
+"358","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",129,"Indore","Madhya Pradesh",2015-10-12,22
+"359","I Paid Rs. 3200 to Food, Civil Supplies and Consumer Affairs in Indore.",3200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",108,"Indore","Madhya Pradesh",2015-10-12,22
+"360","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",114,"Indore","Madhya Pradesh",2015-10-12,22
+"361","I Paid Rs. 15000 to Food, Civil Supplies and Consumer Affairs in Indore.",15000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",128,"Indore","Madhya Pradesh",2015-10-12,22
+"362","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",121,"Indore","Madhya Pradesh",2015-10-12,22
+"363","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",106,"Indore","Madhya Pradesh",2015-10-12,22
+"364","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",90,"Indore","Madhya Pradesh",2015-10-12,22
+"365","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",65,"Indore","Madhya Pradesh",2015-10-12,22
+"366","I Paid Rs. 1400 to Food, Civil Supplies and Consumer Affairs in Indore.",1400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",62,"Indore","Madhya Pradesh",2015-10-12,22
+"367","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",57,"Indore","Madhya Pradesh",2015-10-12,22
+"368","I Paid Rs. 2000 to Municipal Services in Agra.",2000,"Municipal Services","Birth Certificate",101,"Agra","Uttar Pradesh",2015-10-12,22
+"369","I Paid Rs. 900 to Food, Civil Supplies and Consumer Affairs in Indore.",900,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",62,"Indore","Madhya Pradesh",2015-10-12,22
+"370","I Paid Rs. 1000 to Municipal Services in Agra.",1000,"Municipal Services","Birth Certificate",105,"Agra","Uttar Pradesh",2015-10-12,22
+"371","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Indore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",48,"Indore","Madhya Pradesh",2015-10-12,22
+"372","I Paid Rs. 1800 to Municipal Services in Agra.",1800,"Municipal Services","Birth Certificate",84,"Agra","Uttar Pradesh",2015-10-12,22
+"373","I Paid Rs. 610 to Food, Civil Supplies and Consumer Affairs in Indore.",610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",41,"Indore","Madhya Pradesh",2015-10-12,22
+"374","I Paid Rs. 2400 to Municipal Services in Agra.",2400,"Municipal Services","Birth Certificate",67,"Agra","Uttar Pradesh",2015-10-12,22
+"375","I Paid Rs. 1500 to Food, Civil Supplies and Consumer Affairs in Indore.",1500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",39,"Indore","Madhya Pradesh",2015-10-12,22
+"376","I Paid Rs. 2610 to Municipal Services in Agra.",2610,"Municipal Services","Birth Certificate",62,"Agra","Uttar Pradesh",2015-10-12,22
+"377","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",33,"Indore","Madhya Pradesh",2015-10-12,22
+"378","I Paid Rs. 3610 to Municipal Services in Agra.",3610,"Municipal Services","Birth Certificate",49,"Agra","Uttar Pradesh",2015-10-12,22
+"379","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Indore","Madhya Pradesh",2015-10-12,22
+"380","I Paid Rs. 800 to Municipal Services in Agra.",800,"Municipal Services","Birth Certificate",50,"Agra","Uttar Pradesh",2015-10-12,22
+"381","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",34,"Indore","Madhya Pradesh",2015-10-12,22
+"382","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",33,"Indore","Madhya Pradesh",2015-10-12,22
+"383","I Paid Rs. 1200 to Municipal Services in Agra.",1200,"Municipal Services","Birth Certificate",46,"Agra","Uttar Pradesh",2015-10-12,22
+"384","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Indore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",29,"Indore","Madhya Pradesh",2015-10-12,22
+"385","I Paid Rs. 3200 to Municipal Services in Agra.",3200,"Municipal Services","Birth Certificate",46,"Agra","Uttar Pradesh",2015-10-12,22
+"386","I Paid Rs. 1800 to Food, Civil Supplies and Consumer Affairs in Indore.",1800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Indore","Madhya Pradesh",2015-10-12,22
+"387","I Paid Rs. 4000 to Municipal Services in Agra.",4000,"Municipal Services","Birth Certificate",36,"Agra","Uttar Pradesh",2015-10-12,22
+"388","I Paid Rs. 2400 to Food, Civil Supplies and Consumer Affairs in Indore.",2400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",30,"Indore","Madhya Pradesh",2015-10-12,22
+"389","I Paid Rs. 15000 to Municipal Services in Agra.",15000,"Municipal Services","Birth Certificate",28,"Agra","Uttar Pradesh",2015-10-12,22
+"390","I Paid Rs. 2610 to Food, Civil Supplies and Consumer Affairs in Indore.",2610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",28,"Indore","Madhya Pradesh",2015-10-12,22
+"391","I Paid Rs. 3000 to Municipal Services in Agra.",3000,"Municipal Services","Birth Certificate",29,"Agra","Uttar Pradesh",2015-10-12,22
+"392","I Paid Rs. 3610 to Food, Civil Supplies and Consumer Affairs in Indore.",3610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",27,"Indore","Madhya Pradesh",2015-10-12,22
+"393","I Paid Rs. 2500 to Municipal Services in Agra.",2500,"Municipal Services","Birth Certificate",28,"Agra","Uttar Pradesh",2015-10-12,22
+"394","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",26,"Indore","Madhya Pradesh",2015-10-12,22
+"395","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",29,"Indore","Madhya Pradesh",2015-10-12,22
+"396","I Paid Rs. 2500 to Municipal Services in Agra.",2500,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"397","I Paid Rs. 3200 to Food, Civil Supplies and Consumer Affairs in Indore.",3200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",30,"Indore","Madhya Pradesh",2015-10-12,22
+"398","I Paid Rs. 1400 to Municipal Services in Agra.",1400,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"399","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",30,"Indore","Madhya Pradesh",2015-10-12,22
+"400","I Paid Rs. 1500 to Food, Civil Supplies and Consumer Affairs in Indore.",1500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",29,"Indore","Madhya Pradesh",2015-10-12,22
+"401","I Paid Rs. 800 to Municipal Services in Agra.",800,"Municipal Services","Birth Certificate",31,"Agra","Uttar Pradesh",2015-10-12,22
+"402","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Indore","Madhya Pradesh",2015-10-12,22
+"403","I Paid Rs. 900 to Municipal Services in Agra.",900,"Municipal Services","Birth Certificate",30,"Agra","Uttar Pradesh",2015-10-12,22
+"404","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Indore","Madhya Pradesh",2015-10-12,22
+"405","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",32,"Indore","Madhya Pradesh",2015-10-12,22
+"406","I Paid Rs. 610 to Municipal Services in Agra.",610,"Municipal Services","Birth Certificate",34,"Agra","Uttar Pradesh",2015-10-12,22
+"407","I Paid Rs. 3200 to Food, Civil Supplies and Consumer Affairs in Indore.",3200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Indore","Madhya Pradesh",2015-10-12,22
+"408","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Indore","Madhya Pradesh",2015-10-12,22
+"409","I Paid Rs. 1200 to Municipal Services in Agra.",1200,"Municipal Services","Birth Certificate",32,"Agra","Uttar Pradesh",2015-10-12,22
+"410","I Paid Rs. 1400 to Food, Civil Supplies and Consumer Affairs in Indore.",1400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",34,"Indore","Madhya Pradesh",2015-10-12,22
+"411","I Paid Rs. 4000 to Municipal Services in Agra.",4000,"Municipal Services","Birth Certificate",35,"Agra","Uttar Pradesh",2015-10-12,22
+"412","I Paid Rs. 2400 to Food, Civil Supplies and Consumer Affairs in Indore.",2400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",27,"Indore","Madhya Pradesh",2015-10-12,22
+"413","I Paid Rs. 3000 to Municipal Services in Agra.",3000,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"414","I Paid Rs. 1100 to Food, Civil Supplies and Consumer Affairs in Indore.",1100,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",26,"Indore","Madhya Pradesh",2015-10-12,22
+"415","I Paid Rs. 2000 to Municipal Services in Agra.",2000,"Municipal Services","Birth Certificate",38,"Agra","Uttar Pradesh",2015-10-12,22
+"416","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Indore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Indore","Madhya Pradesh",2015-10-12,22
+"417","I Paid Rs. 4200 to Food, Civil Supplies and Consumer Affairs in Indore.",4200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",26,"Indore","Madhya Pradesh",2015-10-12,22
+"418","I Paid Rs. 1000 to Municipal Services in Agra.",1000,"Municipal Services","Birth Certificate",36,"Agra","Uttar Pradesh",2015-10-12,22
+"419","I Paid Rs. 5000 to Food, Civil Supplies and Consumer Affairs in Indore.",5000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"420","I Paid Rs. 1800 to Municipal Services in Agra.",1800,"Municipal Services","Birth Certificate",30,"Agra","Uttar Pradesh",2015-10-12,22
+"421","I Paid Rs. 610 to Food, Civil Supplies and Consumer Affairs in Indore.",610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"422","I Paid Rs. 2400 to Municipal Services in Agra.",2400,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"423","I Paid Rs. 1610 to Food, Civil Supplies and Consumer Affairs in Indore.",1610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"424","I Paid Rs. 3200 to Food, Civil Supplies and Consumer Affairs in Indore.",3200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"425","I Paid Rs. 3610 to Municipal Services in Agra.",3610,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"426","I Paid Rs. 800 to Municipal Services in Agra.",800,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"427","I Paid Rs. 1200 to Municipal Services in Agra.",1200,"Municipal Services","Birth Certificate",25,"Agra","Uttar Pradesh",2015-10-12,22
+"428","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Indore","Madhya Pradesh",2015-10-12,22
+"429","I Paid Rs. 3200 to Municipal Services in Agra.",3200,"Municipal Services","Birth Certificate",29,"Agra","Uttar Pradesh",2015-10-12,22
+"430","I Paid Rs. 900 to Food, Civil Supplies and Consumer Affairs in Indore.",900,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Indore","Madhya Pradesh",2015-10-12,22
+"431","I Paid Rs. 6500 to Police in Bangalore.",6500,"Police","Filing FIR",93,"Bangalore","Karnataka",2015-10-12,22
+"432","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Indore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"433","I Paid Rs. 4000 to Municipal Services in Aligarh.",4000,"Municipal Services","Birth Certificate",58,"Aligarh","Uttar Pradesh",2015-10-12,22
+"434","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",104,"Bangalore","Karnataka",2015-10-12,22
+"435","I Paid Rs. 600 to Income Tax in Bangalore.",600,"Income Tax","New PAN Card",114,"Bangalore","Karnataka",2015-10-12,22
+"436","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",97,"Bangalore","Karnataka",2015-10-12,22
+"437","I Paid Rs. 500 to Income Tax in Bangalore.",500,"Income Tax","New PAN Card",99,"Bangalore","Karnataka",2015-10-12,22
+"438","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",92,"Bangalore","Karnataka",2015-10-12,22
+"439","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"440","I Paid Rs. 5000 to Transport in Bangalore.",5000,"Transport","New Domestic Driving License",131,"Bangalore","Karnataka",2015-10-12,22
+"441","I Paid Rs. 2500 to Municipal Services in Bangalore.",2500,"Municipal Services","Birth Certificate",57,"Bangalore","Karnataka",2015-10-12,22
+"442","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"443","I Paid Rs. 1500 to Municipal Services in Agra.",1500,"Municipal Services","Birth Certificate",26,"Agra","Uttar Pradesh",2015-10-12,22
+"444","I Paid Rs. 1500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",1500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",50,"Bangalore","Karnataka",2015-10-12,22
+"445","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",70,"Bangalore","Karnataka",2015-10-12,22
+"446","I Paid Rs. 2500 to Municipal Services in Agra.",2500,"Municipal Services","Birth Certificate",24,"Agra","Uttar Pradesh",2015-10-12,22
+"447","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Indore","Madhya Pradesh",2015-10-12,22
+"448","I Paid Rs. 6500 to Transport in Bangalore.",6500,"Transport","New Domestic Driving License",79,"Bangalore","Karnataka",2015-10-12,22
+"449","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",42,"Bangalore","Karnataka",2015-10-12,22
+"450","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Indore","Madhya Pradesh",2015-10-12,22
+"451","I Paid Rs. 1000 to Income Tax in Bangalore.",1000,"Income Tax","New PAN Card",75,"Bangalore","Karnataka",2015-10-12,22
+"452","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Indore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",24,"Indore","Madhya Pradesh",2015-10-12,22
+"453","I Paid Rs. 8500 to Stamps and Registration in Bangalore.",8500,"Stamps and Registration","Marriage Certificate",51,"Bangalore","Karnataka",2015-10-12,22
+"454","I Paid Rs. 1800 to Food, Civil Supplies and Consumer Affairs in Indore.",1800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"455","I Paid Rs. 2400 to Food, Civil Supplies and Consumer Affairs in Indore.",2400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Indore","Madhya Pradesh",2015-10-12,22
+"456","I Paid Rs. 2610 to Food, Civil Supplies and Consumer Affairs in Indore.",2610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",25,"Indore","Madhya Pradesh",2015-10-12,22
+"457","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",46,"Bangalore","Karnataka",2015-10-12,22
+"458","I Paid Rs. 3610 to Food, Civil Supplies and Consumer Affairs in Indore.",3610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",27,"Indore","Madhya Pradesh",2015-10-12,22
+"459","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Bangalore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",39,"Bangalore","Karnataka",2015-10-12,22
+"460","I Paid Rs. 5000 to Food, Civil Supplies and Consumer Affairs in Bangalore.",5000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",39,"Bangalore","Karnataka",2015-10-12,22
+"461","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"462","I Paid Rs. 2500 to Municipal Services in Bangalore.",2500,"Municipal Services","Birth Certificate",30,"Bangalore","Karnataka",2015-10-12,22
+"463","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",43,"Bangalore","Karnataka",2015-10-12,22
+"464","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"465","I Paid Rs. 250 to Income Tax in Bangalore.",250,"Income Tax","New PAN Card",63,"Bangalore","Karnataka",2015-10-12,22
+"466","I Paid Rs. 2000 to Municipal Services in Bangalore.",2000,"Municipal Services","Birth Certificate",38,"Bangalore","Karnataka",2015-10-12,22
+"467","I Paid Rs. 3200 to Food, Civil Supplies and Consumer Affairs in Indore.",3200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Indore","Madhya Pradesh",2015-10-12,22
+"468","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Indore","Madhya Pradesh",2015-10-12,22
+"469","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",30,"Bangalore","Karnataka",2015-10-12,22
+"470","I Paid Rs. 6500 to Police in Bangalore.",6500,"Police","Filing FIR",73,"Bangalore","Karnataka",2015-10-12,22
+"471","I Paid Rs. 5600 to Municipal Services in Bangalore.",5600,"Municipal Services","Birth Certificate",26,"Bangalore","Karnataka",2015-10-12,22
+"472","I Paid Rs. 15000 to Food, Civil Supplies and Consumer Affairs in Indore.",15000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Indore","Madhya Pradesh",2015-10-12,22
+"473","I Paid Rs. 60000 to Police in Pune.",60000,"Police","Police Verification for Passport",85,"Pune","Maharashtra",2015-10-12,22
+"474","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",23,"Bangalore","Karnataka",2015-10-12,22
+"475","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Bangalore","Karnataka",2015-10-12,22
+"476","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",17,"Indore","Madhya Pradesh",2015-10-12,22
+"477","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"478","I Paid Rs. 500 to Municipal Services in Agra.",500,"Municipal Services","Birth Certificate",28,"Agra","Uttar Pradesh",2015-10-12,22
+"479","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"480","I Paid Rs. 610 to Municipal Services in Agra.",610,"Municipal Services","Birth Certificate",28,"Agra","Uttar Pradesh",2015-10-12,22
+"481","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"482","I Paid Rs. 65000 to Police in Bangalore.",65000,"Police","Filing FIR",50,"Bangalore","Karnataka",2015-10-12,22
+"483","I Paid Rs. 1500 to Municipal Services in Agra.",1500,"Municipal Services","Birth Certificate",28,"Agra","Uttar Pradesh",2015-10-12,22
+"484","I Paid Rs. 1400 to Food, Civil Supplies and Consumer Affairs in Indore.",1400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Indore","Madhya Pradesh",2015-10-12,22
+"485","I Paid Rs. 1200 to Municipal Services in Agra.",1200,"Municipal Services","Birth Certificate",30,"Agra","Uttar Pradesh",2015-10-12,22
+"486","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Marriage Certificate",34,"Bangalore","Karnataka",2015-10-12,22
+"487","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",17,"Indore","Madhya Pradesh",2015-10-12,22
+"488","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Marriage Certificate",30,"Bangalore","Karnataka",2015-10-12,22
+"489","I Paid Rs. 4000 to Municipal Services in Agra.",4000,"Municipal Services","Birth Certificate",25,"Agra","Uttar Pradesh",2015-10-12,22
+"490","I Paid Rs. 5600 to Transport in Bangalore.",5600,"Transport","New Domestic Driving License",102,"Bangalore","Karnataka",2015-10-12,22
+"491","I Paid Rs. 900 to Food, Civil Supplies and Consumer Affairs in Indore.",900,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Indore","Madhya Pradesh",2015-10-12,22
+"492","I Paid Rs. 6500 to Transport in Bangalore.",6500,"Transport","New Domestic Driving License",57,"Bangalore","Karnataka",2015-10-12,22
+"493","I Paid Rs. 3000 to Municipal Services in Agra.",3000,"Municipal Services","Birth Certificate",27,"Agra","Uttar Pradesh",2015-10-12,22
+"494","I Paid Rs. 50000 to Transport in Bangalore.",50000,"Transport","Duplicate Registration Certificate",71,"Bangalore","Karnataka",2015-10-12,22
+"495","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Indore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"496","I Paid Rs. 5800 to Municipal Services in Bangalore.",5800,"Municipal Services","Birth Certificate",25,"Bangalore","Karnataka",2015-10-12,22
+"497","I Paid Rs. 2000 to Municipal Services in Agra.",2000,"Municipal Services","Birth Certificate",40,"Agra","Uttar Pradesh",2015-10-12,22
+"498","I Paid Rs. 610 to Food, Civil Supplies and Consumer Affairs in Indore.",610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Indore","Madhya Pradesh",2015-10-12,22
+"499","I Paid Rs. 5500 to Stamps and Registration in Bangalore.",5500,"Stamps and Registration","Marriage Certificate",29,"Bangalore","Karnataka",2015-10-12,22
+"500","I Paid Rs. 6000 to Commercial Tax, Sales Tax, VAT in Mumbai.",6000,"Commercial Tax, Sales Tax, VAT","C Form",93,"Mumbai","Maharashtra",2015-10-12,22
+"501","I Paid Rs. 5000 to Transport in Bangalore.",5000,"Transport","New Domestic Driving License",50,"Bangalore","Karnataka",2015-10-12,22
+"502","I Paid Rs. 1000 to Municipal Services in Agra.",1000,"Municipal Services","Birth Certificate",33,"Agra","Uttar Pradesh",2015-10-12,22
+"503","I Paid Rs. 1500 to Food, Civil Supplies and Consumer Affairs in Indore.",1500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Indore","Madhya Pradesh",2015-10-12,22
+"504","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Bangalore","Karnataka",2015-10-12,22
+"505","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Marriage Certificate",26,"Bangalore","Karnataka",2015-10-12,22
+"506","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"507","I Paid Rs. 5200 to Municipal Services in Bangalore.",5200,"Municipal Services","Birth Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"508","I Paid Rs. 25000 to Police in Bangalore.",25000,"Police","Filing FIR",48,"Bangalore","Karnataka",2015-10-12,22
+"509","I Paid Rs. 1800 to Municipal Services in Agra.",1800,"Municipal Services","Birth Certificate",37,"Agra","Uttar Pradesh",2015-10-12,22
+"510","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Indore","Madhya Pradesh",2015-10-12,22
+"511","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Bangalore","Karnataka",2015-10-12,22
+"512","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","Duplicate Registration Certificate",60,"Bangalore","Karnataka",2015-10-12,22
+"513","I Paid Rs. 2400 to Municipal Services in Agra.",2400,"Municipal Services","Birth Certificate",31,"Agra","Uttar Pradesh",2015-10-12,22
+"514","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",25,"Indore","Madhya Pradesh",2015-10-12,22
+"515","I Paid Rs. 3500 to Municipal Services in Bangalore.",3500,"Municipal Services","Birth Certificate",27,"Bangalore","Karnataka",2015-10-12,22
+"516","I Paid Rs. 5800 to Customs, Excise and Service Tax in Bangalore.",5800,"Customs, Excise and Service Tax","Customs Check and Clearance",109,"Bangalore","Karnataka",2015-10-12,22
+"517","I Paid Rs. 2610 to Municipal Services in Agra.",2610,"Municipal Services","Birth Certificate",23,"Agra","Uttar Pradesh",2015-10-12,22
+"518","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Indore","Madhya Pradesh",2015-10-12,22
+"519","I Paid Rs. 4500 to Transport in Bangalore.",4500,"Transport","New Domestic Driving License",58,"Bangalore","Karnataka",2015-10-12,22
+"520","I Paid Rs. 5000 to Commercial Tax, Sales Tax, VAT in Bangalore.",5000,"Commercial Tax, Sales Tax, VAT","C Form",77,"Bangalore","Karnataka",2015-10-12,22
+"521","I Paid Rs. 3610 to Municipal Services in Agra.",3610,"Municipal Services","Birth Certificate",28,"Agra","Uttar Pradesh",2015-10-12,22
+"522","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Indore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"523","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","Duplicate Registration Certificate",33,"Bangalore","Karnataka",2015-10-12,22
+"524","I Paid Rs. 45000 to Stamps and Registration in Bangalore.",45000,"Stamps and Registration","Registration of Flat or Apartment",33,"Bangalore","Karnataka",2015-10-12,22
+"525","I Paid Rs. 1800 to Food, Civil Supplies and Consumer Affairs in Indore.",1800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Indore","Madhya Pradesh",2015-10-12,22
+"526","I Paid Rs. 5600 to Stamps and Registration in Bangalore.",5600,"Stamps and Registration","Registration of Property",28,"Bangalore","Karnataka",2015-10-12,22
+"527","I Paid Rs. 5500 to Police in Bangalore.",5500,"Police","Traffic Violations",42,"Bangalore","Karnataka",2015-10-12,22
+"528","I Paid Rs. 2400 to Food, Civil Supplies and Consumer Affairs in Indore.",2400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",24,"Indore","Madhya Pradesh",2015-10-12,22
+"529","I Paid Rs. 3200 to Transport in Bangalore.",3200,"Transport","New Domestic Driving License",38,"Bangalore","Karnataka",2015-10-12,22
+"530","I Paid Rs. 9000 to Commercial Tax, Sales Tax, VAT in New Delhi.",9000,"Commercial Tax, Sales Tax, VAT","C Form",101,"New Delhi","Delhi",2015-10-12,22
+"531","I Paid Rs. 2610 to Food, Civil Supplies and Consumer Affairs in Indore.",2610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Indore","Madhya Pradesh",2015-10-12,22
+"532","I Paid Rs. 3610 to Food, Civil Supplies and Consumer Affairs in Indore.",3610,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"533","I Paid Rs. 2500 to Police in Bangalore.",2500,"Police","Police Verification for Passport",38,"Bangalore","Karnataka",2015-10-12,22
+"534","I Paid Rs. 5200 to Transport in Bangalore.",5200,"Transport","Duplicate Registration Certificate",33,"Bangalore","Karnataka",2015-10-12,22
+"535","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Indore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Indore","Madhya Pradesh",2015-10-12,22
+"536","I Paid Rs. 650 to Food, Civil Supplies and Consumer Affairs in Bangalore.",650,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Bangalore","Karnataka",2015-10-12,22
+"537","I Paid Rs. 1200 to Food, Civil Supplies and Consumer Affairs in Indore.",1200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Indore","Madhya Pradesh",2015-10-12,22
+"538","I Paid Rs. 3000 to Municipal Services in Bangalore.",3000,"Municipal Services","Birth Certificate",21,"Bangalore","Karnataka",2015-10-12,22
+"539","I Paid Rs. 5600 to Stamps and Registration in Bangalore.",5600,"Stamps and Registration","Marriage Certificate",32,"Bangalore","Karnataka",2015-10-12,22
+"540","I Paid Rs. 3200 to Food, Civil Supplies and Consumer Affairs in Indore.",3200,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",22,"Indore","Madhya Pradesh",2015-10-12,22
+"541","I Paid Rs. 25000 to Police in Bangalore.",25000,"Police","Filing FIR",39,"Bangalore","Karnataka",2015-10-12,22
+"542","I Paid Rs. 6000 to Stamps and Registration in Bangalore.",6000,"Stamps and Registration","Marriage Certificate",29,"Bangalore","Karnataka",2015-10-12,22
+"543","I Paid Rs. 4000 to Food, Civil Supplies and Consumer Affairs in Indore.",4000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Indore","Madhya Pradesh",2015-10-12,22
+"544","I Paid Rs. 2500 to Municipal Services in Agra.",2500,"Municipal Services","Birth Certificate",25,"Agra","Uttar Pradesh",2015-10-12,22
+"545","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","New Domestic Driving License",31,"Bangalore","Karnataka",2015-10-12,22
+"546","I Paid Rs. 60000 to Customs, Excise and Service Tax in Bangalore.",60000,"Customs, Excise and Service Tax","Customs Check and Clearance",100,"Bangalore","Karnataka",2015-10-12,22
+"547","I Paid Rs. 1500 to Food, Civil Supplies and Consumer Affairs in Indore.",1500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Indore","Madhya Pradesh",2015-10-12,22
+"548","I Paid Rs. 2000 to Municipal Services in Aligarh.",2000,"Municipal Services","Birth Certificate",59,"Aligarh","Uttar Pradesh",2015-10-12,22
+"549","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Marriage Certificate",28,"Bangalore","Karnataka",2015-10-12,22
+"550","I Paid Rs. 15000 to Customs, Excise and Service Tax in Bangalore.",15000,"Customs, Excise and Service Tax","Customs Check and Clearance",71,"Bangalore","Karnataka",2015-10-12,22
+"551","I Paid Rs. 9000 to Passport in Chennai.",9000,"Passport","Police Verification for Passport",259,"Chennai","Tamil Nadu",2015-10-12,22
+"552","I Paid Rs. 520 to Food, Civil Supplies and Consumer Affairs in Bangalore.",520,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",14,"Bangalore","Karnataka",2015-10-12,22
+"553","I Paid Rs. 3000 to Food, Civil Supplies and Consumer Affairs in Indore.",3000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Indore","Madhya Pradesh",2015-10-12,22
+"554","I Paid Rs. 2000 to Passport in Bangalore.",2000,"Passport","Passport Delivery",172,"Bangalore","Karnataka",2015-10-12,22
+"555","I Paid Rs. 2500 to Passport in Bangalore.",2500,"Passport","Police Verification for Passport",115,"Bangalore","Karnataka",2015-10-12,22
+"556","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Indore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Indore","Madhya Pradesh",2015-10-12,22
+"557","I Paid Rs. 25000 to Stamps and Registration in Bangalore.",25000,"Stamps and Registration","Registration of Property",27,"Bangalore","Karnataka",2015-10-12,22
+"558","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","Registration of Vehicle",42,"Bangalore","Karnataka",2015-10-12,22
+"559","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Indore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Indore","Madhya Pradesh",2015-10-12,22
+"560","I Paid Rs. 15000 to Police in Bangalore.",15000,"Police","Filing FIR",34,"Bangalore","Karnataka",2015-10-12,22
+"561","I Paid Rs. 2500 to Police in Bangalore.",2500,"Police","Traffic Violations",31,"Bangalore","Karnataka",2015-10-12,22
+"562","I Paid Rs. 25000 to Police in Bangalore.",25000,"Police","Police Harassment",29,"Bangalore","Karnataka",2015-10-12,22
+"563","I Paid Rs. 1500 to Passport in Bangalore.",1500,"Passport","Passport Delivery",74,"Bangalore","Karnataka",2015-10-12,22
+"564","I Paid Rs. 500 to Income Tax in Bangalore.",500,"Income Tax","New PAN Card",47,"Bangalore","Karnataka",2015-10-12,22
+"565","I Paid Rs. 1500 to Passport in Bangalore.",1500,"Passport","Passport Delivery",60,"Bangalore","Karnataka",2015-10-12,22
+"566","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","New Domestic Driving License",36,"Bangalore","Karnataka",2015-10-12,22
+"567","I Paid Rs. 1000 to Stamps and Registration in Bangalore.",1000,"Stamps and Registration","Marriage Certificate",26,"Bangalore","Karnataka",2015-10-12,22
+"568","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Bangalore","Karnataka",2015-10-12,22
+"569","I Paid Rs. 15000 to Police in Bangalore.",15000,"Police","Filing FIR",28,"Bangalore","Karnataka",2015-10-12,22
+"570","I Paid Rs. 2000 to Transport in Bangalore.",2000,"Transport","Duplicate Registration Certificate",44,"Bangalore","Karnataka",2015-10-12,22
+"571","I Paid Rs. 2500 to Customs, Excise and Service Tax in Bangalore.",2500,"Customs, Excise and Service Tax","Customs Check and Clearance",44,"Bangalore","Karnataka",2015-10-12,22
+"572","I Paid Rs. 1500 to Commercial Tax, Sales Tax, VAT in Bangalore.",1500,"Commercial Tax, Sales Tax, VAT","C Form",50,"Bangalore","Karnataka",2015-10-12,22
+"573","I Paid Rs. 5000 to Commercial Tax, Sales Tax, VAT in Bangalore.",5000,"Commercial Tax, Sales Tax, VAT","C Form",49,"Bangalore","Karnataka",2015-10-12,22
+"574","I Paid Rs. 2000 to Municipal Services in Bangalore.",2000,"Municipal Services","Birth Certificate",22,"Bangalore","Karnataka",2015-10-12,22
+"575","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","Registration of Vehicle",46,"Bangalore","Karnataka",2015-10-12,22
+"576","I Paid Rs. 600 to Food, Civil Supplies and Consumer Affairs in Abhayapuri.",600,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",76,"Abhayapuri","Assam",2015-10-12,22
+"577","I Paid Rs. 424 to Commercial Tax, Sales Tax, VAT in Abhayapuri.",424,"Commercial Tax, Sales Tax, VAT","C Form",79,"Abhayapuri","Assam",2015-10-12,22
+"578","I Paid Rs. 15000 to Passport in Adityapur.",15000,"Passport","Passport Delivery",90,"Adityapur","Jharkhand",2015-10-12,22
+"579","I Paid Rs. 2500 to Police in Aligarh.",2500,"Police","Police Verification for Passport",59,"Aligarh","Uttar Pradesh",2015-10-12,22
+"580","I Paid Rs. 1500 to Transport in Abhayapuri.",1500,"Transport","New Domestic Driving License",73,"Abhayapuri","Assam",2015-10-12,22
+"581","I Paid Rs. 10000 to Stamps and Registration in Allahabad.",10000,"Stamps and Registration","Registration of Property",54,"Allahabad","Uttar Pradesh",2015-10-12,22
+"582","I Paid Rs. 550 to Income Tax in Adari.",550,"Income Tax","New PAN Card",90,"Adari","Uttar Pradesh",2015-10-12,22
+"583","I Paid Rs. 2000 to Transport in Arwal.",2000,"Transport","New Domestic Driving License",40,"Arwal","Bihar",2015-10-12,22
+"584","I Paid Rs. 500 to Stamps and Registration in Alleppey.",500,"Stamps and Registration","Marriage Certificate",49,"Alleppey","Kerala",2015-10-12,22
+"585","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Ahmadnagar.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",48,"Ahmadnagar","Maharashtra",2015-10-12,22
+"586","I Paid Rs. 1500 to Commercial Tax, Sales Tax, VAT in Abohar.",1500,"Commercial Tax, Sales Tax, VAT","C Form",93,"Abohar","Punjab",2015-10-12,22
+"587","I Paid Rs. 15000 to Police in Adoni.",15000,"Police","Filing FIR",64,"Adoni","Andhra Pradesh",2015-10-12,22
+"588","I Paid Rs. 2500 to Municipal Services in Ahmedabad.",2500,"Municipal Services","Birth Certificate",71,"Ahmedabad","Gujarat",2015-10-12,22
+"589","I Paid Rs. 2500 to Passport in Hyderabad.",2500,"Passport","Passport Delivery",81,"Hyderabad","Telangana",2015-10-12,22
+"590","I Paid Rs. 800 to Municipal Services in Bangalore.",800,"Municipal Services","Birth Certificate",35,"Bangalore","Karnataka",2015-10-12,22
+"591","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",49,"Bangalore","Karnataka",2015-10-12,22
+"592","I Paid Rs. 800 to Passport in Bangalore.",800,"Passport","Police Verification for Passport",64,"Bangalore","Karnataka",2015-10-12,22
+"593","I Paid Rs. 10000 to Municipal Services in Vadodara.",10000,"Municipal Services","Birth Certificate",60,"Vadodara","Gujarat",2015-10-12,22
+"594","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",57,"Bangalore","Karnataka",2015-10-12,22
+"595","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",55,"Bangalore","Karnataka",2015-10-12,22
+"596","I Paid Rs. 1200 to Police in Bangalore.",1200,"Police","Filing FIR",59,"Bangalore","Karnataka",2015-10-12,22
+"597","I Paid Rs. 800 to Income Tax in Bangalore.",800,"Income Tax","New PAN Card",48,"Bangalore","Karnataka",2015-10-12,22
+"598","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",62,"Bangalore","Karnataka",2015-10-12,22
+"599","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",49,"Bangalore","Karnataka",2015-10-12,22
+"600","I Paid Rs. 800 to Transport in Bangalore.",800,"Transport","Duplicate Registration Certificate",69,"Bangalore","Karnataka",2015-10-12,22
+"601","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",34,"Bangalore","Karnataka",2015-10-12,22
+"602","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",39,"Bangalore","Karnataka",2015-10-12,22
+"603","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Verification for Passport",46,"Bangalore","Karnataka",2015-10-12,22
+"604","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",35,"Bangalore","Karnataka",2015-10-12,22
+"605","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",39,"Bangalore","Karnataka",2015-10-12,22
+"606","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",30,"Bangalore","Karnataka",2015-10-12,22
+"607","I Paid Rs. 900 to Stamps and Registration in Bangalore.",900,"Stamps and Registration","Registration of Flat or Apartment",50,"Bangalore","Karnataka",2015-10-12,22
+"608","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",48,"Bangalore","Karnataka",2015-10-12,22
+"609","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",32,"Bangalore","Karnataka",2015-10-12,22
+"610","I Paid Rs. 800 to Customs, Excise and Service Tax in Bangalore.",800,"Customs, Excise and Service Tax","Customs Check and Clearance",28,"Bangalore","Karnataka",2015-10-12,22
+"611","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",29,"Bangalore","Karnataka",2015-10-12,22
+"612","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",36,"Bangalore","Karnataka",2015-10-12,22
+"613","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Harassment",47,"Bangalore","Karnataka",2015-10-12,22
+"614","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",33,"Bangalore","Karnataka",2015-10-12,22
+"615","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Harassment",30,"Bangalore","Karnataka",2015-10-12,22
+"616","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",29,"Bangalore","Karnataka",2015-10-12,22
+"617","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","New Domestic Driving License",40,"Bangalore","Karnataka",2015-10-12,22
+"618","I Paid Rs. 800 to Passport in Bangalore.",800,"Passport","New Passport Application",64,"Bangalore","Karnataka",2015-10-12,22
+"619","I Paid Rs. 436 to Transport in Puri.",436,"Transport","Registration of Vehicle",45,"Puri","Orissa",2015-10-12,22
+"620","I Paid Rs. 384 to Police in Pedana.",384,"Police","Traffic Violations",35,"Pedana","Andhra Pradesh",2015-10-12,22
+"621","I Paid Rs. 294 to Police in Murliganj.",294,"Police","Filing FIR",34,"Murliganj","Bihar",2015-10-12,22
+"622","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",31,"Bangalore","Karnataka",2015-10-12,22
+"623","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",42,"Bangalore","Karnataka",2015-10-12,22
+"624","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Harassment",35,"Bangalore","Karnataka",2015-10-12,22
+"625","I Paid Rs. 432 to Police in Madhepura.",432,"Police","Filing FIR",34,"Madhepura","Bihar",2015-10-12,22
+"626","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",28,"Bangalore","Karnataka",2015-10-12,22
+"627","I Paid Rs. 800 to Passport in Bangalore.",800,"Passport","New Passport Application",39,"Bangalore","Karnataka",2015-10-12,22
+"628","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Harassment",31,"Bangalore","Karnataka",2015-10-12,22
+"629","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",31,"Bangalore","Karnataka",2015-10-12,22
+"630","I Paid Rs. 1200 to Police in Bangalore.",1200,"Police","Traffic Violations",25,"Bangalore","Karnataka",2015-10-12,22
+"631","I Paid Rs. 936 to Stamps and Registration in Raurkela.",936,"Stamps and Registration","Registration of Property",41,"Raurkela","Orissa",2015-10-12,22
+"632","I Paid Rs. 20000 to Transport in Bangalore.",20000,"Transport","Registration of Vehicle",32,"Bangalore","Karnataka",2015-10-12,22
+"633","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",33,"Bangalore","Karnataka",2015-10-12,22
+"634","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",29,"Bangalore","Karnataka",2015-10-12,22
+"635","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Filing FIR",26,"Bangalore","Karnataka",2015-10-12,22
+"636","I Paid Rs. 1500 to Transport in Bangalore.",1500,"Transport","Registration of Vehicle",31,"Bangalore","Karnataka",2015-10-12,22
+"637","I Paid Rs. 1400 to Stamps and Registration in Bangalore.",1400,"Stamps and Registration","Registration of Property",31,"Bangalore","Karnataka",2015-10-12,22
+"638","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",29,"Bangalore","Karnataka",2015-10-12,22
+"639","I Paid Rs. 800 to Transport in Bangalore.",800,"Transport","Duplicate Registration Certificate",25,"Bangalore","Karnataka",2015-10-12,22
+"640","I Paid Rs. 219 to Food, Civil Supplies and Consumer Affairs in Pithapuram.",219,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",36,"Pithapuram","Andhra Pradesh",2015-10-12,22
+"641","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Bangalore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Bangalore","Karnataka",2015-10-12,22
+"642","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",28,"Bangalore","Karnataka",2015-10-12,22
+"643","I Paid Rs. 432 to Police in Muzaffarpur.",432,"Police","Filing FIR",33,"Muzaffarpur","Bihar",2015-10-12,22
+"644","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",28,"Bangalore","Karnataka",2015-10-12,22
+"645","I Paid Rs. 2000 to Passport in Bangalore.",2000,"Passport","Passport Delivery",34,"Bangalore","Karnataka",2015-10-12,22
+"646","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Harassment",26,"Bangalore","Karnataka",2015-10-12,22
+"647","I Paid Rs. 1500 to Police in Bangalore.",1500,"Police","Police Harassment",25,"Bangalore","Karnataka",2015-10-12,22
+"648","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",30,"Bangalore","Karnataka",2015-10-12,22
+"649","I Paid Rs. 1500 to Food, Civil Supplies and Consumer Affairs in Hyderabad.",1500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",62,"Hyderabad","Telangana",2015-10-12,22
+"650","I Paid Rs. 800 to Stamps and Registration in Bangalore.",800,"Stamps and Registration","Registration of Flat or Apartment",29,"Bangalore","Karnataka",2015-10-12,22
+"651","I Paid Rs. 15000 to Transport in Bangalore.",15000,"Transport","Registration of Vehicle",31,"Bangalore","Karnataka",2015-10-12,22
+"652","I Paid Rs. 700 to Passport in Bangalore.",700,"Passport","Police Verification for Passport",37,"Bangalore","Karnataka",2015-10-12,22
+"653","I Paid Rs. 2000 to Police in Bangalore.",2000,"Police","Police Harassment",27,"Bangalore","Karnataka",2015-10-12,22
+"654","I Paid Rs. 900 to Police in Bangalore.",900,"Police","Police Harassment",22,"Bangalore","Karnataka",2015-10-12,22
+"655","I Paid Rs. 1000 to Passport in Bangalore.",1000,"Passport","Passport Delivery",36,"Bangalore","Karnataka",2015-10-12,22
+"656","I Paid Rs. 800 to Passport in Bangalore.",800,"Passport","Passport Delivery",29,"Bangalore","Karnataka",2015-10-12,22
+"657","I Paid Rs. 1600 to Police in Bangalore.",1600,"Police","Police Verification for Passport",26,"Bangalore","Karnataka",2015-10-12,22
+"658","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Verification for Passport",23,"Bangalore","Karnataka",2015-10-12,22
+"659","I Paid Rs. 2000 to Police in Bangalore.",2000,"Police","Traffic Violations",22,"Bangalore","Karnataka",2015-10-12,22
+"660","I Paid Rs. 700 to Stamps and Registration in Bangalore.",700,"Stamps and Registration","Registration of Flat or Apartment",29,"Bangalore","Karnataka",2015-10-12,22
+"661","I Paid Rs. 3500 to Police in Bangalore.",3500,"Police","Police Verification for Passport",20,"Bangalore","Karnataka",2015-10-12,22
+"662","I Paid Rs. 600 to Stamps and Registration in Bangalore.",600,"Stamps and Registration","Registration of Property",30,"Bangalore","Karnataka",2015-10-12,22
+"663","I Paid Rs. 692 to Stamps and Registration in Solapur.",692,"Stamps and Registration","Registration of Property",33,"Solapur","Maharashtra",2015-10-12,22
+"664","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Verification for Passport",20,"Bangalore","Karnataka",2015-10-12,22
+"665","I Paid Rs. 1500 to Railways in Bangalore.",1500,"Railways","Transport of Goods",200,"Bangalore","Karnataka",2015-10-12,22
+"666","I Paid Rs. 862 to Stamps and Registration in Monoharpur.",862,"Stamps and Registration","Registration of Property",32,"Monoharpur","West Bengal",2015-10-12,22
+"667","I Paid Rs. 1400 to Police in Bangalore.",1400,"Police","Traffic Violations",21,"Bangalore","Karnataka",2015-10-12,22
+"668","I Paid Rs. 800 to Passport in Bangalore.",800,"Passport","Police Verification for Passport",26,"Bangalore","Karnataka",2015-10-12,22
+"669","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",40,"Bangalore","Karnataka",2015-10-12,22
+"670","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Police Verification for Passport",22,"Bangalore","Karnataka",2015-10-12,22
+"671","I Paid Rs. 10000 to Customs, Excise and Service Tax in Bangalore.",10000,"Customs, Excise and Service Tax","Customs Check and Clearance",31,"Bangalore","Karnataka",2015-10-12,22
+"672","I Paid Rs. 963 to Police in Raghunathpur.",963,"Police","Traffic Violations",22,"Raghunathpur","West Bengal",2015-10-12,22
+"673","I Paid Rs. 1200 to Police in Bangalore.",1200,"Police","Police Harassment",19,"Bangalore","Karnataka",2015-10-12,22
+"674","I Paid Rs. 345 to Stamps and Registration in Punjaipugalur.",345,"Stamps and Registration","Registration of Property",25,"Punjaipugalur","Tamil Nadu",2015-10-12,22
+"675","I Paid Rs. 15000 to Stamps and Registration in Bangalore.",15000,"Stamps and Registration","Registration of Flat or Apartment",26,"Bangalore","Karnataka",2015-10-12,22
+"676","I Paid Rs. 987 to Food, Civil Supplies and Consumer Affairs in Leh (Ladakh).",987,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Leh (Ladakh)","Jammu and Kashmir",2015-10-12,22
+"677","I Paid Rs. 800 to Municipal Services in Bangalore.",800,"Municipal Services","Birth Certificate",29,"Bangalore","Karnataka",2015-10-12,22
+"678","I Paid Rs. 1000 to Transport in Bangalore.",1000,"Transport","Registration of Vehicle",33,"Bangalore","Karnataka",2015-10-12,22
+"679","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",27,"Bangalore","Karnataka",2015-10-12,22
+"680","I Paid Rs. 800 to Transport in Bangalore.",800,"Transport","Duplicate Registration Certificate",37,"Bangalore","Karnataka",2015-10-12,22
+"681","I Paid Rs. 1500 to Transport in Bangalore.",1500,"Transport","Registration of Vehicle",30,"Bangalore","Karnataka",2015-10-12,22
+"682","I Paid Rs. 1500 to Police in Bangalore.",1500,"Police","Police Verification for Passport",25,"Bangalore","Karnataka",2015-10-12,22
+"683","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Bangalore","Karnataka",2015-10-12,22
+"684","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Filing FIR",24,"Bangalore","Karnataka",2015-10-12,22
+"685","I Paid Rs. 1000 to Food, Civil Supplies and Consumer Affairs in Bangalore.",1000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",25,"Bangalore","Karnataka",2015-10-12,22
+"686","I Paid Rs. 1500 to Police in Bangalore.",1500,"Police","Police Verification for Passport",22,"Bangalore","Karnataka",2015-10-12,22
+"687","I Paid Rs. 800 to Food, Civil Supplies and Consumer Affairs in Bangalore.",800,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",24,"Bangalore","Karnataka",2015-10-12,22
+"688","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Police Verification for Passport",18,"Bangalore","Karnataka",2015-10-12,22
+"689","I Paid Rs. 1500 to Transport in Bangalore.",1500,"Transport","Duplicate Registration Certificate",27,"Bangalore","Karnataka",2015-10-12,22
+"690","I Paid Rs. 100 to Others in Gurgaon.",100,"Others","Others",84,"Gurgaon","Haryana",2015-10-12,22
+"691","I Paid Rs. 800 to Commercial Tax, Sales Tax, VAT in Bangalore.",800,"Commercial Tax, Sales Tax, VAT","C Form",31,"Bangalore","Karnataka",2015-10-12,22
+"692","I Paid Rs. 2000 to Stamps and Registration in Hyderabad.",2000,"Stamps and Registration","Registration of Flat or Apartment",55,"Hyderabad","Telangana",2015-10-12,22
+"693","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Property",22,"Bangalore","Karnataka",2015-10-12,22
+"694","I Paid Rs. 234 to Stamps and Registration in Nuzvid.",234,"Stamps and Registration","Marriage Certificate",40,"Nuzvid","Andhra Pradesh",2015-10-12,22
+"695","I Paid Rs. 700 to Transport in Bangalore.",700,"Transport","Duplicate Registration Certificate",27,"Bangalore","Karnataka",2015-10-12,22
+"696","I Paid Rs. 1000 to Stamps and Registration in Bangalore.",1000,"Stamps and Registration","Registration of Property",22,"Bangalore","Karnataka",2015-10-12,22
+"697","I Paid Rs. 1300 to Stamps and Registration in Bangalore.",1300,"Stamps and Registration","Registration of Property",22,"Bangalore","Karnataka",2015-10-12,22
+"698","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Registration of Flat or Apartment",21,"Bangalore","Karnataka",2015-10-12,22
+"699","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Traffic Violations",24,"Bangalore","Karnataka",2015-10-12,22
+"700","I Paid Rs. 600 to Commercial Tax, Sales Tax, VAT in Bangalore.",600,"Commercial Tax, Sales Tax, VAT","C Form",34,"Bangalore","Karnataka",2015-10-12,22
+"701","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Police Verification for Passport",23,"Bangalore","Karnataka",2015-10-12,22
+"702","I Paid Rs. 3000 to Transport in Bangalore.",3000,"Transport","Registration of Vehicle",25,"Bangalore","Karnataka",2015-10-12,22
+"703","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",28,"Bangalore","Karnataka",2015-10-12,22
+"704","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Registration of Property",23,"Bangalore","Karnataka",2015-10-12,22
+"705","I Paid Rs. 500 to Income Tax in Bangalore.",500,"Income Tax","New PAN Card",43,"Bangalore","Karnataka",2015-10-12,22
+"706","I Paid Rs. 6000 to Commercial Tax, Sales Tax, VAT in Pune.",6000,"Commercial Tax, Sales Tax, VAT","C Form",57,"Pune","Maharashtra",2015-10-12,22
+"707","I Paid Rs. 1200 to Police in Bangalore.",1200,"Police","Police Verification for Passport",24,"Bangalore","Karnataka",2015-10-12,22
+"708","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",28,"Bangalore","Karnataka",2015-10-12,22
+"709","I Paid Rs. 1000 to Transport in Bangalore.",1000,"Transport","Duplicate Registration Certificate",27,"Bangalore","Karnataka",2015-10-12,22
+"710","I Paid Rs. 500 to Passport in Bangalore.",500,"Passport","Police Verification for Passport",27,"Bangalore","Karnataka",2015-10-12,22
+"711","I Paid Rs. 1500 to Municipal Services in Bangalore.",1500,"Municipal Services","Birth Certificate",31,"Bangalore","Karnataka",2015-10-12,22
+"712","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Police Verification for Passport",21,"Bangalore","Karnataka",2015-10-12,22
+"713","I Paid Rs. 250 to Railways in Bangalore.",250,"Railways","Transport of Goods",135,"Bangalore","Karnataka",2015-10-12,22
+"714","I Paid Rs. 1000 to Transport in New Delhi.",1000,"Transport","New Domestic Driving License",60,"New Delhi","Delhi",2015-10-12,22
+"715","I Paid Rs. 2000 to Stamps and Registration in Bangalore.",2000,"Stamps and Registration","Marriage Certificate",28,"Bangalore","Karnataka",2015-10-12,22
+"716","I Paid Rs. 350 to Police in Bangalore.",350,"Police","Traffic Violations",22,"Bangalore","Karnataka",2015-10-12,22
+"717","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",31,"Bangalore","Karnataka",2015-10-12,22
+"718","I Paid Rs. 1700 to Stamps and Registration in Bangalore.",1700,"Stamps and Registration","Registration of Property",25,"Bangalore","Karnataka",2015-10-12,22
+"719","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",29,"Bangalore","Karnataka",2015-10-12,22
+"720","I Paid Rs. 2500 to Transport in Bangalore.",2500,"Transport","Registration of Vehicle",22,"Bangalore","Karnataka",2015-10-12,22
+"721","I Paid Rs. 1000 to Transport in Bangalore.",1000,"Transport","New Domestic Driving License",22,"Bangalore","Karnataka",2015-10-12,22
+"722","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",26,"Bangalore","Karnataka",2015-10-12,22
+"723","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Property",22,"Bangalore","Karnataka",2015-10-12,22
+"724","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Registration of Flat or Apartment",19,"Bangalore","Karnataka",2015-10-12,22
+"725","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",29,"Bangalore","Karnataka",2015-10-12,22
+"726","I Paid Rs. 500 to Passport in Bangalore.",500,"Passport","Police Verification for Passport",27,"Bangalore","Karnataka",2015-10-12,22
+"727","I Paid Rs. 1500 to Passport in Bangalore.",1500,"Passport","Police Verification for Passport",31,"Bangalore","Karnataka",2015-10-12,22
+"728","I Paid Rs. 800 to Municipal Services in Bangalore.",800,"Municipal Services","Birth Certificate",28,"Bangalore","Karnataka",2015-10-12,22
+"729","I Paid Rs. 600 to Police in Bangalore.",600,"Police","Filing FIR",27,"Bangalore","Karnataka",2015-10-12,22
+"730","I Paid Rs. 10000 to Stamps and Registration in Bangalore.",10000,"Stamps and Registration","Registration of Property",20,"Bangalore","Karnataka",2015-10-12,22
+"731","I Paid Rs. 200 to Police in Bangalore.",200,"Police","Police Harassment",26,"Bangalore","Karnataka",2015-10-12,22
+"732","I Paid Rs. 500 to Railways in Bangalore.",500,"Railways","Transport of Goods",134,"Bangalore","Karnataka",2015-10-12,22
+"733","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",0,"Bangalore","Karnataka",2015-10-12,22
+"734","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",40,"Bangalore","Karnataka",2015-10-12,22
+"735","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",23,"Bangalore","Karnataka",2015-10-12,22
+"736","I Paid Rs. 1400 to Passport in Bangalore.",1400,"Passport","Passport Delivery",23,"Bangalore","Karnataka",2015-10-12,22
+"737","I Paid Rs. 150 to Stamps and Registration in Bangalore.",150,"Stamps and Registration","Registration of Flat or Apartment",19,"Bangalore","Karnataka",2015-10-12,22
+"738","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Flat or Apartment",20,"Bangalore","Karnataka",2015-10-12,22
+"739","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"740","I Paid Rs. 2500 to Passport in Bangalore.",2500,"Passport","New Passport Application",24,"Bangalore","Karnataka",2015-10-12,22
+"741","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"742","I Paid Rs. 1000 to Stamps and Registration in Bangalore.",1000,"Stamps and Registration","Registration of Flat or Apartment",19,"Bangalore","Karnataka",2015-10-12,22
+"743","I Paid Rs. 200 to Transport in Bangalore.",200,"Transport","Duplicate Registration Certificate",22,"Bangalore","Karnataka",2015-10-12,22
+"744","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",23,"Bangalore","Karnataka",2015-10-12,22
+"745","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Registration of Vehicle",20,"Bangalore","Karnataka",2015-10-12,22
+"746","I Paid Rs. 1200 to Income Tax in Bangalore.",1200,"Income Tax","New PAN Card",38,"Bangalore","Karnataka",2015-10-12,22
+"747","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"748","I Paid Rs. 6000 to Transport in Bangalore.",6000,"Transport","New Domestic Driving License",18,"Bangalore","Karnataka",2015-10-12,22
+"749","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",0,"Bangalore","Karnataka",2015-10-12,22
+"750","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",41,"Bangalore","Karnataka",2015-10-12,22
+"751","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",19,"Bangalore","Karnataka",2015-10-12,22
+"752","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"753","I Paid Rs. 1000 to Stamps and Registration in Bangalore.",1000,"Stamps and Registration","Registration of Flat or Apartment",0,"Bangalore","Karnataka",2015-10-12,22
+"754","I Paid Rs. 1000 to Stamps and Registration in Bangalore.",1000,"Stamps and Registration","Marriage Certificate",33,"Bangalore","Karnataka",2015-10-12,22
+"755","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",19,"Bangalore","Karnataka",2015-10-12,22
+"756","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","New Domestic Driving License",0,"Bangalore","Karnataka",2015-10-12,22
+"757","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Bangalore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",15,"Bangalore","Karnataka",2015-10-12,22
+"758","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",30,"Bangalore","Karnataka",2015-10-12,22
+"759","I Paid Rs. 700 to Passport in Bangalore.",700,"Passport","Police Verification for Passport",24,"Bangalore","Karnataka",2015-10-12,22
+"760","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"761","I Paid Rs. 1300 to Police in Bangalore.",1300,"Police","Filing FIR",24,"Bangalore","Karnataka",2015-10-12,22
+"762","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"763","I Paid Rs. 400 to Food, Civil Supplies and Consumer Affairs in Bangalore.",400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",15,"Bangalore","Karnataka",2015-10-12,22
+"764","I Paid Rs. 500 to Income Tax in Bangalore.",500,"Income Tax","New PAN Card",36,"Bangalore","Karnataka",2015-10-12,22
+"765","I Paid Rs. 1500 to Transport in Bangalore.",1500,"Transport","Duplicate Registration Certificate",21,"Bangalore","Karnataka",2015-10-12,22
+"766","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Property",20,"Bangalore","Karnataka",2015-10-12,22
+"767","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",19,"Bangalore","Karnataka",2015-10-12,22
+"768","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",28,"Bangalore","Karnataka",2015-10-12,22
+"769","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",0,"Bangalore","Karnataka",2015-10-12,22
+"770","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",21,"Bangalore","Karnataka",2015-10-12,22
+"771","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"772","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Police Verification for Passport",21,"Bangalore","Karnataka",2015-10-12,22
+"773","I Paid Rs. 5000 to Customs, Excise and Service Tax in Bangalore.",5000,"Customs, Excise and Service Tax","Customs Check and Clearance",24,"Bangalore","Karnataka",2015-10-12,22
+"774","I Paid Rs. 400 to Food, Civil Supplies and Consumer Affairs in Bangalore.",400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Bangalore","Karnataka",2015-10-12,22
+"775","I Paid Rs. 500 to Income Tax in Bangalore.",500,"Income Tax","New PAN Card",27,"Bangalore","Karnataka",2015-10-12,22
+"776","I Paid Rs. 1200 to Municipal Services in Bangalore.",1200,"Municipal Services","Birth Certificate",16,"Bangalore","Karnataka",2015-10-12,22
+"777","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",14,"Bangalore","Karnataka",2015-10-12,22
+"778","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"779","I Paid Rs. 1000 to Passport in Bangalore.",1000,"Passport","Passport Delivery",27,"Bangalore","Karnataka",2015-10-12,22
+"780","I Paid Rs. 1000 to Commercial Tax, Sales Tax, VAT in New Delhi.",1000,"Commercial Tax, Sales Tax, VAT","C Form",45,"New Delhi","Delhi",2015-10-12,22
+"781","I Paid Rs. 1000 to Commercial Tax, Sales Tax, VAT in Bangalore.",1000,"Commercial Tax, Sales Tax, VAT","C Form",22,"Bangalore","Karnataka",2015-10-12,22
+"782","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",22,"Bangalore","Karnataka",2015-10-12,22
+"783","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",25,"Bangalore","Karnataka",2015-10-12,22
+"784","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",20,"Bangalore","Karnataka",2015-10-12,22
+"785","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",22,"Bangalore","Karnataka",2015-10-12,22
+"786","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"787","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",21,"Bangalore","Karnataka",2015-10-12,22
+"788","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",24,"Bangalore","Karnataka",2015-10-12,22
+"789","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",19,"Bangalore","Karnataka",2015-10-12,22
+"790","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",21,"Bangalore","Karnataka",2015-10-12,22
+"791","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",21,"Bangalore","Karnataka",2015-10-12,22
+"792","I Paid Rs. 90 to Municipal Services in Tirunelveli.",90,"Municipal Services","Birth Certificate",26,"Tirunelveli","Tamil Nadu",2015-10-12,22
+"793","I Paid Rs. 2000 to Passport in Hyderabad.",2000,"Passport","Police Verification for Passport",56,"Hyderabad","Telangana",2015-10-12,22
+"794","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"795","I Paid Rs. 1800 to Transport in Bangalore.",1800,"Transport","New Domestic Driving License",24,"Bangalore","Karnataka",2015-10-12,22
+"796","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",20,"Bangalore","Karnataka",2015-10-12,22
+"797","I Paid Rs. 400 to Police in Bangalore.",400,"Police","Police Verification for Passport",16,"Bangalore","Karnataka",2015-10-12,22
+"798","I Paid Rs. 30 to Customs, Excise and Service Tax in Adari.",30,"Customs, Excise and Service Tax","Customs Check and Clearance",76,"Adari","Uttar Pradesh",2015-10-12,22
+"799","I Paid Rs. 30 to Food, Civil Supplies and Consumer Affairs in Adra.",30,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",48,"Adra","West Bengal",2015-10-12,22
+"800","I Paid Rs. 4000 to Passport in Bangalore.",4000,"Passport","Passport Delivery",24,"Bangalore","Karnataka",2015-10-12,22
+"801","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",16,"Bangalore","Karnataka",2015-10-12,22
+"802","I Paid Rs. 50 to Food, Civil Supplies and Consumer Affairs in Dadri.",50,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",51,"Dadri","Uttar Pradesh",2015-10-12,22
+"803","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",37,"Bangalore","Karnataka",2015-10-12,22
+"804","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",0,"Bangalore","Karnataka",2015-10-12,22
+"805","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",24,"Bangalore","Karnataka",2015-10-12,22
+"806","I Paid Rs. 25 to Commercial Tax, Sales Tax, VAT in Achhnera.",25,"Commercial Tax, Sales Tax, VAT","C Form",86,"Achhnera","Uttar Pradesh",2015-10-12,22
+"807","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"808","I Paid Rs. 500 to Passport in Bangalore.",500,"Passport","Police Verification for Passport",26,"Bangalore","Karnataka",2015-10-12,22
+"809","I Paid Rs. 30 to Transport in Adilabad.",30,"Transport","New Domestic Driving License",90,"Adilabad","Telangana",2015-10-12,22
+"810","I Paid Rs. 1000 to Transport in New Delhi.",1000,"Transport","New Domestic Driving License",40,"New Delhi","Delhi",2015-10-12,22
+"811","I Paid Rs. 6321 to Stamps and Registration in Anand.",6321,"Stamps and Registration","Registration of Property",42,"Anand","Gujarat",2015-10-12,22
+"812","I Paid Rs. 400 to Police in Bangalore.",400,"Police","Filing FIR",22,"Bangalore","Karnataka",2015-10-12,22
+"813","I Paid Rs. 25 to Transport in Agra.",25,"Transport","New Domestic Driving License",22,"Agra","Uttar Pradesh",2015-10-12,22
+"814","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Police Harassment",18,"Bangalore","Karnataka",2015-10-12,22
+"815","I Paid Rs. 30 to Customs, Excise and Service Tax in Adari.",30,"Customs, Excise and Service Tax","Customs Check and Clearance",72,"Adari","Uttar Pradesh",2015-10-12,22
+"816","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"817","I Paid Rs. 6523 to Transport in Bagalkot.",6523,"Transport","Registration of Vehicle",30,"Bagalkot","Karnataka",2015-10-12,22
+"818","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",23,"Bangalore","Karnataka",2015-10-12,22
+"819","I Paid Rs. 6400 to Stamps and Registration in Bangalore.",6400,"Stamps and Registration","Registration of Flat or Apartment",22,"Bangalore","Karnataka",2015-10-12,22
+"820","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",29,"Bangalore","Karnataka",2015-10-12,22
+"821","I Paid Rs. 25 to Transport in Abohar.",25,"Transport","Duplicate Registration Certificate",77,"Abohar","Punjab",2015-10-12,22
+"822","I Paid Rs. 60000 to Commercial Tax, Sales Tax, VAT in Mumbai.",60000,"Commercial Tax, Sales Tax, VAT","C Form",68,"Mumbai","Maharashtra",2015-10-12,22
+"823","I Paid Rs. 7956 to Stamps and Registration in Anugul.",7956,"Stamps and Registration","Registration of Property",33,"Anugul","Orissa",2015-10-12,22
+"824","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Flat or Apartment",19,"Bangalore","Karnataka",2015-10-12,22
+"825","I Paid Rs. 20 to Others in Patna.",20,"Others","Others",78,"Patna","Bihar",2015-10-12,22
+"826","I Paid Rs. 400 to Municipal Services in Bangalore.",400,"Municipal Services","Birth Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"827","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Property",19,"Bangalore","Karnataka",2015-10-12,22
+"828","I Paid Rs. 32 to Commercial Tax, Sales Tax, VAT in Achhnera.",32,"Commercial Tax, Sales Tax, VAT","C Form",83,"Achhnera","Uttar Pradesh",2015-10-12,22
+"829","I Paid Rs. 2500 to Police in Bangalore.",2500,"Police","Filing FIR",18,"Bangalore","Karnataka",2015-10-12,22
+"830","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",28,"Bangalore","Karnataka",2015-10-12,22
+"831","I Paid Rs. 15 to Commercial Tax, Sales Tax, VAT in Abohar.",15,"Commercial Tax, Sales Tax, VAT","C Form",79,"Abohar","Punjab",2015-10-12,22
+"832","I Paid Rs. 7410 to Police in Amroha.",7410,"Police","Police Verification for Passport",33,"Amroha","Uttar Pradesh",2015-10-12,22
+"833","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",21,"Bangalore","Karnataka",2015-10-12,22
+"834","I Paid Rs. 500 to Passport in Bangalore.",500,"Passport","Passport Delivery",22,"Bangalore","Karnataka",2015-10-12,22
+"835","I Paid Rs. 46301 to Customs, Excise and Service Tax in Almora.",46301,"Customs, Excise and Service Tax","Customs Check and Clearance",30,"Almora","Uttarakhand",2015-10-12,22
+"836","I Paid Rs. 3400 to Stamps and Registration in Bangalore.",3400,"Stamps and Registration","Registration of Property",16,"Bangalore","Karnataka",2015-10-12,22
+"837","I Paid Rs. 25 to Customs, Excise and Service Tax in Adari.",25,"Customs, Excise and Service Tax","Customs Check and Clearance",74,"Adari","Uttar Pradesh",2015-10-12,22
+"838","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",25,"Bangalore","Karnataka",2015-10-12,22
+"839","I Paid Rs. 42000 to Commercial Tax, Sales Tax, VAT in Ariyalur.",42000,"Commercial Tax, Sales Tax, VAT","C Form",42,"Ariyalur","Tamil Nadu",2015-10-12,22
+"840","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"841","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"842","I Paid Rs. 14000 to Police in Banda.",14000,"Police","Traffic Violations",71,"Banda","Uttar Pradesh",2015-10-12,22
+"843","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",17,"Bangalore","Karnataka",2015-10-12,22
+"844","I Paid Rs. 6502 to Police in Akola.",6502,"Police","Traffic Violations",28,"Akola","Madhya Pradesh",2015-10-12,22
+"845","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",22,"Bangalore","Karnataka",2015-10-12,22
+"846","I Paid Rs. 1000 to Commercial Tax, Sales Tax, VAT in New Delhi.",1000,"Commercial Tax, Sales Tax, VAT","C Form",47,"New Delhi","Delhi",2015-10-12,22
+"847","I Paid Rs. 4632 to Police in Araria.",4632,"Police","Police Verification for Passport",38,"Araria","Bihar",2015-10-12,22
+"848","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",25,"Bangalore","Karnataka",2015-10-12,22
+"849","I Paid Rs. 48000 to Stamps and Registration in Ambikapur.",48000,"Stamps and Registration","Registration of Flat or Apartment",24,"Ambikapur","Chhattisgarh",2015-10-12,22
+"850","I Paid Rs. 500 to Passport in Bangalore.",500,"Passport","Passport Delivery",26,"Bangalore","Karnataka",2015-10-12,22
+"851","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"852","I Paid Rs. 400 to Commercial Tax, Sales Tax, VAT in Bangalore.",400,"Commercial Tax, Sales Tax, VAT","C Form",24,"Bangalore","Karnataka",2015-10-12,22
+"853","I Paid Rs. 45000 to Transport in Baghpat.",45000,"Transport","Registration of Vehicle",23,"Baghpat","Uttar Pradesh",2015-10-12,22
+"854","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",22,"Bangalore","Karnataka",2015-10-12,22
+"855","I Paid Rs. 41000 to Stamps and Registration in Amarpur.",41000,"Stamps and Registration","Registration of Property",53,"Amarpur","Bihar",2015-10-12,22
+"856","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Registration of Vehicle",16,"Bangalore","Karnataka",2015-10-12,22
+"857","I Paid Rs. 1236 to Police in Aurangabad.",1236,"Police","Police Harassment",21,"Aurangabad","Maharashtra",2015-10-12,22
+"858","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Bangalore","Karnataka",2015-10-12,22
+"859","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",0,"Bangalore","Karnataka",2015-10-12,22
+"860","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",34,"Bangalore","Karnataka",2015-10-12,22
+"861","I Paid Rs. 6500 to Stamps and Registration in Bangalore.",6500,"Stamps and Registration","Registration of Flat or Apartment",18,"Bangalore","Karnataka",2015-10-12,22
+"862","I Paid Rs. 12347 to Customs, Excise and Service Tax in Adoni.",12347,"Customs, Excise and Service Tax","Customs Check and Clearance",56,"Adoni","Andhra Pradesh",2015-10-12,22
+"863","I Paid Rs. 2000 to Transport in Bangalore.",2000,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"864","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",16,"Bangalore","Karnataka",2015-10-12,22
+"865","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"866","I Paid Rs. 4500 to Stamps and Registration in Bangalore.",4500,"Stamps and Registration","Registration of Property",18,"Bangalore","Karnataka",2015-10-12,22
+"867","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",17,"Bangalore","Karnataka",2015-10-12,22
+"868","I Paid Rs. 400 to Police in Bangalore.",400,"Police","Filing FIR",17,"Bangalore","Karnataka",2015-10-12,22
+"869","I Paid Rs. 12365 to Police in Aligarh.",12365,"Police","Police Verification for Passport",54,"Aligarh","Uttar Pradesh",2015-10-12,22
+"870","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",19,"Bangalore","Karnataka",2015-10-12,22
+"871","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Flat or Apartment",15,"Bangalore","Karnataka",2015-10-12,22
+"872","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",20,"Bangalore","Karnataka",2015-10-12,22
+"873","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",21,"Bangalore","Karnataka",2015-10-12,22
+"874","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"875","I Paid Rs. 48000 to Transport in Ambikapur.",48000,"Transport","Duplicate Registration Certificate",30,"Ambikapur","Chhattisgarh",2015-10-12,22
+"876","I Paid Rs. 1200 to Passport in Hyderabad.",1200,"Passport","Passport Delivery",61,"Hyderabad","Telangana",2015-10-12,22
+"877","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"878","I Paid Rs. 1230 to Municipal Services in Adari.",1230,"Municipal Services","Birth Certificate",65,"Adari","Uttar Pradesh",2015-10-12,22
+"879","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",16,"Bangalore","Karnataka",2015-10-12,22
+"880","I Paid Rs. 5000 to Stamps and Registration in Bangalore.",5000,"Stamps and Registration","Registration of Property",26,"Bangalore","Karnataka",2015-10-12,22
+"881","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",20,"Bangalore","Karnataka",2015-10-12,22
+"882","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"883","I Paid Rs. 21000 to Police in Ameenapuram.",21000,"Police","Filing FIR",25,"Ameenapuram","Telangana",2015-10-12,22
+"884","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",30,"Bangalore","Karnataka",2015-10-12,22
+"885","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Registration of Property",24,"Bangalore","Karnataka",2015-10-12,22
+"886","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Filing FIR",18,"Bangalore","Karnataka",2015-10-12,22
+"887","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",17,"Bangalore","Karnataka",2015-10-12,22
+"888","I Paid Rs. 4200 to Stamps and Registration in Aurangabad.",4200,"Stamps and Registration","Registration of Flat or Apartment",60,"Aurangabad","Bihar",2015-10-12,22
+"889","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Registration of Vehicle",0,"Bangalore","Karnataka",2015-10-12,22
+"890","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",42,"Bangalore","Karnataka",2015-10-12,22
+"891","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",0,"Bangalore","Karnataka",2015-10-12,22
+"892","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",0,"Bangalore","Karnataka",2015-10-12,22
+"893","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",24,"Bangalore","Karnataka",2015-10-12,22
+"894","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",31,"Bangalore","Karnataka",2015-10-12,22
+"895","I Paid Rs. 17000 to Transport in Amguri.",17000,"Transport","Duplicate Registration Certificate",39,"Amguri","Assam",2015-10-12,22
+"896","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Traffic Violations",16,"Bangalore","Karnataka",2015-10-12,22
+"897","I Paid Rs. 200 to Transport in Bangalore.",200,"Transport","Duplicate Registration Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"898","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",19,"Bangalore","Karnataka",2015-10-12,22
+"899","I Paid Rs. 10000 to Transport in Bangalore.",10000,"Transport","Registration of Vehicle",16,"Bangalore","Karnataka",2015-10-12,22
+"900","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",22,"Bangalore","Karnataka",2015-10-12,22
+"901","I Paid Rs. 400 to Police in Bangalore.",400,"Police","Filing FIR",18,"Bangalore","Karnataka",2015-10-12,22
+"902","I Paid Rs. 4100 to Municipal Services in Abhayapuri.",4100,"Municipal Services","Birth Certificate",67,"Abhayapuri","Assam",2015-10-12,22
+"903","I Paid Rs. 400 to Municipal Services in Bangalore.",400,"Municipal Services","Birth Certificate",22,"Bangalore","Karnataka",2015-10-12,22
+"904","I Paid Rs. 1800 to Police in Bangalore.",1800,"Police","Filing FIR",18,"Bangalore","Karnataka",2015-10-12,22
+"905","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",19,"Bangalore","Karnataka",2015-10-12,22
+"906","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"907","I Paid Rs. 1500 to Transport in Bangalore.",1500,"Transport","Duplicate Registration Certificate",22,"Bangalore","Karnataka",2015-10-12,22
+"908","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",20,"Bangalore","Karnataka",2015-10-12,22
+"909","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",21,"Bangalore","Karnataka",2015-10-12,22
+"910","I Paid Rs. 400 to Transport in Bangalore.",400,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"911","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"912","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",19,"Bangalore","Karnataka",2015-10-12,22
+"913","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",19,"Bangalore","Karnataka",2015-10-12,22
+"914","I Paid Rs. 200 to Police in Bangalore.",200,"Police","Filing FIR",19,"Bangalore","Karnataka",2015-10-12,22
+"915","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",24,"Bangalore","Karnataka",2015-10-12,22
+"916","I Paid Rs. 2000 to Police in Hyderabad.",2000,"Police","Police Verification for Passport",55,"Hyderabad","Telangana",2015-10-12,22
+"917","I Paid Rs. 500 to Customs, Excise and Service Tax in Bangalore.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",21,"Bangalore","Karnataka",2015-10-12,22
+"918","I Paid Rs. 20000 to Municipal Services in Greater Noida.",20000,"Municipal Services","Birth Certificate",56,"Greater Noida","Uttar Pradesh",2015-10-12,22
+"919","I Paid Rs. 2300 to Stamps and Registration in Bangalore.",2300,"Stamps and Registration","Marriage Certificate",15,"Bangalore","Karnataka",2015-10-12,22
+"920","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",0,"Bangalore","Karnataka",2015-10-12,22
+"921","I Paid Rs. 500 to Municipal Services in Bangalore.",500,"Municipal Services","Birth Certificate",0,"Bangalore","Karnataka",2015-10-12,22
+"922","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Bangalore.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",19,"Bangalore","Karnataka",2015-10-12,22
+"923","I Paid Rs. 700 to Police in Bangalore.",700,"Police","Filing FIR",21,"Bangalore","Karnataka",2015-10-12,22
+"924","I Paid Rs. 900 to Municipal Services in Bangalore.",900,"Municipal Services","Birth Certificate",16,"Bangalore","Karnataka",2015-10-12,22
+"925","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"926","I Paid Rs. 400 to Customs, Excise and Service Tax in Bangalore.",400,"Customs, Excise and Service Tax","Customs Check and Clearance",17,"Bangalore","Karnataka",2015-10-12,22
+"927","I Paid Rs. 300 to Transport in New Delhi.",300,"Transport","New Domestic Driving License",44,"New Delhi","Delhi",2015-10-12,22
+"928","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Traffic Violations",17,"Bangalore","Karnataka",2015-10-12,22
+"929","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",13,"Bangalore","Karnataka",2015-10-12,22
+"930","I Paid Rs. 1300 to Transport in Bangalore.",1300,"Transport","New Domestic Driving License",14,"Bangalore","Karnataka",2015-10-12,22
+"931","I Paid Rs. 50 to Transport in Bangalore.",50,"Transport","Duplicate Registration Certificate",15,"Bangalore","Karnataka",2015-10-12,22
+"932","I Paid Rs. 400 to Municipal Services in Bangalore.",400,"Municipal Services","Birth Certificate",14,"Bangalore","Karnataka",2015-10-12,22
+"933","I Paid Rs. 600 to Food, Civil Supplies and Consumer Affairs in Bangalore.",600,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",15,"Bangalore","Karnataka",2015-10-12,22
+"934","I Paid Rs. 700 to Municipal Services in Bangalore.",700,"Municipal Services","Birth Certificate",14,"Bangalore","Karnataka",2015-10-12,22
+"935","I Paid Rs. 2500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",2500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",17,"Bangalore","Karnataka",2015-10-12,22
+"936","I Paid Rs. 5000 to Stamps and Registration in Udaipur.",5000,"Stamps and Registration","Marriage Certificate",59,"Udaipur","Rajasthan",2015-10-12,22
+"937","I Paid Rs. 700 to Commercial Tax, Sales Tax, VAT in Bangalore.",700,"Commercial Tax, Sales Tax, VAT","C Form",22,"Bangalore","Karnataka",2015-10-12,22
+"938","I Paid Rs. 2000 to Stamps and Registration in Duliajan Oil Town.",2000,"Stamps and Registration","Marriage Certificate",19,"Duliajan Oil Town","Assam",2015-10-12,22
+"939","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",13,"Bangalore","Karnataka",2015-10-12,22
+"940","I Paid Rs. 1000 to Police in Bangalore.",1000,"Police","Filing FIR",20,"Bangalore","Karnataka",2015-10-12,22
+"941","I Paid Rs. 2500 to Police in Hyderabad.",2500,"Police","Police Verification for Passport",55,"Hyderabad","Telangana",2015-10-12,22
+"942","I Paid Rs. 900 to Food, Civil Supplies and Consumer Affairs in Bangalore.",900,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Bangalore","Karnataka",2015-10-12,22
+"943","I Paid Rs. 250 to Food, Civil Supplies and Consumer Affairs in Bangalore.",250,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",16,"Bangalore","Karnataka",2015-10-12,22
+"944","I Paid Rs. 600 to Food, Civil Supplies and Consumer Affairs in Bangalore.",600,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",17,"Bangalore","Karnataka",2015-10-12,22
+"945","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",18,"Bangalore","Karnataka",2015-10-12,22
+"946","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",20,"Bangalore","Karnataka",2015-10-12,22
+"947","I Paid Rs. 20000 to Food, Civil Supplies and Consumer Affairs in Tirwaganj.",20000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",17,"Tirwaganj","Uttar Pradesh",2015-10-12,22
+"948","I Paid Rs. 800 to Transport in Bangalore.",800,"Transport","Duplicate Registration Certificate",18,"Bangalore","Karnataka",2015-10-12,22
+"949","I Paid Rs. 2000 to Passport in Hyderabad.",2000,"Passport","Police Verification for Passport",57,"Hyderabad","Telangana",2015-10-12,22
+"950","I Paid Rs. 900 to Police in Bangalore.",900,"Police","Filing FIR",16,"Bangalore","Karnataka",2015-10-12,22
+"951","I Paid Rs. 2500 to Stamps and Registration in Bangalore.",2500,"Stamps and Registration","Marriage Certificate",19,"Bangalore","Karnataka",2015-10-12,22
+"952","I Paid Rs. 500 to Transport in Abohar.",500,"Transport","Duplicate Registration Certificate",75,"Abohar","Punjab",2015-10-12,22
+"953","I Paid Rs. 600 to Police in Bangalore.",600,"Police","Filing FIR",11,"Bangalore","Karnataka",2015-10-12,22
+"954","I Paid Rs. 2000 to Food, Civil Supplies and Consumer Affairs in Tirupati.",2000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",31,"Tirupati","Andhra Pradesh",2015-10-12,22
+"955","I Paid Rs. 500 to Transport in Bangalore.",500,"Transport","Duplicate Registration Certificate",17,"Bangalore","Karnataka",2015-10-12,22
+"956","I Paid Rs. 600 to Food, Civil Supplies and Consumer Affairs in Adari.",600,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",48,"Adari","Uttar Pradesh",2015-10-12,22
+"957","I Paid Rs. 467 to Police in Abohar.",467,"Police","Filing FIR",75,"Abohar","Punjab",2015-10-12,22
+"958","I Paid Rs. 8500 to Stamps and Registration in Amreli.",8500,"Stamps and Registration","Registration of Property",20,"Amreli","Gujarat",2015-10-12,22
+"959","I Paid Rs. 500 to Food, Civil Supplies and Consumer Affairs in Bangalore.",500,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",13,"Bangalore","Karnataka",2015-10-12,22
+"960","I Paid Rs. 700 to Food, Civil Supplies and Consumer Affairs in Bangalore.",700,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",11,"Bangalore","Karnataka",2015-10-12,22
+"961","I Paid Rs. 400 to Police in Anugul.",400,"Police","Filing FIR",28,"Anugul","Orissa",2015-10-12,22
+"962","I Paid Rs. 800 to Transport in Bangalore.",800,"Transport","Duplicate Registration Certificate",12,"Bangalore","Karnataka",2015-10-12,22
+"963","I Paid Rs. 546 to Commercial Tax, Sales Tax, VAT in Abohar.",546,"Commercial Tax, Sales Tax, VAT","C Form",76,"Abohar","Punjab",2015-10-12,22
+"964","I Paid Rs. 30 to Transport in Adari.",30,"Transport","Duplicate Registration Certificate",46,"Adari","Uttar Pradesh",2015-10-12,22
+"965","I Paid Rs. 12000 to Food, Civil Supplies and Consumer Affairs in Tiruppur.",12000,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",39,"Tiruppur","Tamil Nadu",2015-10-12,22
+"966","I Paid Rs. 800 to Railways in Bangalore.",800,"Railways","Transport of Goods",71,"Bangalore","Karnataka",2015-10-12,22
+"967","I Paid Rs. 2500 to Police in Bangalore.",2500,"Police","Filing FIR",9,"Bangalore","Karnataka",2015-10-12,22
+"968","I Paid Rs. 354 to Transport in Adari.",354,"Transport","Duplicate Registration Certificate",37,"Adari","Uttar Pradesh",2015-10-12,22
+"969","I Paid Rs. 900 to Transport in Bangalore.",900,"Transport","Duplicate Registration Certificate",10,"Bangalore","Karnataka",2015-10-12,22
+"970","I Paid Rs. 20000 to Stamps and Registration in Tirupati.",20000,"Stamps and Registration","Marriage Certificate",33,"Tirupati","Andhra Pradesh",2015-10-12,22
+"971","I Paid Rs. 600 to Commercial Tax, Sales Tax, VAT in Bangalore.",600,"Commercial Tax, Sales Tax, VAT","C Form",15,"Bangalore","Karnataka",2015-10-12,22
+"972","I Paid Rs. 800 to Customs, Excise and Service Tax in Adoni.",800,"Customs, Excise and Service Tax","Customs Check and Clearance",53,"Adoni","Andhra Pradesh",2015-10-12,22
+"973","I Paid Rs. 650 to Passport in Adityapur.",650,"Passport","Police Verification for Passport",73,"Adityapur","Jharkhand",2015-10-12,22
+"974","I Paid Rs. 3546 to Police in Adari.",3546,"Police","Filing FIR",38,"Adari","Uttar Pradesh",2015-10-12,22
+"975","I Paid Rs. 50 to Customs, Excise and Service Tax in Adityapur.",50,"Customs, Excise and Service Tax","Customs Check and Clearance",59,"Adityapur","Jharkhand",2015-10-12,22
+"976","I Paid Rs. 500 to Police in Adityapur.",500,"Police","Filing FIR",63,"Adityapur","Jharkhand",2015-10-12,22
+"977","I Paid Rs. 434 to Commercial Tax, Sales Tax, VAT in Adityapur.",434,"Commercial Tax, Sales Tax, VAT","C Form",73,"Adityapur","Jharkhand",2015-10-12,22
+"978","I Paid Rs. 350 to Police in Adari.",350,"Police","Filing FIR",34,"Adari","Uttar Pradesh",2015-10-12,22
+"979","I Paid Rs. 700 to Commercial Tax, Sales Tax, VAT in Arakkonam.",700,"Commercial Tax, Sales Tax, VAT","C Form",23,"Arakkonam","Tamil Nadu",2015-10-12,22
+"980","I Paid Rs. 2500 to Stamps and Registration in Bangalore.",2500,"Stamps and Registration","Marriage Certificate",11,"Bangalore","Karnataka",2015-10-12,22
+"981","I Paid Rs. 3000 to Stamps and Registration in Tirupathur.",3000,"Stamps and Registration","Marriage Certificate",16,"Tirupathur","Tamil Nadu",2015-10-12,22
+"982","I Paid Rs. 75 to Stamps and Registration in Adari.",75,"Stamps and Registration","Marriage Certificate",20,"Adari","Uttar Pradesh",2015-10-12,22
+"983","I Paid Rs. 500 to Transport in Barpeta.",500,"Transport","Duplicate Registration Certificate",11,"Barpeta","Assam",2015-10-12,22
+"984","I Paid Rs. 4545 to Transport in Adari.",4545,"Transport","Duplicate Registration Certificate",27,"Adari","Uttar Pradesh",2015-10-12,22
+"985","I Paid Rs. 900 to Transport in Bangalore.",900,"Transport","Duplicate Registration Certificate",14,"Bangalore","Karnataka",2015-10-12,22
+"986","I Paid Rs. 30 to Food, Civil Supplies and Consumer Affairs in Adari.",30,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",27,"Adari","Uttar Pradesh",2015-10-12,22
+"987","I Paid Rs. 20000 to Transport in Tirunelveli.",20000,"Transport","New Domestic Driving License",23,"Tirunelveli","Tamil Nadu",2015-10-12,22
+"988","I Paid Rs. 400 to Food, Civil Supplies and Consumer Affairs in Amethi.",400,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",23,"Amethi","Uttar Pradesh",2015-10-12,22
+"989","I Paid Rs. 500 to Commercial Tax, Sales Tax, VAT in Bangalore.",500,"Commercial Tax, Sales Tax, VAT","C Form",15,"Bangalore","Karnataka",2015-10-12,22
+"990","I Paid Rs. 200 to Transport in Adilabad.",200,"Transport","Duplicate Registration Certificate",91,"Adilabad","Telangana",2015-10-12,22
+"991","I Paid Rs. 1000 to Municipal Services in New Delhi.",1000,"Municipal Services","Birth Certificate",39,"New Delhi","Delhi",2015-10-12,22
+"992","I Paid Rs. 2000 to Income Tax in Tirukkoyilur.",2000,"Income Tax","New PAN Card",21,"Tirukkoyilur","Tamil Nadu",2015-10-12,22
+"993","I Paid Rs. 200 to Stamps and Registration in Adityapur.",200,"Stamps and Registration","Marriage Certificate",58,"Adityapur","Jharkhand",2015-10-12,22
+"994","I Paid Rs. 800 to Police in Bangalore.",800,"Police","Filing FIR",11,"Bangalore","Karnataka",2015-10-12,22
+"995","I Paid Rs. 350 to Food, Civil Supplies and Consumer Affairs in Amreli.",350,"Food, Civil Supplies and Consumer Affairs","Issue of Ration Card",25,"Amreli","Gujarat",2015-10-12,22
+"996","I Paid Rs. 300 to Commercial Tax, Sales Tax, VAT in Ambedkar Nagar.",300,"Commercial Tax, Sales Tax, VAT","C Form",18,"Ambedkar Nagar","Uttar Pradesh",2015-10-12,22
+"997","I Paid Rs. 500 to Police in Bangalore.",500,"Police","Police Verification for Passport",12,"Bangalore","Karnataka",2015-10-12,22
+"998","I Paid Rs. 900 to Railways in Bangalore.",900,"Railways","Transport of Goods",58,"Bangalore","Karnataka",2015-10-12,22
+"999","I Paid Rs. 500 to Stamps and Registration in Bangalore.",500,"Stamps and Registration","Marriage Certificate",15,"Bangalore","Karnataka",2015-10-12,22
+"1000","I Paid Rs. 500 to Customs, Excise and Service Tax in Abohar.",500,"Customs, Excise and Service Tax","Customs Check and Clearance",73,"Abohar","Punjab",2015-10-12,22
