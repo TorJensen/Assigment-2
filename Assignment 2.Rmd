@@ -21,6 +21,9 @@ library("xml2")
 library("rvest")
 library("dplyr")
 library("xml2")
+library("readr")
+library("stringr")
+library("ggplot2")
 
 ## Initialize dataframe with the desired data columns
 df <- data_frame(title = character(), 
@@ -158,3 +161,98 @@ df <- df[, c(1,2,3,4,5,6,9,7,8)]
 #   
 #   }  
  
+
+
+#Import the common csv file from github to work on
+
+df <- read_csv("https://raw.githubusercontent.com/TorJensen/Assignment-2/master/df.csv")
+df <- df[,2:10] #remove the rownames column
+df <- filter(df, dep != "") #Remove entry with missing data
+
+
+#sort data and have a look at the top 10 largest amounts to get an idea of outliers
+df %>% 
+  arrange(desc(amount)) %>% 
+  head(20) 
+#one single value that is incredibly high, not necesarily incorrect but maybe clean it out for averages?
+
+#sorted in ascending order
+df %>% 
+  arrange(desc(desc(amount))) %>% 
+  head(20)
+#quite a few instances of Rs <= 10 (equivalent to about 14euro cent), maybe not so relevant, but not too crazy 
+
+
+#basic plot showing amount and views 
+p <- ggplot(df,aes(views, amount))
+p + geom_point()
+
+#is clearly an issue with outlier, clean it out: #this commented out for now
+#df <- df %>% 
+#  filter(amount < max(amount))
+
+#try again, filtering out largest value and taking logs:
+#basic plot showing amount and views, logs of aount to deal with higher numbers
+p <- ggplot(df %>% filter(amount < max(amount)),aes(views, log(amount)))
+p + geom_point(alpha = 0.4)
+#doesn't seem to be any real relation, few outliers are for medium-sized amounts, but outlier status seems to be driven by other things than size in general
+
+#Number of bribes and their sizes, by variables in various combinations: 
+
+#department
+df_dep <- df %>% 
+  group_by(dep) %>% 
+  summarise(count = n(), sum = sum(amount))%>% 
+  mutate(avgamount = round(sum/count))
+
+#state
+df_state <- df %>% 
+  group_by(states) %>% 
+  summarise(count = n(), sum = sum(amount))%>% 
+  mutate(avgamount = round(sum/count))
+
+#department and transaction type
+df_deptrans <- df %>% 
+  group_by(dep,trans) %>% 
+  summarise(count = n(), sum = sum(amount))%>% 
+  mutate(avgamount = round(sum/count))
+
+#state and city
+df_statecity <- df %>% 
+  group_by(states, city) %>% 
+  summarise(count = n(), sum = sum(amount)) %>% 
+  mutate(avgamount = round(sum/count))
+
+#state and department, the thougth was that some departments could be more corrupt in some areas compared to others
+df_statedep <- df %>% 
+  group_by(states, dep) %>% 
+  summarise(count = n(), sum = sum(amount)) %>% 
+  mutate(avgamount = round(sum/count))
+
+#number of views by state, are some states viewed more frequently, do states with lots of reports have more views, do states with a higher value of bribes have more views
+df_stateviews <- df %>% 
+  group_by(states) %>% 
+  summarise(count = n(), views = sum(views), amount = sum(amount)) %>% 
+  mutate(avgviews = round(views/count), avgamount = round(amount/count))
+
+#number of views by department, are some departments viewed more frequently, do departments with lots of reports have more views, do departments with higher bribe value have more views.  
+df_depviews <- df %>% 
+  group_by(dep) %>% 
+  summarise(count = n(), views = sum(views), amount = sum(amount)) %>% 
+  mutate(avgviews = round(views/count), avgamount = round(amount/count))
+
+#does number of views level out with time? 
+df_viewsdate <- df %>% 
+  group_by(date) %>% 
+  summarise(count = n(), views = sum(views)) %>% 
+  mutate(avgviews = round(views/count))
+#maybe a little bit in general, but interesting thing comes up, more than 600 observations were uploaded on the same day last month, none of these were viewed very much at all, could be worth looking into why this was - robots? press coverage? specific pattern? 
+
+#plot showing it
+p <- ggplot(df_viewsdate,aes(date, count))
+p + geom_bar(stat = "identity")
+
+# commented this out while playing with dplyr
+# bribe_sta <- aggregate(amount ~ states, df, sum)
+# bribe_sta <- bribe_sta[-c(1),]
+# bribe_sta <- bribe_sta %>% arrange(desc(amount))
