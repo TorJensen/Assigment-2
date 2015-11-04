@@ -9,22 +9,17 @@ Can get most of the data from the main "search", without having to go through ev
 
 Let's generate and scrape the links of the reports first
 ```{r}
-install.packages("rvest")
-install.packages("dplyr")
-install.packages("xml2")
-library("rvest")
-library("dplyr")
-library("xml2")
+# load the required packages for the report
+require("rvest")
+require("dplyr")
+require("xml2")
+require("readr")
+require("stringr")
+require("ggplot2")
+```
 
+```{r}
 # Create Dataset
-
-library("rvest")
-library("dplyr")
-library("xml2")
-library("readr")
-library("stringr")
-library("ggplot2")
-
 ## Initialize dataframe with the desired data columns
 df <- data_frame(title = character(), 
                  amount = character(), 
@@ -35,10 +30,10 @@ df <- data_frame(title = character(),
                  date = character(), 
                  time = character())
 
-## Create empty dataframe
+## initialize empty dataframe for 
 dftemp <- data_frame()
 
-## Scrape data from web
+## Scrape data from "I paid a bribe" website
 
 for (i in 0:99) { #loop through first 100 pages, 10 results per page = 1000 
   link <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*10, sep = "") #Create hyperlink based on loop function
@@ -69,16 +64,16 @@ for (i in 0:99) { #loop through first 100 pages, 10 results per page = 1000
     html_nodes(".location") %>% # get the CSS nodes
     html_text() # extract the link text
   
-  date <- main %>% 
-    html_nodes(".date") %>% 
-    html_text() 
+  date <- main %>% # feed `main.page` to the next step
+    html_nodes(".date") %>% # get the CSS nodes
+    html_text() # extract the link text
   
-  time <- main %>% 
-    html_nodes(".time-span") %>% 
-    html_text() 
+  time <- main %>% # feed `main.page` to the next step
+    html_nodes(".time-span") %>% # get the CSS nodes
+    html_text() # extract the link text
   
   dftemp <- cbind(title, amount, dep, trans, views, city, date, time) #bind the variables together into a 10 by n dataframe
-  df <- rbind(df,dftemp)
+  df <- rbind(df,dftemp) #rbind the temp dataframe for this page to the main dataframe
   
   Sys.sleep(1) #timer, wait 1 second
   cat(" done!\n") #progress report
@@ -87,18 +82,22 @@ for (i in 0:99) { #loop through first 100 pages, 10 results per page = 1000
 #clean unused variables from workspace
 rm("title", "amount", "dep", "trans", "views", "city", "date", "time", "dftemp", "i")
 
-## Split the city column
+## Split the city column into a city and state column
 
 df$states <- lapply(strsplit(as.character(df$city), "\\,"), "[", 2)
 df$city <- lapply(strsplit(as.character(df$city), "\\,"), "[", 1)
 
-## Clean and order dataset
-
-library(stringr)
-
+## Clean and order dataset, force correct data types, factors for faceting and checking number of levels
+clean <- function(df) {
 df$title <- df$title %>% #clean text
   str_replace_all(pattern = "\\n" , replacement = " ") %>%
   str_trim()
+
+df$dep <- df$dep %>% 
+  as.factor() #convert to factor 
+
+df$trans <- df$trans %>% 
+  as.factor() #convert to factor 
 
 df$amount <- df$amount %>% #clean text from amount and convert to numeric
   str_replace_all(pattern = "Paid INR" , replacement = " ") %>% 
@@ -112,18 +111,26 @@ df$views <- df$views %>% #clean text from views and convert to numeric
   as.numeric()
 
 df$city <- df$city %>% #clean text from city
-  as.character(df$city) %>%
-  str_trim()
+  as.character() %>%
+  str_trim() %>%
+  as.factor() # conver tot factor
 
 df$states <- df$states %>% #clean text from states
   as.character(df$states) %>%
-  str_trim()
+  str_trim() %>% 
+  as.factor() #convert to factor
 
 df$time <- as.numeric(str_extract(df$time,"[0-9]*"))*!grepl("minutes|hours",df$time) #clean hours and minutes out of time stamp and change to whole number of days
 
 df$date <- as.Date(df$date, format("%B %d, %Y")) #convert the date column to date format
 
-df <- df[, c(1,2,3,4,5,6,9,7,8)]
+df <- df[, c(1,2,3,4,5,6,9,7,8)] #rearrange columns
+
+return (df)
+
+}
+
+df <- clean(df)
 
 ## Suggestion: Analysis of Variance between transaction and amount per province or city
 
@@ -161,55 +168,116 @@ df <- df[, c(1,2,3,4,5,6,9,7,8)]
 #   
 #   }  
  
+```
 
+```{r}
+#Import the common csv file from github to work on, at end of project remove this reference, lines to be removed marked with [X]
 
-#Import the common csv file from github to work on
+df_raw <- read_csv("https://raw.githubusercontent.com/TorJensen/Assignment-2/master/df.csv") #read csv file from github [X]
+df_raw <- df_raw[,2:10] #remove the rownames column - [X]
 
-df <- read_csv("https://raw.githubusercontent.com/TorJensen/Assignment-2/master/df.csv")
-df <- df[,2:10] #remove the rownames column
-df <- filter(df, dep != "") #Remove entry with missing data
+df <- df_raw
 
+df <- clean(df)
+```
 
-#sort data and have a look at the top 10 largest amounts to get an idea of outliers
+```{r}
+# futher Data cleaning
+
+## look at headers and footers for obvious outliers in bribe size
+
+### sorted in descending value 
 df %>% 
   arrange(desc(amount)) %>% 
-  head(20) 
-#one single value that is incredibly high, not necesarily incorrect but maybe clean it out for averages?
+  head(5) 
+#one single value that is incredibly high, equivalent to 113 million euros for a birth certificate, this could be removed as an unlikely entry
 
-#sorted in ascending order
+### sorted in ascending order
 df %>% 
   arrange(desc(desc(amount))) %>% 
-  head(20)
-#quite a few instances of Rs <= 10 (equivalent to about 14euro cent), maybe not so relevant, but not too crazy 
+  head(5)
+#quite a few instances of Rs 1, not necessarily wrong, 1 Rs is 1.4 eurocent, very small bribe, but given relative poverty, could be reasonable? can't really argue for setting a minimum threshold for bribes. 
 
+## look for missing values in the character variables (title, dep, trans, city, state)
+dfmissing <- df %>% filter(title == "" | dep == "" | trans == "" | city == "" | states == "") %>% head(5)
+dfmissing
+#only a single entry with no data
 
-#basic plot showing amount and views 
-p <- ggplot(df,aes(views, amount))
-p + geom_point()
+## count number of rows with NA values
+narows <- nrow(df[!complete.cases(df),])
+narows
+#total number is 0, no need to filter out NA values
 
-#is clearly an issue with outlier, clean it out: #this commented out for now
-#df <- df %>% 
-#  filter(amount < max(amount))
+## test for misassigned values in either 
+duplicate <- match(df$city,df$states)
+duplicate2 <- match(df$states,df$city)
+dupcheck <- df[!is.na(duplicate),]
+dupcheck2 <- df[!is.na(duplicate2),]
+#3 values come up, city name is capital name, chandigarh is a state and an area so no problem
 
-#try again, filtering out largest value and taking logs:
-#basic plot showing amount and views, logs of aount to deal with higher numbers
-p <- ggplot(df %>% filter(amount < max(amount)),aes(views, log(amount)))
-p + geom_point(alpha = 0.4)
+## filter based on the above criteria
+df <- df %>% 
+  filter(dep != "", amount < max(amount))  #Remove entry with missing data and remove the
+
+## remove unwanted variables again used
+rm("dfmissing", "narows", "duplicate", "duplicate2", "dupcheck", "dupcheck2")
+
+```
+
+```{r}
+#exploratory data analysis 
+
+summary(df)
+
+#Basic summary shows birth large difference in mean and median amounts, third quartie and mean difference indicates large relatively small amount of large bribes pulling up the mean, while the vast majority of bribes reported are relatively small. Almost half of the bribes are reported from Bangalore, and about 2/3rds of the bribes are recorded within the top 5 departments.  The reporting period ends at 12th of october, so we only have 1 month worth of data, which limits the time/weekeday/seasonality analsysis options available. 
+
+#plot showing amount of records per day
+p <- ggplot(df %>% group_by(date) %>% summarise(count = n()),aes(date, count))
+p + geom_bar(stat = "identity")
+
+#Looking closer at the distribution of bribes submitted per day, we can see that the majority of our dataset was submitted on a single day last month. This is definitely an outlier compared to the other days that average about 10-30 reports per day. Having a look at the data for that specific day, it seems to be reasonably well-distributed across states and departments, so it can probably rules out that the reason is a barrage of spam / incorrect reports. 
+
+#narrow down the the dataset to entries made on october 12rd
+df_lump <- df %>% 
+  filter(date == min(date)) #filter the data based on the earliest day in the dataset
+
+summary(df_lump) # show summary data
+
+# a quick google news search for october reveals that an article was posted in Times of India on the 11th of October, which could be a possible explanation for the sudden spike link: https://www.google.dk/search?q=ipaidabribe&num=100&espv=2&biw=1920&bih=1067&source=lnt&tbs=cdr%3A1%2Ccd_min%3A10%2F1%2F2015%2Ccd_max%3A10%2F31%2F2015&tbm=nws
+
+# looking into relation between views and amount of data - do higher value bribe reports attract more attention 
+p <- ggplot(df,aes(views, log(amount)))
+p + geom_point(alpha = 0.4) #lower alpha (transparency) to be able to identify clusters of data
 #doesn't seem to be any real relation, few outliers are for medium-sized amounts, but outlier status seems to be driven by other things than size in general
+#a possibiliy could be a relation between the amount of text in each post - with a more descriptive "story" of the bribe than the standard, more views would be attracted, but this would require a further individual scrape of each posts' link to get the full comment text. 
 
-#Number of bribes and their sizes, by variables in various combinations: 
+## get an idea of the sizes of the factors in our dataset: 
+
+levelcount <- lapply(df,levels) %>% summary
+levelcount
+
+#There are 27 states and 17 departments (with 40 transaction types) just in the 1000 records we have mined, so an analysis looking at transaction type level by state, for example, would need more than 1000 data points to be able to get a reasonable analysis (assuming some degree of normality.) Instead focus on higher level summaries, specific departments or specific states with a particular  
+
+
+# Number of bribes and their sizes, by variables in various combinations:
+
+### below are some tables looking at the 
 
 #department
 df_dep <- df %>% 
   group_by(dep) %>% 
-  summarise(count = n(), sum = sum(amount))%>% 
-  mutate(avgamount = round(sum/count))
+  summarise(count = n(), amount = sum(amount))%>% 
+  mutate(avgamount = round(amount/count)) %>% 
+  arrange(desc(avgamount))
+df_dep
 
 #state
 df_state <- df %>% 
   group_by(states) %>% 
-  summarise(count = n(), sum = sum(amount))%>% 
-  mutate(avgamount = round(sum/count))
+  summarise(count = n(), amount = sum(amount))%>% 
+  mutate(avgamount = round(amount/count)) %>% 
+  arrange(desc(count))
+df_state
 
 #department and transaction type
 df_deptrans <- df %>% 
@@ -223,11 +291,12 @@ df_statecity <- df %>%
   summarise(count = n(), sum = sum(amount)) %>% 
   mutate(avgamount = round(sum/count))
 
-#state and department, the thougth was that some departments could be more corrupt in some areas compared to others
+#state and department, the thougth was that some departments could be more corrupt in some areas compared to others, hard to tell with so few data for so many sates. 
 df_statedep <- df %>% 
   group_by(states, dep) %>% 
   summarise(count = n(), sum = sum(amount)) %>% 
-  mutate(avgamount = round(sum/count))
+  mutate(avgamount = round(sum/count)) %>% 
+  arrange(desc(count))
 
 #number of views by state, are some states viewed more frequently, do states with lots of reports have more views, do states with a higher value of bribes have more views
 df_stateviews <- df %>% 
@@ -246,16 +315,13 @@ df_viewsdate <- df %>%
   group_by(date) %>% 
   summarise(count = n(), views = sum(views)) %>% 
   mutate(avgviews = round(views/count))
-#maybe a little bit in general, but interesting thing comes up, more than 600 observations were uploaded on the same day last month, none of these were viewed very much at all, could be worth looking into why this was - robots? press coverage? specific pattern? 
-
-#plot showing it
-p <- ggplot(df_viewsdate,aes(date, count))
-p + geom_bar(stat = "identity")
-
 # commented this out while playing with dplyr
 # bribe_sta <- aggregate(amount ~ states, df, sum)
 # bribe_sta <- bribe_sta[-c(1),]
 # bribe_sta <- bribe_sta %>% arrange(desc(amount))
+```
+
+
 
 #part janette
 ```{r}
