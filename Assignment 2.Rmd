@@ -379,4 +379,78 @@ options(scipen=999)
 
 names(Comparison4)[2] = "Population" 
 
+## Timo
+
+install.packages("raster")
+install.packages("sp")
+install.packages("ggplot2")
+install.packages("splitstackshape")
+
+### Bribes per department
+
+bribe_dep <- aggregate(amount ~ dep, df, sum)
+bribe_dep$dep <- as.character(bribe_dep$dep)
+bribe_dep[which(with(bribe_dep, dep == "Food, Civil Supplies and Consumer Affairs")), c(1)] <- "Food/Civil Supplies"
+
+bribe_dep <- bribe_dep %>% filter(dep != "") %>% arrange(desc(amount))
+
+bribe_dep$dep <- as.factor(bribe_dep$dep)
+
+bribe_dep$dep = factor(bribe_dep$dep,levels(bribe_dep$dep)[c(8, 6, 11, 15, 2, 9, 16, 5, 3, 10, 14, 13, 4, 7, 17, 1, 12)])
+
+p = ggplot(bribe_dep, aes(x = dep, y = amount, fill = dep))
+p + geom_bar(stat="identity") + 
+  theme_tufte() + 
+  scale_y_continuous(labels=comma) +
+  theme(axis.text.x = element_blank(),
+        legend.position = "none") + 
+  facet_wrap(~ dep, scales = "free_x") +
+  scale_fill_viridis(discrete = TRUE)
+
+
+### Bribes per state
+
+bribe_sta <- aggregate(amount ~ states, df, sum)
+bribe_sta <- bribe_sta[-c(1),]
+bribe_sta <- bribe_sta %>% arrange(desc(amount))
+
+## Visualize bribe/state
+
+library(raster)
+library(sp)
+library(ggplot2)
+
+ind.df <- getData("GADM", country="IND", level=1)
+
+count <- rbind(bribe_sta, data.frame(states = setdiff(ind.df$NAME_1, bribe_sta$states), amount = rep(0, 11)))
+
+count <- count[-c(38),]
+count <- count[-c(25),]
+
+count[which(with(count, states == "Uttarakhand")), c(1)] <- "Uttaranchal"
+
+count <- count[order(count$states, decreasing = FALSE),]
+
+count$id <- c(1:36)
+
+ind.df <- fortify(ind.df)
+
+count$index <- as.numeric(tapply(ind.df$id, ind.df$id, length))
+test <- data.frame(amount = count$amount, index = count$index)
+
+library(splitstackshape)
+
+test <- expandRows(test, "index")
+
+ind.df$count <- test$amount
+
+p2 <- ggplot() + 
+  geom_polygon(data = ind.df, aes(x=long, y=lat, group=group, fill = count), colour = "black") +
+  scale_fill_gradient("Bribes paid \nby state ", low="orange",high="red", breaks = c(0, 1e+06, 2e+06, 3e+06, 4e+06),
+                      labels=c("0", "1M", "2M", "3M", "4M")) +
+  labs(x="", y="", title="Total Amount of Bribes by State") + 
+  theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), 
+        axis.ticks.x = element_blank(),axis.text.x = element_blank(), 
+        plot.title = element_text(lineheight=.8, face="bold", vjust=1))
+
 ```
