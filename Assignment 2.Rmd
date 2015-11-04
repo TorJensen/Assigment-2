@@ -379,6 +379,12 @@ options(scipen=999)
 
 names(Comparison4)[2] = "Population" 
 
+#Visualisation
+install.packages("ggplot2")
+library("ggplot2")
+p <- ggplot(Comparison4, aes(GDP_per_Capita, log(money_per_bribe)))
+p + geom_point()
+
 ## Timo
 
 install.packages("raster")
