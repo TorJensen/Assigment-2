@@ -488,25 +488,23 @@ p + geom_bar(stat="identity") +
 
 ind.df <- getData("GADM", country="IND", level=1)
 
-count <- rbind(bribe_sta, data.frame(states = setdiff(ind.df$NAME_1, bribe_sta$states), amount = rep(0, 11)))
+am.count <- rbind(bribe_sta, data.frame(states = setdiff(ind.df$NAME_1, bribe_sta$states), amount = rep(0, 11)))
 
-count <- count[-c(38),]
-count <- count[-c(25),]
+am.count <- am.count[-c(38),]
+am.count <- am.count[-c(25),]
 
-count[which(with(count, states == "Uttarakhand")), c(1)] <- "Uttaranchal"
+am.count[which(with(am.count, states == "Uttarakhand")), c(1)] <- "Uttaranchal"
 
-count <- count[order(count$states, decreasing = FALSE),]
-
-count$id <- c(1:36)
+am.count <- am.count[order(am.count$states, decreasing = FALSE),]
 
 ind.df <- fortify(ind.df)
 
-count$index <- as.numeric(tapply(ind.df$id, ind.df$id, length))
-test <- data.frame(amount = count$amount, index = count$index)
+am.count$index <- as.numeric(tapply(ind.df$id, ind.df$id, length))
+am.count <- data.frame(amount = am.count$amount, index = am.count$index)
 
-test <- expandRows(test, "index")
+am.count <- expandRows(am.count, "index")
 
-ind.df$count <- test$amount
+ind.df$count <- am.count$amount
 
 p2 <- ggplot() + 
   geom_polygon(data = ind.df, aes(x=long, y=lat, group=group, fill = count), colour = "black") +
