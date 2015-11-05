@@ -4,7 +4,9 @@ title: "Assignment 2"
 General considerations website layout:  
 Data about the bribe; time, place, amount, category, etc. is available from the main search page.  
 The full text describing the event is only available from the link itself. 
-Can get most of the data from the main "search", without having to go through every link that has been pulled  
+Can get most of the data from the main "search", without having to go through every link that has been pulled
+
+Corruption is one of the major issues in India and there are several reasons causing that problem. The obsolete political system, especially the lack of transparent laws and processes, forces the Indians to bribe employees of public institutions. It has not only a big effect on the economy, but also a big influence on the Indian’s lives, as we can see in a quote from an Indian citizen in an article about courruption in India of “The Guardian”: “Of the 40,000 rupees (£520) I earn a month from my restaurant, I pay at least a third in bribes.” Mostly every public authority requires bribes for their actually regular work. 
 
 
 Let's generate and scrape the links of the reports first
@@ -16,6 +18,9 @@ require("xml2")
 require("readr")
 require("stringr")
 require("ggplot2")
+require("ggthemes")
+require("scales")
+require("viridis")
 require("raster")
 require("sp")
 require("splitstackshape")
@@ -459,9 +464,12 @@ names(Comparison4)[2] = "Population" #rename column 2 of comparison 4 to populat
 p <- ggplot(Comparison4, aes(GDP_per_Capita, log(money_per_bribe)))
 p + geom_point()
 # 
+```
+# Timo
 
+In the gathered data we can see that the most bribes are paid in the department of Municipal Services, especially for issuing a birth certification. Facing this situation, we wanted to find out if there are any reasons for the high rate of corruption in this sector. Apart from the fact that the Indian citizens mostly have to pay bribes for every service they ask for, the high birth rate in India is probably the main reason for this circumstance. The more urgent the need of the documents, the higher the amount the people have to pay for the bribe. Furthermore, we have aggregated the amounts of bribes paid per department and this shows us that there is not just a wide selection of corruption in the sector of Municipal Services, but these public authorities also gain the highest amount of money by far. Relating to the high birth rate in India, as mentioned above, it is probably the easiest and most common way to be bribed. Due to the also complicated taxes and licensing systems in that country and the corrupt police system, the bribe payments in the departments of “Income Tax” and “Police” belong to the highest in India. 
 
-## Timo
+```{r}
 
 ### Bribes per department
 
@@ -473,7 +481,7 @@ bribe_dep <- bribe_dep %>% filter(dep != "") %>% arrange(desc(amount))
 
 bribe_dep$dep <- as.factor(bribe_dep$dep)
 
-bribe_dep$dep = factor(bribe_dep$dep,levels(bribe_dep$dep)[c(8, 6, 11, 15, 2, 9, 16, 5, 3, 10, 14, 13, 4, 7, 17, 1, 12)])
+bribe_dep$dep = factor(bribe_dep$dep,levels(bribe_dep$dep)[c(8, 11, 15, 2, 9, 16, 5, 6, 3, 10, 14, 13, 4, 7, 17, 1, 12)])
 
 p = ggplot(bribe_dep, aes(x = dep, y = amount, fill = dep))
 p + geom_bar(stat="identity") + 
@@ -483,6 +491,12 @@ p + geom_bar(stat="identity") +
         legend.position = "none") + 
   facet_wrap(~ dep, scales = "free_x") +
   scale_fill_viridis(discrete = TRUE)
+```
+
+
+We created a map of India showing the total amount of bribes by each state. Here we can see, that the highest rate of bribes are made in the south of India, particularly in Kerala, Tamil Nadu, Karnataka. Jammu and Kashmir has also an high amount of bribes, so in conclusion the bribes are more concentrated in the north and south of India, near the borders to Pakistan and the Indian Ocean. Here we have total amounts of bribes paid about 2,000,000.  In the inside of the country the level of bribes paid decreases in comparison to the external states. One reason for this circumstance could be the high number of citizens in these regions compared to the other states in India.
+
+```{r}
 
 ## Visualize bribe/state
 
