@@ -9,13 +9,14 @@ Can get most of the data from the main "search", without having to go through ev
 
 Let's generate and scrape the links of the reports first
 ```{r}
-# load the required packages for the report
+# load the required packages for the report and set options
 require("rvest")
 require("dplyr")
 require("xml2")
 require("readr")
 require("stringr")
 require("ggplot2")
+options(scipen=999)
 ```
 
 ```{r}
@@ -87,6 +88,9 @@ rm("title", "amount", "dep", "trans", "views", "city", "date", "time", "dftemp",
 df$states <- lapply(strsplit(as.character(df$city), "\\,"), "[", 2)
 df$city <- lapply(strsplit(as.character(df$city), "\\,"), "[", 1)
 
+```
+
+```{r}
 ## Clean and order dataset, force correct data types, factors for faceting and checking number of levels
 clean <- function(df) {
 df$title <- df$title %>% #clean text
@@ -325,131 +329,134 @@ df_viewsdate <- df %>%
 
 #part janette
 ```{r}
+
+#Bribe amounts
 bribe_sta <- aggregate(amount ~ states, df, sum)
 bribe_sta <- bribe_sta[-c(1),]
 bribe_sta <- bribe_sta %>% arrange(desc(amount))
+
+
+# pulling the GDP and population data of different states
 
 #Distribution of GDP within the different states of India in 2013/14
 
 #First we scrape the data from the web. 
 
-install.packages("rvest")
-library("rvest")
 GDPindia = read_html("https://en.wikipedia.org/wiki/List_of_Indian_states_by_GDP") %>%
   html_nodes(xpath = '//*[@id="mw-content-text"]/table[2]') %>% 
   html_table() %>% data.frame # then convert the HTML table into a data frame
 
-GDPindia$GDP.in.2013.14..in.crore.rupees. = as.numeric(gsub("," , "" , GDPindia$GDP.in.2013.14..in.crore.rupees.))
+GDPindia$GDP.in.2013.14..in.crore.rupees. = as.numeric(gsub("," , "" , GDPindia$GDP.in.2013.14..in.crore.rupees.)) #remove commas from indian number notation
 
-GPDindia1 = mutate(GDPindia, GDP = GDP.in.2013.14..in.crore.rupees.*10000000)
+GDPindia1 = mutate(GDPindia, GDP = GDP.in.2013.14..in.crore.rupees.*10000000) %>% as.data.frame() #1 crore is 10 million, convert to unit measure and stick it in a new dataframe
 
 population = read_html("https://en.wikipedia.org/wiki/List_of_states_and_union_territories_of_India_by_population") %>%
   html_nodes(xpath = '//*[@id="mw-content-text"]/table[2]') %>% 
   html_table() %>% data.frame %>% select(State.or.union.territory, Population..2011.Census..12.....of.Population.of.India..13.)
 
+population$one <- lapply(strsplit(as.character(population$Population..2011.Census..12.....of.Population.of.India..13.), "\\â "), "[", 2)
+population$two <- lapply(strsplit(as.character(population$Population..2011.Census..12.....of.Population.of.India..13.), "\\â "), "[", 1)
 
-library(stringr)
+#TOR - I tried going through the code but couldn't get it create the proper $one table, it just made a string of NA's, str_extract code beow to extract number should also work
+# population$one <-  str_extract(population$Population..2011.Census..12.....of.Population.of.India..13., "(?<=\\d{19}...)[0-9,]*") %>% str_replace_all(",","") %>% as.numeric()
 
-population$one <- lapply(strsplit(as.character(population$Population..2011.Census..12.....of.Population.of.India..13.), "\\♠"), "[", 2)
-population$two <- lapply(strsplit(as.character(population$Population..2011.Census..12.....of.Population.of.India..13.), "\\♠"), "[", 1)
+population$one = gsub("\\s*\\([^\\)]+\\)","", population$one) #cleaning string
 
-population$one = gsub("\\s*\\([^\\)]+\\)","", population$one)
+population$one = population$one %>% str_replace_all(pattern = "," , replacement = "") #removing commas
 
-population$one = population$one %>% str_replace_all(pattern = "," , replacement = "")
+population = select(population, State.or.union.territory, one) #select only desired data
 
-population = select(population, State.or.union.territory, one)
+setdiff(population$State.or.union.territory, GDPindia$State.UT) #find the states that are in one dataset but not the other
 
-setdiff(population$State.or.union.territory, GDPindia$State.UT)
+#count <- rbind(bribe_sta, data.frame(states = setdiff(population$State.or.union.territory, bribe_sta$states), amount = rep(0, 13))) original
+count <- rbind(bribe_sta, data.frame(states = setdiff(population$State.or.union.territory, bribe_sta$states), amount = rep(0, 12))) #create a dataframe with the states that are in one dataset and missing in the other, assign value 0, then rbind with the bribe_sta data to get full state list. #TOR - changed 13 to 12, said state #s were different
 
-count <- rbind(bribe_sta, data.frame(states = setdiff(population$State.or.union.territory, bribe_sta$states), amount = rep(0, 13)))
+GDPindia1 <- select(GDPindia1,State.UT,GDP)
+#countGDPindia = rbind(GPDindia1, data.frame(states = setdiff(population$State.or.union.territory, GPDindia1$State.UT), amount = rep(0, 7)))
+countGDPindia = rbind(GDPindia1, data.frame(states = setdiff(population$State.or.union.territory, GPDindia1$State.UT), GDP = rep(0, 3)))  #TOR - 3 columns in GDPindia1, 2 in the created state set, adding select() around gdpindia1, the created colum is labeled amount, GDPIndia1 "GDP", renaming keep geting errors names not found - this variable (countgdpindia is never used below :O )
 
-countGDPindia = rbind(GPDindia1, data.frame(states = setdiff(population$State.or.union.territory, GPDindia1$State.UT), amount = rep(0, 7)))
+count <- count[-c(25, 28, 31, 40), ] #remove rows 25, 28, 31, 40 <- TOR - changes what states they refer to when the dataset is cleaned initially, what are the states?
 
-count <- count[-c(25, 28, 31, 40), ]
+population = population[-c(37), ] #remove rows 37, India, from population
 
-population = population[-c(37), ]
+GPDindia1 = select(GPDindia1, State.UT, GDP) #narrow down India
 
-GPDindia1 = select(GPDindia1, State.UT, GDP)
+GPDindia1[which(with(GPDindia1, State.UT == "Manipur")), c(1)] = "ManipurÎ²" # rename columns
 
-GPDindia1[which(with(GPDindia1, State.UT == "Manipur")), c(1)] = "Manipurβ"
+GPDindia1[which(with(GPDindia1, State.UT == "Chattisgarh")), c(1)] = "Chhattisgarh" # rename columns
 
-GPDindia1[which(with(GPDindia1, State.UT == "Chattisgarh")), c(1)] = "Chhattisgarh"
+GPDindia1[which(with(GPDindia1, State.UT == "Jammu & Kashmir")), c(1)] = "Jammu and Kashmir" # rename columns
 
-GPDindia1[which(with(GPDindia1, State.UT == "Jammu & Kashmir")), c(1)] = "Jammu and Kashmir"
+GPDindia1[which(with(GPDindia1, State.UT == "Andaman & Nicobar Islands")), c(1)] = "Andaman and Nicobar Islands" # rename columns
 
-GPDindia1[which(with(GPDindia1, State.UT == "Andaman & Nicobar Islands")), c(1)] = "Andaman and Nicobar Islands"
+Comparison1 = left_join(population, GPDindia1, by = c("State.or.union.territory" = "State.UT")) #join the population and gdp tables together
 
-Comparison1 = left_join(population, GPDindia1, by = c("State.or.union.territory" = "State.UT"))
+Comparison1[is.na(Comparison1)] <- 0 #set NA values to 0 
 
-Comparison1[is.na(Comparison1)] <- 0
+Comparison1 = transform(Comparison1, one = as.numeric(one)) #force population data to value
 
-Comparison1 = transform(Comparison1, one = as.numeric(one))
+Comparison2 = mutate(Comparison1, GDP_per_Capita = GDP/one) #create new colun with gdp per capita
 
-Comparison2 = mutate(Comparison1, GDP_per_Capita = GDP/one)
+count[which(with(count, states == "Orissa")), c(1)] = "Odisha" #rename columns
 
-count[which(with(count, states == "Orissa")), c(1)] = "Odisha"
+count[which(with(count, states == "Manipur")), c(1)] = "ManipurÎ²" #rename columns
 
-count[which(with(count, states == "Manipur")), c(1)] = "Manipurβ"
+Comparison = left_join(Comparison2, count, by = c("State.or.union.territory" = "states")) #join the GDP per capita column with the bribes per state
 
-install.packages("dplyr")
-library("dplyr")
-Comparison = left_join(Comparison2, count, by = c("State.or.union.territory" = "states"))
+bribe_number = df %>% group_by(states) %>% count(states) #create column with number of bribes per state 
 
-bribe_number = df %>% group_by(states) %>% count(states)
+bribe_number = bribe_number[-c(1, 10), ] #remove rows 1 and 10, andhra pradesh and Haryana (TOR - eh?)
 
-bribe_number = bribe_number[-c(1, 10), ]
+bribe_number[which(with(bribe_number, states == "Orissa")), c(1)] = "Odisha" #rename columns
 
-bribe_number[which(with(bribe_number, states == "Orissa")), c(1)] = "Odisha"
-
-bribe_number[which(with(bribe_number, states == "Manipur")), c(1)] = "Manipurβ"
+bribe_number[which(with(bribe_number, states == "Manipur")), c(1)] = "ManipurÎ²" #rename columns
 
 
-newrow1 = c("Himachal Pradesh", "hallo")
+newrow1 = c("Himachal Pradesh", "hallo")  #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow1)
 
-newrow2 = c("Meghalaya", "hallo")
+newrow2 = c("Meghalaya", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow2)
 
-newrow3 = c("Nagaland", "hallo")
+newrow3 = c("Nagaland", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow3)
 
-newrow4 = c("Goa", "hallo")
+newrow4 = c("Goa", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow4)
 
-newrow5 = c("Sikkim", "hallo")
+newrow5 = c("Sikkim", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow5)
 
-newrow6 = c("Puducherry", "hallo")
+newrow6 = c("Puducherry", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow6)
 
-newrow7 = c("Andaman and Nicobar Islands", "hallo")
+newrow7 = c("Andaman and Nicobar Islands", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow7)
 
-newrow8 = c("Dadra and Nagar Haveli", "hallo")
+newrow8 = c("Dadra and Nagar Haveli", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow8)
 
-newrow9 = c("Daman and Diu", "hallo")
+newrow9 = c("Daman and Diu", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow9)
 
-newrow10 = c("Lakshadweep", "hallo")
+newrow10 = c("Lakshadweep", "hallo") #add row for state with value "hallo"
 bribe_number = rbind(bribe_number, newrow10)
 
-bribe_number$n =  bribe_number$n %>% str_replace_all(pattern = "hallo" , replacement = "0")
+bribe_number$n =  bribe_number$n %>% str_replace_all(pattern = "hallo" , replacement = "0") #replace hallo with 0
 
-bribe_number = transform(bribe_number, n = as.numeric(n))
+bribe_number = transform(bribe_number, n = as.numeric(n)) #force n to numeric to convert character 0's
 
-Comparison3 = left_join(Comparison, bribe_number, by = c("State.or.union.territory" = "states"))
+Comparison3 = left_join(Comparison, bribe_number, by = c("State.or.union.territory" = "states")) #join the bribe number to the comparison dataset
 
-Comparison4 = mutate(Comparison, money_per_bribe = amount/n)
-options(scipen=999)
+Comparison4 = mutate(Comparison, money_per_bribe = amount/n()) #add column to comparison dataset with amount of bribe per report
 
-names(Comparison4)[2] = "Population" 
+names(Comparison4)[2] = "Population" #rename column 2 of comparison 4 to population
 
-#Visualisation
-install.packages("ggplot2")
-library("ggplot2")
+#Visualisation of GDP per capita and log(money per bribe), trying to see if there is a correlation between gdp per capita and the amount of money paid per bribe, e.g. do richer states have a higher bribe level than poorer states. 
 p <- ggplot(Comparison4, aes(GDP_per_Capita, log(money_per_bribe)))
 p + geom_point()
+# 
+
 
 ## Timo
 
