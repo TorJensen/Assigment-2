@@ -2,6 +2,15 @@
 title: "Assignment 2"
 output: pdf_document
 ---
+General considerations website layout:  
+Data about the bribe; time, place, amount, category, etc. is available from the main search page.  
+The full text describing the event is only available from the link itself. 
+Can get most of the data from the main "search", without having to go through every link that has been pulled
+
+Corruption is one of the major issues in India and there are several reasons causing that problem. The obsolete political system, especially the lack of transparent laws and processes, forces the Indians to bribe employees of public institutions. It has not only a big effect on the economy, but also a big influence on the Indian’s lives, as we can see in a quote from an Indian citizen in an article about courruption in India of “The Guardian”: “Of the 40,000 rupees (£520) I earn a month from my restaurant, I pay at least a third in bribes.” Mostly every public authority requires bribes for their actually regular work. 
+
+
+Let's generate and scrape the links of the reports first
 ```{r echo = FALSE}
 # load the required packages for the report and set options
 require("rvest")
@@ -18,14 +27,9 @@ require("sp")
 require("splitstackshape")
 options(scipen=999)
 ```
-```{r echo = FALSE}
-# Create Dataset by scraping the I Paid a Bribe website, link to pre-scraped dataset below this block
 
-#General considerations website layout:  
-#Data about the bribe; time, place, amount, category, etc. is available from the main search page.  
-#The full text describing the event is only available from the link itself. 
-#Can get most of the data from the main "search", without having to go through every link that has been pulled
-
+```{r}
+# Create Dataset
 ## Initialize dataframe with the desired data columns
 df <- data_frame(title = character(), 
                  amount = character(), 
@@ -93,50 +97,9 @@ rm("title", "amount", "dep", "trans", "views", "city", "date", "time", "dftemp",
 df$states <- lapply(strsplit(as.character(df$city), "\\,"), "[", 2)
 df$city <- lapply(strsplit(as.character(df$city), "\\,"), "[", 1)
 
-# Alternative scraper: 
-# Arbirtrary list of variables and header locations in link, variable observations per pages
-# 
-# headers <- c("title", "amount", "dep", "trans", "views", "city", "date", "time", "link") #list of column names
-# nodes <- c(".heading-3 a",".paid-amount span", ".name a", ".transaction a", ".overview .views", ".location", ".date", #".time-span", ".heading-3 a") #corresponding css nodes
-# obsnr <- 10 #number of observations per page
-# pgnr <- 99 #number of pages to loop through +1 (starts at 0)
-# df <- data_frame() #initialize df as data frame
-# dftemps <- data_frame() #initialize dftemps as dataframe
-# 
-# for (i in 0:pgnr) { #loop through first 100 pages, 10 results per page = 1000 
-#   link <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*obsnr, sep = "") #Create hyperlink based on loop function
-#   print(paste("processing", i, sep = " ")) #progress report outer loop
-#   main <- read_html(link, encoding = "UTF-8") #define the static part of link references
-#       #begin inner loop, defining the dftemps results based on the header and node vectors
-#       for (k in 1:length(headers)) { #dynamic length based on the number of headers
-#       print(paste("processing", headers[[k]], sep = " ")) #progress report inner loop
-#       dftemps[1:obsnr, headers[[k]]] <- #define the column name by the headers vector
-#       if(headers[[k]] != "link") #test if the data is the link data, if it's not, standard html_text, if it is, html_attr()
-#         main %>% #create column based on header name, fill with node data
-#         html_nodes(nodes[[k]]) %>% 
-#         html_text()
-#       else #this is if it is the link data
-#         main %>% 
-#         html_nodes(nodes[[k]]) %>% 
-#         html_attr(name = 'href')
-#       }
-#   
-#   df <- rbind(df,dftemps) #bind dftemps to df, and iterate to next link.
-#   Sys.sleep(1) #timer, wait 1 second
-#   cat(" done!\n") #progress report
-#   
-#   }  
 ```
-```{r echo = FALSE}
-#Import the common csv file from github to work on, at end of project remove this reference, lines to be removed marked with [X]
 
-df_raw <- read_csv("https://raw.githubusercontent.com/TorJensen/Assignment-2/master/df.csv") #read csv file from github [X]
-df_raw <- df_raw[,2:10] #remove the rownames column - [X]
-
-df <- df_raw #define df
-rm(df_raw) #remove df_raw from the environment
-```
-```{r echo = FALSE}
+```{r}
 ## Clean and order dataset, force correct data types, factors for faceting and checking number of levels
 clean <- function(df) {
 df$title <- df$title %>% #clean text
@@ -182,8 +145,56 @@ return (df)
 
 df <- clean(df)
 
+## Suggestion: Analysis of Variance between transaction and amount per province or city
+
+# Alternative to start of : 
+# Arbirtrary list of variables and header locations in link, variable observations per pages
+# 
+# headers <- c("title", "amount", "dep", "trans", "views", "city", "date", "time", "link") #list of column names
+# nodes <- c(".heading-3 a",".paid-amount span", ".name a", ".transaction a", ".overview .views", ".location", ".date", #".time-span", ".heading-3 a") #corresponding css nodes
+# obsnr <- 10 #number of observations per page
+# pgnr <- 99 #number of pages to loop through +1 (starts at 0)
+# df <- data_frame() #initialize df as data frame
+# dftemps <- data_frame() #initialize dftemps as dataframe
+# 
+# for (i in 0:pgnr) { #loop through first 100 pages, 10 results per page = 1000 
+#   link <- paste("http://www.ipaidabribe.com/reports/paid?page=",i*obsnr, sep = "") #Create hyperlink based on loop function
+#   print(paste("processing", i, sep = " ")) #progress report outer loop
+#   main <- read_html(link, encoding = "UTF-8") #define the static part of link references
+#       #begin inner loop, defining the dftemps results based on the header and node vectors
+#       for (k in 1:length(headers)) { #dynamic length based on the number of headers
+#       print(paste("processing", headers[[k]], sep = " ")) #progress report inner loop
+#       dftemps[1:obsnr, headers[[k]]] <- #define the column name by the headers vector
+#       if(headers[[k]] != "link") #test if the data is the link data, if it's not, standard html_text, if it is, html_attr()
+#         main %>% #create column based on header name, fill with node data
+#         html_nodes(nodes[[k]]) %>% 
+#         html_text()
+#       else #this is if it is the link data
+#         main %>% 
+#         html_nodes(nodes[[k]]) %>% 
+#         html_attr(name = 'href')
+#       }
+#   
+#   df <- rbind(df,dftemps) #bind dftemps to df, and iterate to next link.
+#   Sys.sleep(1) #timer, wait 1 second
+#   cat(" done!\n") #progress report
+#   
+#   }  
+ 
 ```
-```{r echo = FALSE}
+
+```{r}
+#Import the common csv file from github to work on, at end of project remove this reference, lines to be removed marked with [X]
+
+df_raw <- read_csv("https://raw.githubusercontent.com/TorJensen/Assignment-2/master/df.csv") #read csv file from github [X]
+df_raw <- df_raw[,2:10] #remove the rownames column - [X]
+
+df <- df_raw
+
+df <- clean(df)
+```
+
+```{r}
 # futher Data cleaning
 
 ## look at headers and footers for obvious outliers in bribe size
@@ -202,10 +213,12 @@ df %>%
 
 ## look for missing values in the character variables (title, dep, trans, city, state)
 dfmissing <- df %>% filter(title == "" | dep == "" | trans == "" | city == "" | states == "") %>% head(5)
+dfmissing
 #only a single entry with no data
 
 ## count number of rows with NA values
 narows <- nrow(df[!complete.cases(df),])
+narows
 #total number is 0, no need to filter out NA values
 
 ## test for misassigned values in either 
@@ -223,12 +236,13 @@ df <- df %>%
 rm("dfmissing", "narows", "duplicate", "duplicate2", "dupcheck", "dupcheck2")
 
 ```
-```{r eval = FALSE echo = FALSE}
+
+```{r}
 #exploratory data analysis 
 
 summary(df)
 
-#Basic summary shows large difference in mean and median amounts, third quartile and mean difference indicates large relatively small amount of large bribes pulling up the mean, while the vast majority of bribes reported are relatively small. Almost half of the bribes are reported from Bangalore, and about 2/3rds of the bribes are recorded within the top 5 departments.  The reporting period ends at 12th of october, so we only have 1 month worth of data, which limits the time/weekeday/seasonality analsysis options available. 
+#Basic summary shows birth large difference in mean and median amounts, third quartie and mean difference indicates large relatively small amount of large bribes pulling up the mean, while the vast majority of bribes reported are relatively small. Almost half of the bribes are reported from Bangalore, and about 2/3rds of the bribes are recorded within the top 5 departments.  The reporting period ends at 12th of october, so we only have 1 month worth of data, which limits the time/weekeday/seasonality analsysis options available. 
 
 #plot showing amount of records per day
 p <- ggplot(df %>% group_by(date) %>% summarise(count = n()),aes(date, count))
@@ -256,9 +270,9 @@ levelcount <- lapply(df,levels) %>% summary
 levelcount
 
 #There are 27 states and 17 departments (with 40 transaction types) just in the 1000 records we have mined, so an analysis looking at transaction type level by state, for example, would need more than 1000 data points to be able to get a reasonable analysis (assuming some degree of normality.) Instead focus on higher level summaries, specific departments or specific states with a particular  
-```
-```{r echo = FALSE}
-# Number of bribes and their sizes, by variables in various combinations, these can be called throughout the text:
+
+
+# Number of bribes and their sizes, by variables in various combinations:
 
 ### below are some tables looking at the 
 
@@ -268,6 +282,7 @@ df_dep <- df %>%
   summarise(count = n(), amount = sum(amount))%>% 
   mutate(avgamount = round(amount/count)) %>% 
   arrange(desc(avgamount))
+df_dep
 
 #state
 df_state <- df %>% 
@@ -275,16 +290,14 @@ df_state <- df %>%
   summarise(count = n(), amount = sum(amount))%>% 
   mutate(avgamount = round(amount/count)) %>% 
   arrange(desc(count))
+df_state
 
 #department and transaction type
 df_deptrans <- df %>% 
   group_by(dep,trans) %>% 
   summarise(count = n(), sum = sum(amount))%>% 
-  mutate(avgamount = round(sum/count)) %>% 
-  select(dep, trans, count, avgamount)
+  mutate(avgamount = round(sum/count))
 
-
-df_deptrans[with(df_deptrans, order(desc(count))),]
 #state and city
 df_statecity <- df %>% 
   group_by(states, city) %>% 
@@ -315,9 +328,16 @@ df_viewsdate <- df %>%
   group_by(date) %>% 
   summarise(count = n(), views = sum(views)) %>% 
   mutate(avgviews = round(views/count))
+# commented this out while playing with dplyr
+# bribe_sta <- aggregate(amount ~ states, df, sum)
+# bribe_sta <- bribe_sta[-c(1),]
+# bribe_sta <- bribe_sta %>% arrange(desc(amount))
 ```
+
+
+
 #part janette
-```{r echo = FALSE}
+```{r}
 
 #Bribe amounts
 bribe_sta <- aggregate(amount ~ states, df, sum)
@@ -355,7 +375,7 @@ population$one = population$one %>% str_replace_all(pattern = "," , replacement 
 
 population = select(population, State.or.union.territory, one) #select only desired data
 
-#setdiff(population$State.or.union.territory, GDPindia$State.UT) #shows the states that are in one dataset but not the other, commented out to avoid displaying during evaluation of code
+setdiff(population$State.or.union.territory, GDPindia$State.UT) #find the states that are in one dataset but not the other
 
 #count <- rbind(bribe_sta, data.frame(states = setdiff(population$State.or.union.territory, bribe_sta$states), amount = rep(0, 13))) original
 count <- rbind(bribe_sta, data.frame(states = setdiff(population$State.or.union.territory, bribe_sta$states), amount = rep(0, 12))) #create a dataframe with the states that are in one dataset and missing in the other, assign value 0, then rbind with the bribe_sta data to get full state list. #TOR - changed 13 to 12, said state #s were different
@@ -440,8 +460,7 @@ Comparison3 = left_join(Comparison, bribe_number, by = c("State.or.union.territo
 Comparison4 = mutate(Comparison, money_per_bribe = amount/n()) #add column to comparison dataset with amount of bribe per report
 
 names(Comparison4)[2] = "Population" #rename column 2 of comparison 4 to population
-```
-```{r echo = FALSE eval = FALSE}
+
 #Visualisation of GDP per capita and log(money per bribe), trying to see if there is a correlation between gdp per capita and the amount of money paid per bribe, e.g. do richer states have a higher bribe level than poorer states. 
 p <- ggplot(Comparison4, aes(GDP_per_Capita, log(money_per_bribe)))
 p + geom_point()
@@ -449,20 +468,9 @@ p + geom_point()
 ```
 # Timo
 
+In the gathered data we can see that the most bribes are paid in the department of Municipal Services, especially for issuing a birth certification. Facing this situation, we wanted to find out if there are any reasons for the high rate of corruption in this sector. Apart from the fact that the Indian citizens mostly have to pay bribes for every service they ask for, the high birth rate in India is probably the main reason for this circumstance. The more urgent the need of the documents, the higher the amount the people have to pay for the bribe. Furthermore, we have aggregated the amounts of bribes paid per department and this shows us that there is not just a wide selection of corruption in the sector of Municipal Services, but these public authorities also gain the highest amount of money by far. Relating to the high birth rate in India, as mentioned above, it is probably the easiest and most common way to be bribed. Due to the also complicated taxes and licensing systems in that country and the corrupt police system, the bribe payments in the departments of “Income Tax” and “Police” belong to the highest in India. 
 
-Corruption is one of the major issues in India and there are several reasons causing that problem. The obsolete political system, especially the lack of transparent laws and processes, forces the Indians to bribe employees of public institutions. It has not only a big effect on the economy, but also a big influence on the Indian’s lives, as we can see in a quote from an Indian citizen in an article about courruption in India of “The Guardian”: “Of the 40,000 rupees (£520) I earn a month from my restaurant, I pay at least a third in bribes.” Mostly every public authority requires bribes for their actually regular work. 
-
-In the gathered data we can see that the most bribes are paid in the department of Municipal Services, especially for issuing a birth certification. Facing this situation, we wanted to find out if there are any reasons for the high rate of corruption in this sector. Apart from the fact that the Indian citizens mostly have to pay bribes for every service they ask for, the high birth rate in India is probably the main reason for this circumstance. The more urgent the need of the documents, the higher the amount the people have to pay for the bribe. Furthermore, we have aggregated the amounts of bribes paid per department and this shows us that there is not just a wide selection of corruption in the sector of Municipal Services, but these public authorities also gain the highest amount of money by far. Relating to the high birth rate in India, as mentioned above, it is probably the easiest and most common way to be bribed. Due to the complicated taxes and licensing systems and corrupt police system, the bribe payments in the departments of “Income Tax” and “Police” belong to the highest in India. 
-
-The below tables dispays the top 5 departments by the number of bribes reported, transactions with the highest average amounts.   
-```{r echo = FALSE}
-head(df_deptrans[with(df_deptrans, order(desc(count))),],5) 
-head(df_deptrans[with(df_deptrans, order(desc(avgamount))),],5) 
-```
-
-We can see that the most pervasive bribes aren't necessarily the largest ones, this isn't suprising, but the two tables emphasize how you risk encountering corruption everywhere you go, with every interaction you have with the state. Ration cards are especially important as they are necessary to benefit from the fuel subsidies the indian government gives, and to access the public food distribution systems. For the less frequent but higher value amounts, it is striking that the issuing of [new PAN cards](http://www.indiacgny.org/pdf/pan_faq.pdf), which are not just used to pay taxes, but also as proofs of identity and are necessary to enter most financial transactions, are either bought on false from corrupt officials, or those officials extort people who need it. 
-
-```{r echo = FALSE}
+```{r}
 
 ### Bribes per department
 
@@ -486,9 +494,10 @@ p + geom_bar(stat="identity") +
   scale_fill_viridis(discrete = TRUE)
 ```
 
+
 We created a map of India showing the total amount of bribes by each state. Here we can see, that the highest rate of bribes are made in the south of India, particularly in Kerala, Tamil Nadu, Karnataka. Jammu and Kashmir has also an high amount of bribes, so in conclusion the bribes are more concentrated in the north and south of India, near the borders to Pakistan and the Indian Ocean. Here we have total amounts of bribes paid about 2,000,000.  In the inside of the country the level of bribes paid decreases in comparison to the external states. One reason for this circumstance could be the high number of citizens in these regions compared to the other states in India.
 
-```{r echo = FALSE}
+```{r}
 
 ## Visualize bribe/state
 
