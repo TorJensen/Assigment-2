@@ -16,6 +16,9 @@ require("xml2")
 require("readr")
 require("stringr")
 require("ggplot2")
+require("raster")
+require("sp")
+require("splitstackshape")
 options(scipen=999)
 ```
 
@@ -460,11 +463,6 @@ p + geom_point()
 
 ## Timo
 
-install.packages("raster")
-install.packages("sp")
-install.packages("ggplot2")
-install.packages("splitstackshape")
-
 ### Bribes per department
 
 bribe_dep <- aggregate(amount ~ dep, df, sum)
@@ -486,18 +484,7 @@ p + geom_bar(stat="identity") +
   facet_wrap(~ dep, scales = "free_x") +
   scale_fill_viridis(discrete = TRUE)
 
-
-### Bribes per state
-
-bribe_sta <- aggregate(amount ~ states, df, sum)
-bribe_sta <- bribe_sta[-c(1),]
-bribe_sta <- bribe_sta %>% arrange(desc(amount))
-
 ## Visualize bribe/state
-
-library(raster)
-library(sp)
-library(ggplot2)
 
 ind.df <- getData("GADM", country="IND", level=1)
 
@@ -516,8 +503,6 @@ ind.df <- fortify(ind.df)
 
 count$index <- as.numeric(tapply(ind.df$id, ind.df$id, length))
 test <- data.frame(amount = count$amount, index = count$index)
-
-library(splitstackshape)
 
 test <- expandRows(test, "index")
 
