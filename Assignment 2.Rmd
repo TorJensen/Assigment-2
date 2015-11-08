@@ -245,10 +245,10 @@ Although the chance that we are dealing with an error source here is quite likel
 df_lump <- df %>% 
   filter(date == min(date)) # filter the data based on the earliest day in the dataset
 
-summary(df_lump) # show summary data
+summary(select(df_lump, amount, dep, trans, views, city, states)) # show summary data
 ```
 
-Accoring to the previous summary there does not seem to be any significant relation. We can only observe few outliers which are for medium-sized amounts. Consequently, we can assume that there must be other intervening factors that have a larger impact on these outliers other than size alone.
+According to the previous summary there does not seem to be any significant relation. We can only observe few outliers which are for medium-sized amounts. Consequently, we can assume that there must be other intervening factors that have a larger impact on these outliers other than size alone.
 
 ---
 
