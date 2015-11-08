@@ -1,11 +1,14 @@
 ---
 title: "Assignment 2"
-author: "Tor Jensen, Timo Klingler, Margaret Köhn and Janette Wiget"
-date: "8. November 2015"
-output: html_document
+author: "Tor Jensen, Timo Klingler, Margaret Kuhn and Janette Wiget"
+date: "8 November 2015"
+output:
+  html_document: default
+  pdf_document:
+    latex_engine: xelatex
 ---
 
-```{r, include = FALSE}
+```{r load_libraries, include = FALSE}
 #loading the required packages for the report and set options
 require("rvest")
 require("xml2")
@@ -18,6 +21,7 @@ require("viridis")
 require("raster")
 require("sp")
 require("splitstackshape")
+require("plyr")
 require("dplyr")
 options(scipen=999)
 ```
@@ -39,7 +43,7 @@ The following data analyis is based on data from the website "I paid a pribe" [l
 
 ## Creating the dataset about the last 1000 reports
 
-```{r, eval = FALSE}
+```{r scrape_data, eval = FALSE}
 # Creating a dataset by scraping data from the "I Paid a Bribe"" website, linking to pre-scraped dataset below this block
 
 # General considerations about the layout of the website:  
@@ -115,7 +119,7 @@ df$states <- lapply(strsplit(as.character(df$city), "\\,"), "[", 2)
 df$city <- lapply(strsplit(as.character(df$city), "\\,"), "[", 1)
 ```
 
-```{r, eval = FALSE, echo = FALSE}
+```{r clean_data, echo = FALSE}
 ## Clean and order dataset, force correct data types, factors for faceting and checking number of levels
 clean <- function(df) {
 df$title <- df$title %>% # clean text
@@ -158,14 +162,12 @@ df <- df[, c(1,2,3,4,5,6,9,7,8)] # rearrange columns
 return (df)
 
 }
-
-df <- clean(df)
 ```
 
 After having applied string manipulation and other data cleaning methods we are able to have a first look at the values by ordering the number. First, we observed a single value that is incredibly high. The amount of money is equivalent to 113 million euros - and this "only" for a birth certificate. This report seems highly unlikely and was removed because of the distortion it would've had introduced in the analysis. Second, the head function reveals quite a few instances of Rs 1. Due to the poverty of a large portion of the Indian population, we cannott really argue for setting a minimum threshold for bribes even at this relatively low amount. 
 
 
-```{r, eval = FALSE, include = FALSE}
+```{r cleaning_errors_outliers, eval = FALSE, include = FALSE}
 # futher Data cleaning
 
 ## look at headers and footers for obvious outliers in bribe size
@@ -204,7 +206,7 @@ rm("dfmissing", "narows", "duplicate", "duplicate2", "dupcheck", "dupcheck2")
 
 ```
 
-```{r}
+```{r import_csv}
 # Import the common csv file from github to work on, at end of project remove this reference, lines to be removed marked with [X]
 
 df_raw <- read_csv("https://raw.githubusercontent.com/TorJensen/Assignment-2/master/df.csv") # read csv file from github [X]
@@ -212,13 +214,15 @@ df_raw <- df_raw[,2:10] # remove the rownames column - [X]
 
 df <- df_raw # define df
 rm(df_raw) # remove df_raw from the environment
+df <- clean(df) #apply cleaning function
+
 ```
 
 ---
 
 ## Basic summary of dataset
 
-```{r, echo = FALSE}
+```{r summary, echo = FALSE}
 df <- df %>% 
   filter(dep != "", amount < max(amount))
 
@@ -231,7 +235,7 @@ The basic summary shows large differences between the mean and median amounts an
 
 Having a closer look at the distribution of bribes submitted per day, we can see that the majority of information in our dataset was submitted on one single day in the last month (see below). This is definitely an outlier compared to the other days wheer we count about 10-30 reports on average per day. Having a look at the datasets' other variables assigned to that specific day, it seems like that all the other values of the varibles did not show any significant variances and thus can be said that the bribes on that day are reasonably well-distributed across states and departments. The best possible explanation connected to this observation is probably the fact of an excisting barrage of spam or simply incorrect reports.  
 
-```{r, echo = FALSE}
+```{r records_per_day, echo = FALSE}
 # plot showing amount of records per day
 p <- ggplot(df %>% group_by(date) %>% summarise(count = n()),aes(date, count))
 p + geom_bar(stat = "identity") + 
@@ -241,7 +245,7 @@ p + geom_bar(stat = "identity") +
 
 Although the chance that we are dealing with an error source here is quite likely, a quick google news search for october reveals that an article was posted in Times of India on the 11th of October which could still be a possible explanation for the sudden spike or at least for a part of it [link](http://timesofindia.indiatimes.com/city/chennai/Chennai-corporation-takes-no-action-on-corruption/articleshow/49316078.cms). The article is not only reporting on corruption, but also is directly refering on the "I paid a bribe" website as the have gathered information from the webpage.
 
-```{r, echo = FALSE}
+```{r narrow_data, echo = FALSE}
 # narrow down the dataset to entries made on October 12
 df_lump <- df %>% 
   filter(date == min(date)) # filter the data based on the earliest day in the dataset
@@ -257,7 +261,7 @@ Accoring to the previous summary there does not seem to be any significant relat
 
 Building on the previous discussion, another possible relation to have a further look at is the amount of views compared to the amount of money paid. As shown in the graph below, it is difficult to argue for a strong relation between those two factors. 
 
-```{r, echo = FALSE}
+```{r cluster_data, echo = FALSE}
 # looking at the relation between views and amount of data - do higher value bribe reports attract more attention?
 p2 <- ggplot(df,aes(views, log(amount)))
 p2 + geom_point(alpha = 0.4) + # lower alpha (transparency) to be able to identify clusters of data
@@ -271,14 +275,16 @@ p2 + geom_point(alpha = 0.4) + # lower alpha (transparency) to be able to identi
 
 There are 27 states and 17 departments (with 40 transaction types) in the 1000 records we have mined, so an analysis looking at transaction type level by state, for example, would need more than 1000 data points in order to be able to get a reasonable analysis (assuming some degree of normality.) Instead we decided to focus on higher level summaries, specific departments or specific states. 
 
-```{r, echo = FALSE}
-levelcount <- lapply(df,levels) %>% summary
+```{r levels, echo = FALSE}
+levelcount <- llply(df,levels) %>% summary()
+levelcount <- ldply(llply(llply(levelcount[,1],str_trim),as.numeric)) %>% filter(V1>0)
+names(levelcount) <-c("Variable","Factors")
 levelcount
 ```
 
 In the gathered data we can see that most bribes are paid to the department of Municipal Services, especially for issuing a birth certification. Facing this situation, we wanted to find out if there are any reasons for the high rate of corruption in this sector. Apart from the fact that the Indian citizens mostly have to pay bribes for every service they ask for, the high birth rate in India is probably the main reason for this circumstance. The more urgent the need for a document, the higher the amount the people have to pay for a certain service. Furthermore, we have aggregated the amounts of bribes paid per department. The resulting visualisations are showing us that there is not just a wide selection of corruption in the sector of Municipal Services, but also generate these public authorities by far the highest amount of money. Relating to the high birth rate in India, as mentioned above, it is probably the easiest and most common way to be bribed. Due to the complicated tax and licensing systems and corrupt police system, the bribe payments in the departments of “Income Tax” and “Police” belong to the highest in India.
 
-```{r, echo = FALSE}
+```{r bribes_sliced, echo = FALSE}
 # Number of bribes and their sizes, by variables in various combinations, these can be called throughout the text:
 
 ### below are some tables looking at the... 
@@ -345,7 +351,7 @@ We can observe that the most pervasive bribes aren't necessarily the largest one
 
 The graphs below display the top 5 departments ordered by the number of bribes reported and the transactions with the highest amounts in average.
 
-```{r, echo = FALSE}
+```{r bars, echo = FALSE}
 
 ### Bribes per department
 
@@ -382,12 +388,13 @@ p3 + geom_bar(stat="identity") +
 
 The following code lines and its resulting graph are questioning the relation between the GDP per capita of each state and the average amount of money paid per bribe in a certain state. In order to get the needed information, the data from our dataset is complemented by tables scraped from two different wikipedia sources.
 
-```{r, echo = FALSE}
+```{r gdp_per_capita, echo = FALSE}
 # Bribe amounts
 bribe_sta <- aggregate(amount ~ states, df, sum)
 bribe_n <- df %>% group_by(states) %>% count(states) # create column with number of bribes per state 
 bribe_sta$n <- bribe_n$n # add column with number of bribes per state to amount of bribes per state
 bribe_sta <- bribe_sta[-c(9),] # remove Hardoi
+bribe_sta$states <- as.character(bribe_sta$states)
 bribe_sta[which(with(bribe_sta, states == "Orissa")), c(1)] = "Odisha" #rename columns
 
 # Download India GDP data
@@ -417,10 +424,10 @@ ind.pop[which(with(ind.pop, states == "Manipurβ")), c(1)] = "Manipur"
 ind.pop$population <-  str_extract(ind.pop$population, "(?<=\\d{19}...)[0-9,]*") %>% str_replace_all(",","") %>% as.numeric()
 
 # Combine bribe_sta, ind.gdp and ind.pop
- 
-ind.df <- rbind(bribe_sta, data.frame(states = setdiff(ind.pop$states, bribe_sta$states), amount = rep(0,10), n = rep(0, 10)))
 
-ind.gdp <- rbind(ind.gdp, data.frame(states = setdiff(ind.df$states, ind.gdp$states), gdp = rep(0,3)))
+ind.df <- rbind(bribe_sta, data.frame(states = setdiff(ind.pop$states, bribe_sta$states), amount = rep(0,length(setdiff(ind.pop$states, bribe_sta$states))), n = rep(0, length(setdiff(ind.pop$states, bribe_sta$states)))))
+
+ind.gdp <- rbind(ind.gdp, data.frame(states = setdiff(ind.df$states, ind.gdp$states), gdp = rep(0,length(setdiff(ind.df$states, ind.gdp$states)))))
 
 ind.df <- left_join(ind.df, ind.gdp, by = c("states" = "states"))
 ind.df <- left_join(ind.df, ind.pop, by = c("states" = "states"))
@@ -438,7 +445,7 @@ ind.df[rm.nan(ind.df)] <- 0
 The resulting graph from above is raising the question whether states with a higher GDP per capita have a higher/lower frequency of people paying bribes. The question relating to a general relationship between those to factors can best be examined by the performance of a regression analysis.
 According to the regression plot there does not seem to be a strong relaton between GDP per Capita and the average amount of money spent. Nevertheless, it can be argued that there is a slight tendancy of moving towards the fact that states with a higher GDP per Capita come along with a higher amount paid per bribe than average. Which would obviously also make sense as those people have more ressources to spend.
 
-```{r, echo = FALSE}
+```{r gdp_bribe_graph, echo = FALSE}
 p4 <- ggplot(ind.df, aes(gdp_cap, log(m_per_b)))
 p4 + geom_point() + 
   labs(x="GDP per Capita", y="log(Amount per Bribe)", title="GDP/Capita and Amount of Bribes Paid") +
@@ -447,7 +454,7 @@ p4 + geom_point() +
 
 In the last part of our data analysis we have created a map of India showing the total amount of bribes by each state. The resulting map illustrates, that the highest number of bribes can be observed in the Southern part of India, particularly in Kerala, Tamil Nadu, Karnataka. Jammu and Kashmir has also an high amount of bribes. In conclusion, we can say that the bribes are more concentrated in the North and South of India, near the borders to Pakistan and the Indian Ocean. Here we have a total amount of bribes paid of about 2,000,000.  In the inside of the country the level of bribes paid decreases in comparison to the external states. One reason for this circumstance could be the high number of citizens in these regions compared to the other states in India. We could also speculate about the question whether people have less internet access in the inner states of the countries or whether their level of education is lower so that they simply don't have the knowledge about the website we're taking the data from. 
 
-```{r, message = FALSE, echo = FALSE}
+```{r visualize_map, message = FALSE, echo = FALSE}
 
 ## Visualize bribe/state
 
