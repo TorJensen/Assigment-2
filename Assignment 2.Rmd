@@ -197,10 +197,6 @@ dupcheck <- df[!is.na(duplicate),]
 dupcheck2 <- df[!is.na(duplicate2),]
 # 3 values come up, city name is capital name, chandigarh is a state and an area so no problem
 
-## filter based on the above criteria
-df <- df %>% 
-  filter(dep != "", amount < max(amount))  # Remove entry with missing data and remove the
-
 ## remove unwanted variables again used
 rm("dfmissing", "narows", "duplicate", "duplicate2", "dupcheck", "dupcheck2")
 
@@ -214,8 +210,6 @@ df_raw <- df_raw[,2:10] # remove the rownames column - [X]
 
 df <- df_raw # define df
 rm(df_raw) # remove df_raw from the environment
-df <- clean(df) #apply cleaning function
-
 ```
 
 ---
@@ -223,12 +217,13 @@ df <- clean(df) #apply cleaning function
 ## Basic summary of dataset
 
 ```{r summary, echo = FALSE}
+df <- clean(df) #apply cleaning function
 df <- df %>% 
-  filter(dep != "", amount < max(amount))
+  filter(dep != "", amount < max(amount)) # Remove entry with missing data and remove the maximum value
 
 # exploratory data analysis 
 
-summary(df)
+summary(df %>% select(title, amount, views, states, date))
 ```
 
 The basic summary shows large differences between the mean and median amounts and the third quartile. The mean difference indicates that a relatively small amount of large bribes are increasing the mean, while the vast majority of bribes reported are relatively small. Almost half of the bribes are reported from Bangalore, and about 2/3rds of the bribes are recorded within the top 5 departments. The reporting period ends on the 12th of October, so we only have 1 month worth of data, which limits the time/weekeday/seasonality analysis options available. 
