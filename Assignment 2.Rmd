@@ -43,7 +43,7 @@ The following data analyis is based on data from the website "I paid a pribe" [l
 
 ## Creating the dataset about the last 1000 reports
 
-```{r scrape_data, eval = FALSE}
+```{r scrape_data, eval = FALSE, include = FALSE}
 # Creating a dataset by scraping data from the "I Paid a Bribe"" website, linking to pre-scraped dataset below this block
 
 # General considerations about the layout of the website:  
